@@ -77,13 +77,13 @@ function buildICFReports() {
       if (reportsMap.has(id)) {
         // Merge with existing markdown
         const report = reportsMap.get(id);
-        report.html = { path: normalizePath(path), content, url };
+        report.html = { path: normalizePath(path), url }; // Content removed to save memory
       } else {
         // Create new entry for HTML-only reports
         reportsMap.set(id, {
           id,
           title: extractHtmlTitle(content, id.split('/').pop()), // Fallback title or extracted
-          html: { path: normalizePath(path), content, url }
+          html: { path: normalizePath(path), url } // Content removed to save memory
         });
       }
     });
