@@ -200,14 +200,14 @@ export function renderICFReports(root, data) {
     group.className = 'icf-report-group';
 
     if (report.md) {
-      const label = document.createElement('h4');
+      const label = document.createElement('div');
       label.className = 'icf-format-label';
       label.textContent = 'Markdown';
       group.appendChild(label);
       group.appendChild(createFileCard(report.md));
     }
     if (report.html) {
-      const label = document.createElement('h4');
+      const label = document.createElement('div');
       label.className = 'icf-format-label';
       label.textContent = 'HTML';
       group.appendChild(label);
