@@ -21,3 +21,16 @@ um Lernen, Reflexion und Weiterentwicklung zu ermöglichen.
 ## Prinzip
 
 Beobachtung, Interpretation und Entscheidung werden getrennt dokumentiert.
+
+## Visualisierung
+
+Eine minimale Web-App unter `app/` stellt die Inhalte aus `docs/` strukturiert dar.
+Die App ist **read-only**: Es gibt keine Bearbeitung, kein Rückschreiben und keine Repo-Mutationen.
+
+### Lokale Visualisierung starten
+
+```bash
+cd app
+npm install
+npm run dev
+```
