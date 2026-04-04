@@ -72,9 +72,9 @@ function createHtmlFileCard(report) {
   const iframe = document.createElement('iframe');
   iframe.className = 'icf-report-frame';
 
-  // Use Blob URL instead of srcdoc for better isolation
-  const blob = new Blob([entry.content], { type: 'text/html' });
-  iframe.src = URL.createObjectURL(blob);
+  // Use pre-generated Blob URL from Data Layer
+  iframe.src = entry.url;
+  iframe.setAttribute('sandbox', 'allow-same-origin');
 
   iframe.loading = 'lazy';
   iframe.title = `ICF Report: ${report.title}`;

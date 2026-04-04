@@ -33,6 +33,21 @@ function parseDecisionFile(path, content) {
   };
 }
 
+function extractHtmlTitle(content, fallback) {
+  const titleMatch = content.match(/<title[^>]*>(.*?)<\/title>/is);
+  if (titleMatch && titleMatch[1].trim()) return titleMatch[1].trim();
+  const h1Match = content.match(/<h1[^>]*>(.*?)<\/h1>/is);
+  if (h1Match && h1Match[1].trim()) return h1Match[1].trim().replace(/<[^>]+>/g, '');
+  return fallback;
+}
+
+function reportIdFromPath(path) {
+  // Extract path relative to icf-reports folder and remove extension
+  const normalized = normalizePath(path);
+  const match = normalized.match(/docs\/icf-reports\/(.+)\.(md|html)$/);
+  return match ? match[1] : normalized.split('/').pop().replace(/\.(md|html)$/, '');
+}
+
 function buildICFReports() {
   const reportsMap = new Map();
 
@@ -40,8 +55,7 @@ function buildICFReports() {
   Object.entries(markdownFiles)
     .filter(([path]) => path.includes('/docs/icf-reports/') && path.endsWith('.md'))
     .forEach(([path, content]) => {
-      const filename = path.split('/').pop();
-      const id = filename.replace(/\.md$/, '');
+      const id = reportIdFromPath(path);
       const parsed = parseFile(path, content);
 
       reportsMap.set(id, {
@@ -54,19 +68,22 @@ function buildICFReports() {
   // Process HTML Reports
   Object.entries(htmlFiles)
     .forEach(([path, content]) => {
-      const filename = path.split('/').pop();
-      const id = filename.replace(/\.html$/, '');
+      const id = reportIdFromPath(path);
+
+      // Blob URL is generated once per report lifecycle
+      const blob = new Blob([content], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
 
       if (reportsMap.has(id)) {
         // Merge with existing markdown
         const report = reportsMap.get(id);
-        report.html = { path: normalizePath(path), content };
+        report.html = { path: normalizePath(path), content, url };
       } else {
         // Create new entry for HTML-only reports
         reportsMap.set(id, {
           id,
-          title: id, // Fallback title
-          html: { path: normalizePath(path), content }
+          title: extractHtmlTitle(content, id.split('/').pop()), // Fallback title or extracted
+          html: { path: normalizePath(path), content, url }
         });
       }
     });
