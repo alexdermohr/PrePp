@@ -10,13 +10,19 @@ function createSectionBlock(section) {
     const ul = document.createElement('ul');
     section.bullets.forEach((bullet) => {
       const li = document.createElement('li');
-      li.textContent = bullet;
+      li.textContent = normalizeInlineMarkdown(bullet);
       ul.appendChild(li);
     });
     sectionEl.appendChild(ul);
   }
 
   return sectionEl;
+}
+
+function normalizeInlineMarkdown(text) {
+  return text
+    .replace(/\*\*(.*?)\*\*/g, '$1')
+    .replace(/`([^`]+)`/g, '$1');
 }
 
 function createFileCard(entry) {
@@ -119,7 +125,7 @@ export function renderEntscheidungen(root, data) {
         const list = values.length > 0 ? values : ['Nicht explizit angegeben'];
         list.forEach((value) => {
           const li = document.createElement('li');
-          li.textContent = value;
+          li.textContent = normalizeInlineMarkdown(value);
           ul.appendChild(li);
         });
 
