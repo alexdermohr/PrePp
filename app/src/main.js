@@ -92,24 +92,40 @@ function markReloadedVersion(version) {
   sessionStorage.setItem('lastReloadedVersion', version);
 }
 
+let isCheckingForUpdate = false;
+let pendingUpdateVersion = null;
+
 async function maybeApplyUpdate() {
   if (getCurrentVersion() === 'dev') return;
+  if (isCheckingForUpdate) return;
 
-  // Reload nur im hidden state, um sichtbare Interaktion nicht zu stören und Reloads kontrolliert zu aktivieren.
+  isCheckingForUpdate = true;
+  try {
+    const remoteVersion = await fetchRemoteVersion();
+
+    if (shouldReloadForVersion(remoteVersion)) {
+      pendingUpdateVersion = remoteVersion;
+      applyPendingUpdateIfSafe();
+    }
+  } finally {
+    isCheckingForUpdate = false;
+  }
+}
+
+function applyPendingUpdateIfSafe() {
+  if (!pendingUpdateVersion) return;
+
+  // Reload nur im hidden state, um sichtbare Interaktion nicht zu stören
   if (document.visibilityState === 'visible') return;
 
-  const remoteVersion = await fetchRemoteVersion();
-
-  if (shouldReloadForVersion(remoteVersion)) {
-    markReloadedVersion(remoteVersion);
-    location.reload();
-  }
+  markReloadedVersion(pendingUpdateVersion);
+  location.reload();
 }
 
 document.addEventListener('visibilitychange', () => {
   // Tab-Wechsel-Event als Trigger für verzögertes Update
   if (document.visibilityState === 'hidden') {
-    maybeApplyUpdate();
+    applyPendingUpdateIfSafe();
   }
 });
 
