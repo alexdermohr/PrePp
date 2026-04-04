@@ -10,9 +10,17 @@ export function parseMarkdownSections(markdown) {
   let inCodeBlock = false;
   let codeContent = [];
 
+
+  let currentTextBlock = null;
+
   for (const rawLine of rawLines) {
     const line = rawLine.trim();
+
     if (line.startsWith('```')) {
+      if (currentTextBlock) {
+        current.blocks.push(currentTextBlock);
+        currentTextBlock = null;
+      }
       if (inCodeBlock) {
         current.blocks.push({ type: 'code', text: codeContent.join('\n') });
         inCodeBlock = false;
@@ -28,9 +36,19 @@ export function parseMarkdownSections(markdown) {
       continue;
     }
 
-    if (!line) continue;
+    if (!line) {
+      if (currentTextBlock) {
+        current.blocks.push(currentTextBlock);
+        currentTextBlock = null;
+      }
+      continue;
+    }
 
     if (/^#{1,6}\s+/.test(line)) {
+      if (currentTextBlock) {
+        current.blocks.push(currentTextBlock);
+        currentTextBlock = null;
+      }
       if (current.heading || current.blocks.length) {
         sections.push(current);
       }
@@ -42,17 +60,34 @@ export function parseMarkdownSections(markdown) {
     }
 
     if (/^-\s+/.test(line)) {
+      if (currentTextBlock) {
+        current.blocks.push(currentTextBlock);
+        currentTextBlock = null;
+      }
       current.blocks.push({ type: 'bullet', text: line.replace(/^-\s+/, '').trim() });
       continue;
     }
 
     if (/^\d+\.\s+/.test(line)) {
+      if (currentTextBlock) {
+        current.blocks.push(currentTextBlock);
+        currentTextBlock = null;
+      }
       current.blocks.push({ type: 'bullet', text: line.replace(/^\d+\.\s+/, '').trim() });
       continue;
     }
 
-    current.blocks.push({ type: 'text', text: line.trim() });
+    if (currentTextBlock) {
+      currentTextBlock.text += ' ' + line;
+    } else {
+      currentTextBlock = { type: 'text', text: line };
+    }
   }
+
+  if (currentTextBlock) {
+    current.blocks.push(currentTextBlock);
+  }
+
 
   if (current.heading || current.blocks.length) {
     sections.push(current);

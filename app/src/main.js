@@ -3,7 +3,7 @@ import { loadData } from './lib/data';
 import {
   renderBeobachtungen,
   renderEntscheidungen,
-  renderOverview,
+  renderStart,
   renderSimpleDoc,
   renderTagebuch,
   renderProjektplan,
@@ -17,7 +17,7 @@ const viewGroups = [
   {
     heading: 'Start',
     views: [
-      { id: 'overview', label: 'Übersicht', render: renderOverview }
+      { id: 'overview', label: 'Start', render: renderStart }
     ]
   },
   {

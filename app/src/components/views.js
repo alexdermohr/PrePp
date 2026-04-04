@@ -110,13 +110,43 @@ function createHtmlFileCard(report) {
   return card;
 }
 
-export function renderOverview(root, data) {
+export function renderStart(root, data) {
   const article = document.createElement('article');
   article.className = 'start-page card';
 
   const intro = document.createElement('p');
   intro.textContent = 'Willkommen zur Projekt-Dokumentation. Diese Oberfläche dient der strukturierten Einsicht in den Entwicklungsprozess, um Beobachtungen, Hypothesen und Entscheidungen nachvollziehbar zu machen.';
   article.appendChild(intro);
+
+  if (data.projektplan) {
+    const focusSection = document.createElement('section');
+    focusSection.className = 'section-block';
+    focusSection.style.marginBottom = '1.5rem';
+    focusSection.style.padding = '1rem';
+    focusSection.style.backgroundColor = '#fdfdfd';
+    focusSection.style.borderLeft = '4px solid #3b82f6';
+
+    const h4 = document.createElement('h4');
+    h4.textContent = 'Worum geht es in diesem Projekt?';
+    h4.style.marginTop = '0';
+    focusSection.appendChild(h4);
+
+    // Find the first non-empty text block in Projektplan
+    let firstText = 'Ein Projektplan ist hinterlegt.';
+    for (const section of data.projektplan.sections) {
+      const tb = section.blocks.find(b => b.type === 'text' && b.text.length > 20);
+      if (tb) {
+        firstText = tb.text;
+        break;
+      }
+    }
+
+    const p = document.createElement('p');
+    p.textContent = firstText;
+    p.style.marginBottom = '0';
+    focusSection.appendChild(p);
+    article.appendChild(focusSection);
+  }
 
   const cardsContainer = document.createElement('div');
   cardsContainer.className = 'status-cards';
@@ -290,43 +320,104 @@ export function renderAktuellerStand(root, data) {
   article.className = 'stand-section card';
 
   const intro = document.createElement('p');
-  intro.textContent = 'Kompakter Überblick über den letzten Stand des Projekts.';
+  intro.textContent = 'Kompakter Überblick über den aktuellen Projektstand, extrahiert aus den jüngsten Dokumentationen.';
   article.appendChild(intro);
 
-  if (data.tagebuch && data.tagebuch.length > 0) {
-    const latestTagebuch = data.tagebuch[0]; // Assuming data is now sorted newest first
+  if (data.projektplan) {
     const section = document.createElement('section');
     section.className = 'section-block';
     const heading = document.createElement('h4');
-    heading.textContent = 'Zuletzt im Tagebuch';
+    heading.textContent = 'Projektkontext';
     section.appendChild(heading);
+
+    let firstText = 'Projektplan ist angelegt.';
+    for (const s of data.projektplan.sections) {
+      const tb = s.blocks.find(b => b.type === 'text' && b.text.length > 20);
+      if (tb) {
+        firstText = tb.text;
+        break;
+      }
+    }
     const p = document.createElement('p');
-    p.textContent = latestTagebuch.title;
+    p.textContent = firstText;
     section.appendChild(p);
+    article.appendChild(section);
+  }
+
+  if (data.tagebuch && data.tagebuch.length > 0) {
+    const latestTagebuch = data.tagebuch[0];
+    const section = document.createElement('section');
+    section.className = 'section-block';
+    const heading = document.createElement('h4');
+    heading.textContent = 'Zuletzt passiert';
+    section.appendChild(heading);
+
+    const titleP = document.createElement('p');
+    titleP.innerHTML = `<strong>${latestTagebuch.title}</strong>`;
+    section.appendChild(titleP);
+
+    let contentSnippet = '';
+    for (const s of latestTagebuch.sections) {
+      const tb = s.blocks.find(b => b.type === 'text' || b.type === 'bullet');
+      if (tb) {
+        contentSnippet = tb.text;
+        break;
+      }
+    }
+
+    if (contentSnippet) {
+      const p = document.createElement('p');
+      p.textContent = contentSnippet;
+      section.appendChild(p);
+    }
     article.appendChild(section);
   }
 
   if (data.entscheidungen && data.entscheidungen.length > 0) {
-    const latestDecision = data.entscheidungen[0]; // Getting the last one (assuming older sort or just picking one)
+    const latestDecision = data.entscheidungen[0];
     const section = document.createElement('section');
     section.className = 'section-block';
     const heading = document.createElement('h4');
-    heading.textContent = 'Letzte Entscheidung';
+    heading.textContent = 'Letzte Entscheidung / Steuerung';
     section.appendChild(heading);
-    const p = document.createElement('p');
-    p.textContent = latestDecision.title;
-    section.appendChild(p);
+
+    const titleP = document.createElement('p');
+    titleP.innerHTML = `<strong>${latestDecision.title}</strong>`;
+    section.appendChild(titleP);
+
+    if (latestDecision.decisionBlocks && latestDecision.decisionBlocks.length > 0) {
+       const block = latestDecision.decisionBlocks[0];
+       if (block.massnahme.length > 0) {
+         const p = document.createElement('p');
+         p.textContent = 'Maßnahme: ' + block.massnahme[0];
+         section.appendChild(p);
+       } else if (block.begruendung.length > 0) {
+         const p = document.createElement('p');
+         p.textContent = 'Begründung: ' + block.begruendung[0];
+         section.appendChild(p);
+       }
+    }
     article.appendChild(section);
   }
 
   if (data.beobachtungen && data.beobachtungen.length > 0) {
+    const latestObs = data.beobachtungen[data.beobachtungen.length - 1]; // Assume oldest to newest, pick last or first depending on sorting. data is likely oldest first for beobachtungen, let's grab the last one.
     const section = document.createElement('section');
     section.className = 'section-block';
     const heading = document.createElement('h4');
-    heading.textContent = 'Beobachtungen';
+    heading.textContent = 'Zentrale Beobachtung';
     section.appendChild(heading);
+
+    let contentSnippet = latestObs.title;
+    for (const s of latestObs.sections) {
+      const tb = s.blocks.find(b => b.type === 'text' || b.type === 'bullet');
+      if (tb) {
+        contentSnippet = tb.text;
+        break;
+      }
+    }
     const p = document.createElement('p');
-    p.textContent = `${data.beobachtungen.length} dokumentierte Muster.`;
+    p.textContent = contentSnippet;
     section.appendChild(p);
     article.appendChild(section);
   }
@@ -334,10 +425,14 @@ export function renderAktuellerStand(root, data) {
   const icfSection = document.createElement('section');
   icfSection.className = 'section-block';
   const icfHeading = document.createElement('h4');
-  icfHeading.textContent = 'Evidenz';
+  icfHeading.textContent = 'Evidenz & Rahmen';
   icfSection.appendChild(icfHeading);
   const icfP = document.createElement('p');
-  icfP.textContent = data.icfReports.length > 0 ? 'ICF-Verlauf liegt vor.' : 'Noch keine ICF-Reports verknüpft.';
+  if (data.icfReports.length > 0) {
+    icfP.textContent = 'ICF-Verlauf liegt vor und stützt die Beobachtungen mit normierter Evidenz.';
+  } else {
+    icfP.textContent = 'Noch keine normierten ICF-Reports verknüpft.';
+  }
   icfSection.appendChild(icfP);
   article.appendChild(icfSection);
 
