@@ -51,51 +51,23 @@ function reportIdFromPath(path) {
 function buildICFReports() {
   const reportsMap = new Map();
 
-  // Process Markdown Reports
-  Object.entries(markdownFiles)
-    .filter(([path]) => path.includes('/docs/icf-reports/') && path.endsWith('.md'))
-    .forEach(([path, content]) => {
-      const id = reportIdFromPath(path);
-      const parsed = parseFile(path, content);
-
-      reportsMap.set(id, {
-        id,
-        title: parsed.title, // Initial title from markdown
-        md: parsed
-      });
-    });
-
   // Process HTML Reports
   Object.entries(htmlFiles)
     .forEach(([path, content]) => {
       const id = reportIdFromPath(path);
 
-      // Blob URL is generated once per report lifecycle
-      const blob = new Blob([content], { type: 'text/html' });
-      const url = URL.createObjectURL(blob);
-
-      if (reportsMap.has(id)) {
-        // Merge with existing markdown
-        const report = reportsMap.get(id);
-        report.html = { path: normalizePath(path), url }; // Content removed to save memory
-      } else {
-        // Create new entry for HTML-only reports
-        reportsMap.set(id, {
-          id,
-          title: extractHtmlTitle(content, id.split('/').pop()), // Fallback title or extracted
-          html: { path: normalizePath(path), url } // Content removed to save memory
-        });
-      }
+      reportsMap.set(id, {
+        id,
+        title: extractHtmlTitle(content, id.split('/').pop()), // Fallback title or extracted
+        html: { path: normalizePath(path), content }
+      });
     });
 
-  // Convert map to sorted array and add preference
+  // Convert map to sorted array
   return Array.from(reportsMap.values())
-    .sort((a, b) => a.id.localeCompare(b.id))
-    .map(report => ({
-      ...report,
-      preferred: report.html ? 'html' : 'md'
-    }));
+    .sort((a, b) => a.id.localeCompare(b.id));
 }
+
 
 export function loadData() {
   const tagebuch = byFolder('tagebuch').map(([path, content]) => parseFile(path, content));
