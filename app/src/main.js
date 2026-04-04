@@ -60,3 +60,24 @@ function render(activeId) {
 }
 
 render('overview');
+
+
+const currentVersion = __APP_VERSION__;
+
+async function checkVersion() {
+  if (currentVersion === 'dev') return;
+
+  try {
+    const res = await fetch('/version.json', { cache: 'no-store' });
+    const { version } = await res.json();
+
+    if (version && version !== currentVersion) {
+      location.reload();
+    }
+  } catch (error) {
+    // Ignore fetch errors to not spam the console if offline
+  }
+}
+
+setInterval(checkVersion, 30000);
+checkVersion();
