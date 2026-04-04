@@ -55,6 +55,34 @@ function createFileCard(entry) {
   return card;
 }
 
+function createHtmlFileCard(report) {
+  const entry = report.html;
+  const card = document.createElement('article');
+  card.className = 'card icf-report-card';
+
+  const title = document.createElement('h3');
+  title.textContent = report.title;
+  card.appendChild(title);
+
+  const meta = document.createElement('p');
+  meta.className = 'meta icf-report-meta';
+  meta.textContent = entry.path;
+  card.appendChild(meta);
+
+  const iframe = document.createElement('iframe');
+  iframe.className = 'icf-report-frame';
+
+  // Use pre-generated Blob URL from Data Layer
+  iframe.src = entry.url;
+  iframe.setAttribute('sandbox', 'allow-same-origin');
+
+  iframe.loading = 'lazy';
+  iframe.title = `ICF Report: ${report.title}`;
+  card.appendChild(iframe);
+
+  return card;
+}
+
 export function renderOverview(root, data) {
   const areas = [
     { label: 'Tagebuch', count: data.tagebuch.length },
@@ -166,7 +194,14 @@ export function renderICFReports(root, data) {
     root.appendChild(p);
     return;
   }
-  data.icfReports.forEach(entry => root.appendChild(createFileCard(entry)));
+
+  data.icfReports.forEach(report => {
+    if (report.preferred === 'html') {
+      root.appendChild(createHtmlFileCard(report));
+    } else {
+      root.appendChild(createFileCard(report.md));
+    }
+  });
 }
 
 export function renderMeta(root, data) {
