@@ -5,7 +5,11 @@ import {
   renderEntscheidungen,
   renderOverview,
   renderSimpleDoc,
-  renderTagebuch
+  renderTagebuch,
+  renderProjektplan,
+  renderICFReports,
+  renderMeta,
+  renderModels
 } from './components/views';
 
 const views = [
@@ -14,7 +18,11 @@ const views = [
   { id: 'beobachtungen', label: 'Beobachtungen', render: renderBeobachtungen },
   { id: 'entscheidungen', label: 'Entscheidungen', render: renderEntscheidungen },
   { id: 'hypothesen', label: 'Hypothesen', render: (el, data) => renderSimpleDoc(el, data.hypothesen) },
-  { id: 'reflexion', label: 'Reflexion', render: (el, data) => renderSimpleDoc(el, data.reflexion) }
+  { id: 'reflexion', label: 'Reflexion', render: (el, data) => renderSimpleDoc(el, data.reflexion) },
+  { id: 'projektplan', label: 'Projektplan', render: renderProjektplan },
+  { id: 'icf-reports', label: 'ICF-Reports', render: renderICFReports },
+  { id: 'meta', label: 'Meta', render: renderMeta },
+  { id: 'modelle', label: 'Modelle', render: renderModels }
 ];
 
 const data = loadData();

@@ -61,7 +61,11 @@ export function renderOverview(root, data) {
     { label: 'Beobachtungen', count: data.beobachtungen.length },
     { label: 'Entscheidungen', count: data.entscheidungen.length },
     { label: 'Hypothesen', count: data.hypothesen ? 1 : 0, single: true },
-    { label: 'Reflexion', count: data.reflexion ? 1 : 0, single: true }
+    { label: 'Reflexion', count: data.reflexion ? 1 : 0, single: true },
+    { label: 'Projektplan', count: data.projektplan ? 1 : 0, single: true },
+    { label: 'ICF-Reports', count: data.icfReports.length },
+    { label: 'Meta', count: data.meta.length },
+    { label: 'Modelle', count: data.models.length }
   ];
   const ul = document.createElement('ul');
   ul.className = 'overview-list';
@@ -149,4 +153,38 @@ export function renderSimpleDoc(root, doc) {
   }
 
   root.appendChild(createFileCard(doc));
+}
+
+export function renderProjektplan(root, data) {
+  renderSimpleDoc(root, data.projektplan);
+}
+
+export function renderICFReports(root, data) {
+  if (!data.icfReports.length) {
+    const p = document.createElement('p');
+    p.textContent = 'Keine ICF-Reports vorhanden.';
+    root.appendChild(p);
+    return;
+  }
+  data.icfReports.forEach(entry => root.appendChild(createFileCard(entry)));
+}
+
+export function renderMeta(root, data) {
+  if (!data.meta.length) {
+    const p = document.createElement('p');
+    p.textContent = 'Keine Meta-Daten vorhanden.';
+    root.appendChild(p);
+    return;
+  }
+  data.meta.forEach(entry => root.appendChild(createFileCard(entry)));
+}
+
+export function renderModels(root, data) {
+  if (!data.models.length) {
+    const p = document.createElement('p');
+    p.textContent = 'Keine Modelle vorhanden.';
+    root.appendChild(p);
+    return;
+  }
+  data.models.forEach(entry => root.appendChild(createFileCard(entry)));
 }
