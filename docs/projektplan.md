@@ -66,7 +66,7 @@ Ideen werden gesammelt und möglicherweise Absprachen beziehungsweise Verabredun
 
 ### 3. Konkreten Plan erstellen
 Aus den gesammelten Ideen wird ein konkreter Umsetzungsplan erstellt. Dieser wird anschließend noch einmal bei den Verantwortlichen abgesegnet.
-Ein gutes Zeitmanagement wird hierbei wichtig sein, um dem straffen Zeitrahmen des prePp gerecht zu werden.
+Ein gutes Zeitmanagement wird hierbei wichtig sein, um dem straffen Zeitrahmen des PrepP gerecht zu werden.
 Auch hier werden gute Lernchancen bezüglich (Selbst-)Organisation geboten.
 
 ### 4. Materialbeschaffung und Umsetzung
