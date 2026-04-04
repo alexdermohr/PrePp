@@ -236,3 +236,18 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Code Blocks */
+pre {
+  background: #1f2937;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+code {
+  font-family: inherit;
+}

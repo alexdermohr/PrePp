@@ -6,7 +6,34 @@ function createSectionBlock(section) {
   heading.textContent = section.heading;
   sectionEl.appendChild(heading);
 
-  if (section.bullets.length > 0) {
+  if (section.blocks && section.blocks.length > 0) {
+    let currentUl = null;
+
+    section.blocks.forEach((block) => {
+      if (block.type === 'bullet') {
+        if (!currentUl) {
+          currentUl = document.createElement('ul');
+          sectionEl.appendChild(currentUl);
+        }
+        const li = document.createElement('li');
+        li.textContent = normalizeInlineMarkdown(block.text);
+        currentUl.appendChild(li);
+      } else if (block.type === 'code') {
+        currentUl = null;
+        const pre = document.createElement('pre');
+        const code = document.createElement('code');
+        code.textContent = block.text;
+        pre.appendChild(code);
+        sectionEl.appendChild(pre);
+      } else {
+        currentUl = null;
+        const p = document.createElement('p');
+        p.textContent = normalizeInlineMarkdown(block.text);
+        sectionEl.appendChild(p);
+      }
+    });
+  } else if (section.bullets && section.bullets.length > 0) {
+    // Fallback for old structure if any
     const ul = document.createElement('ul');
     section.bullets.forEach((bullet) => {
       const li = document.createElement('li');
@@ -40,8 +67,8 @@ function createFileCard(entry) {
 
   entry.sections.forEach((section, index) => {
     if (index === 0 && section.heading === entry.title) {
-      if (section.bullets.length > 0) {
-        const bulletOnly = createSectionBlock({ heading: '', bullets: section.bullets });
+      if ((section.blocks && section.blocks.length > 0) || (section.bullets && section.bullets.length > 0)) {
+        const bulletOnly = createSectionBlock({ heading: '', blocks: section.blocks, bullets: section.bullets });
         const heading = bulletOnly.querySelector('h4');
         if (heading) heading.remove();
         card.appendChild(bulletOnly);

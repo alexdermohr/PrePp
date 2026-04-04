@@ -5,40 +5,59 @@ function lines(markdown) {
 export function parseMarkdownSections(markdown) {
   const rawLines = lines(markdown);
   const sections = [];
-  let current = { heading: 'Inhalt', bullets: [] };
+  let current = { heading: 'Inhalt', blocks: [] };
+
+  let inCodeBlock = false;
+  let codeContent = [];
 
   for (const line of rawLines) {
+    if (line.startsWith('```')) {
+      if (inCodeBlock) {
+        current.blocks.push({ type: 'code', text: codeContent.join('\n') });
+        inCodeBlock = false;
+        codeContent = [];
+      } else {
+        inCodeBlock = true;
+      }
+      continue;
+    }
+
+    if (inCodeBlock) {
+      codeContent.push(line);
+      continue;
+    }
+
     if (!line) continue;
 
     if (/^#{1,6}\s+/.test(line)) {
-      if (current.heading || current.bullets.length) {
+      if (current.heading || current.blocks.length) {
         sections.push(current);
       }
       current = {
         heading: line.replace(/^#{1,6}\s+/, '').trim(),
-        bullets: []
+        blocks: []
       };
       continue;
     }
 
     if (/^-\s+/.test(line)) {
-      current.bullets.push(line.replace(/^-\s+/, '').trim());
+      current.blocks.push({ type: 'bullet', text: line.replace(/^-\s+/, '').trim() });
       continue;
     }
 
     if (/^\d+\.\s+/.test(line)) {
-      current.bullets.push(line.replace(/^\d+\.\s+/, '').trim());
+      current.blocks.push({ type: 'bullet', text: line.replace(/^\d+\.\s+/, '').trim() });
       continue;
     }
 
-    current.bullets.push(line.trim());
+    current.blocks.push({ type: 'text', text: line.trim() });
   }
 
-  if (current.heading || current.bullets.length) {
+  if (current.heading || current.blocks.length) {
     sections.push(current);
   }
 
-  return sections.filter((section) => section.bullets.length > 0 || section.heading !== 'Inhalt');
+  return sections.filter((section) => section.blocks.length > 0 || section.heading !== 'Inhalt');
 }
 
 export function firstHeading(markdown, fallback) {
