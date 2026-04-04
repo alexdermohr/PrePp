@@ -48,7 +48,10 @@ function reportIdFromPath(path) {
   return match ? match[1] : normalized.split('/').pop().replace(/\.(md|html)$/, '');
 }
 
-function buildICFReports() {
+// Markdown bleibt die Quell-/Repo-Variante.
+// Das Frontend rendert ICF-Reports bewusst nur aus den vorgerenderten HTML-Dateien.
+// Deshalb werden ICF-Markdown-Dateien hier nicht in das Frontend-Reportmodell übernommen.
+function buildHtmlICFReports() {
   const reportsMap = new Map();
 
   // Process HTML Reports
@@ -83,7 +86,7 @@ export function loadData() {
   const projektplanEntry = Object.entries(markdownFiles).find(([path]) => path.endsWith('/docs/projektplan.md'));
   const projektplan = projektplanEntry ? parseFile(projektplanEntry[0], projektplanEntry[1]) : null;
 
-  const icfReports = buildICFReports();
+  const icfReports = buildHtmlICFReports();
 
   const meta = Object.entries(markdownFiles)
     .filter(([path]) => path.includes('/meta/') && path.endsWith('.md'))

@@ -72,7 +72,8 @@ function createHtmlFileCard(report) {
   const iframe = document.createElement('iframe');
   iframe.className = 'icf-report-frame';
 
-  // Use direct HTML content via srcdoc
+  // Bewusste Entscheidung: Das Frontend zeigt vorgerendertes HTML direkt an.
+  // srcdoc ist hier die sauberste Lösung für isoliertes Rendering.
   iframe.srcdoc = entry.content;
 
   iframe.loading = 'lazy';
