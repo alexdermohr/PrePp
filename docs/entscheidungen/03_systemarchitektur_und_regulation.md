@@ -1,4 +1,4 @@
-# Entscheidung: Systemarchitektur und Regulation
+# Entscheidungen: Systemarchitektur und Regulation
 
 ## Exklusivität von Angeboten
 - **Maßnahme:** Es wird testweise Systemkonkurrenz reduziert, indem das Projekt so gestaltet wird, dass keine konkurrierenden, parallelen niedrigschwelligen Alternativangebote verfügbar sind.
