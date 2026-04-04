@@ -70,31 +70,23 @@ function buildICFReports() {
     .forEach(([path, content]) => {
       const id = reportIdFromPath(path);
 
-      // Blob URL is generated once per report lifecycle
-      const blob = new Blob([content], { type: 'text/html' });
-      const url = URL.createObjectURL(blob);
-
       if (reportsMap.has(id)) {
         // Merge with existing markdown
         const report = reportsMap.get(id);
-        report.html = { path: normalizePath(path), url }; // Content removed to save memory
+        report.html = { path: normalizePath(path), content };
       } else {
         // Create new entry for HTML-only reports
         reportsMap.set(id, {
           id,
           title: extractHtmlTitle(content, id.split('/').pop()), // Fallback title or extracted
-          html: { path: normalizePath(path), url } // Content removed to save memory
+          html: { path: normalizePath(path), content }
         });
       }
     });
 
-  // Convert map to sorted array and add preference
+  // Convert map to sorted array
   return Array.from(reportsMap.values())
-    .sort((a, b) => a.id.localeCompare(b.id))
-    .map(report => ({
-      ...report,
-      preferred: report.html ? 'html' : 'md'
-    }));
+    .sort((a, b) => a.id.localeCompare(b.id));
 }
 
 export function loadData() {

@@ -72,8 +72,8 @@ function createHtmlFileCard(report) {
   const iframe = document.createElement('iframe');
   iframe.className = 'icf-report-frame';
 
-  // Use pre-generated Blob URL from Data Layer
-  iframe.src = entry.url;
+  // Use srcdoc with raw content
+  iframe.srcdoc = entry.content;
   iframe.setAttribute('sandbox', 'allow-same-origin');
 
   iframe.loading = 'lazy';
@@ -196,10 +196,11 @@ export function renderICFReports(root, data) {
   }
 
   data.icfReports.forEach(report => {
-    if (report.preferred === 'html') {
-      root.appendChild(createHtmlFileCard(report));
-    } else {
+    if (report.md) {
       root.appendChild(createFileCard(report.md));
+    }
+    if (report.html) {
+      root.appendChild(createHtmlFileCard(report));
     }
   });
 }
