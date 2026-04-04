@@ -1,6 +1,6 @@
 import { firstHeading, normalizePath, parseDecisionBlocks, parseMarkdownSections } from './markdown';
 
-const markdownFiles = import.meta.glob('../../../docs/**/*.md', {
+const markdownFiles = import.meta.glob('../../../{docs,meta,models}/**/*.md', {
   query: '?raw',
   import: 'default',
   eager: true
@@ -38,11 +38,29 @@ export function loadData() {
   const hypothesen = hypothesenEntry ? parseFile(hypothesenEntry[0], hypothesenEntry[1]) : null;
   const reflexion = reflexionEntry ? parseFile(reflexionEntry[0], reflexionEntry[1]) : null;
 
+  const projektplan = markdownFiles['../../../docs/projektplan.md'] || null;
+
+  const icfReports = Object.entries(markdownFiles)
+    .filter(([path]) => path.includes('/docs/icf-reports/') && path.endsWith('.md'))
+    .map(([path, content]) => ({ path, content }));
+
+  const meta = Object.entries(markdownFiles)
+    .filter(([path]) => path.includes('/meta/') && path.endsWith('.md'))
+    .map(([path, content]) => ({ path, content }));
+
+  const models = Object.entries(markdownFiles)
+    .filter(([path]) => path.includes('/models/') && path.endsWith('.md'))
+    .map(([path, content]) => ({ path, content }));
+
   return {
     tagebuch,
     beobachtungen,
     entscheidungen,
     hypothesen,
-    reflexion
+    reflexion,
+    projektplan,
+    icfReports,
+    meta,
+    models
   };
 }

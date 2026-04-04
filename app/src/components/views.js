@@ -1,3 +1,5 @@
+import { marked } from 'marked';
+
 function createSectionBlock(section) {
   const sectionEl = document.createElement('section');
   sectionEl.className = 'section-block';
@@ -149,4 +151,54 @@ export function renderSimpleDoc(root, doc) {
   }
 
   root.appendChild(createFileCard(doc));
+}
+
+export function renderProjektplan(root, data) {
+  if (!data.projektplan) {
+    root.innerHTML += '<p>Kein Projektplan vorhanden.</p>';
+    return;
+  }
+  root.innerHTML += `<div class="card">${marked.parse(data.projektplan)}</div>`;
+}
+
+export function renderICFReports(root, data) {
+  if (!data.icfReports.length) {
+    root.innerHTML += '<p>Keine ICF-Reports vorhanden.</p>';
+    return;
+  }
+
+  root.innerHTML += data.icfReports.map(r => `
+    <div class="card">
+      <h3>${r.path.split('/').pop()}</h3>
+      ${marked.parse(r.content)}
+    </div>
+  `).join('');
+}
+
+export function renderMeta(root, data) {
+  if (!data.meta.length) {
+    root.innerHTML += '<p>Keine Meta-Daten vorhanden.</p>';
+    return;
+  }
+
+  root.innerHTML += data.meta.map(m => `
+    <div class="card">
+      <h3>${m.path.split('/').pop()}</h3>
+      ${marked.parse(m.content)}
+    </div>
+  `).join('');
+}
+
+export function renderModels(root, data) {
+  if (!data.models.length) {
+    root.innerHTML += '<p>Keine Modelle vorhanden.</p>';
+    return;
+  }
+
+  root.innerHTML += data.models.map(m => `
+    <div class="card">
+      <h3>${m.path.split('/').pop()}</h3>
+      ${marked.parse(m.content)}
+    </div>
+  `).join('');
 }
