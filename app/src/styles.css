@@ -85,67 +85,6 @@ body {
   margin-top: 0;
 }
 
-@media (max-width: 900px) {
-  .layout {
-    grid-template-columns: 1fr;
-  }
-
-  .sidebar {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
-/* ICF Reports (HTML) */
-.icf-report-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.icf-report-meta {
-  margin-bottom: 1rem;
-}
-
-.icf-report-frame {
-  width: 100%;
-  min-height: 600px;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.4rem;
-  background: #ffffff;
-}
-
-@media (max-width: 900px) {
-  .icf-report-frame {
-    min-height: 400px;
-  }
-}
-
-/* ICF Report Groups */
-.icf-report-group {
-  background: #fdfdfd;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.8rem;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.icf-format-label {
-  margin: 0 0 0.5rem 0;
-  color: #4b5563;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.icf-report-group .card {
-  margin-bottom: 1.5rem;
-}
-.icf-report-group .card:last-child {
-  margin-bottom: 0;
-}
 
 /* Sidebar Group Headers */
 .sidebar-group-label {
@@ -160,6 +99,28 @@ body {
 }
 .sidebar-group-label:first-child {
   margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .sidebar button {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+  }
 }
 
 /* Start Page & Status Cards */
@@ -282,20 +243,120 @@ code {
   background: #fafafa;
 }
 
-.hypothesis-details-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin-top: 0.8rem;
-}
+
 
 .hypothesis-highlight {
   border-left: 4px solid var(--accent-color, #005fcc) !important;
   background-color: var(--bg-light, #f8f9fa) !important;
 }
 
-@media (max-width: 600px) {
+
+
+
+/* Accessibility Improvements */
+:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+
+
+
+/* Hypothesis Layout Tweaks */
+.hypothesis-details-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Kern bekommt mehr Platz als Meta */
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 768px) {
   .hypothesis-details-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ICF Details Toggle */
+.icf-html-details summary {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background: #f3f4f6;
+  border-radius: 0.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  user-select: none;
+}
+.icf-html-details summary:hover {
+  background: #e5e7eb;
+}
+
+
+/* Specific margin for ICF HTML Label inside details */
+.icf-html-label {
+  margin-top: 1rem;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #3b82f6;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.skip-link:focus-visible {
+  top: 0;
+}
+
+/* ICF Reports (HTML) */
+.icf-report-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.icf-report-meta {
+  margin-bottom: 1rem;
+}
+
+.icf-report-frame {
+  width: 100%;
+  min-height: 600px;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.4rem;
+  background: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .icf-report-frame {
+    min-height: 400px;
+  }
+}
+
+/* ICF Report Groups */
+.icf-report-group {
+  background: #fdfdfd;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.8rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.icf-format-label {
+  margin: 0 0 0.5rem 0;
+  color: #4b5563;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.icf-report-group .card {
+  margin-bottom: 1.5rem;
+}
+.icf-report-group .card:last-child {
+  margin-bottom: 0;
 }

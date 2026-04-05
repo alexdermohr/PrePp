@@ -66,7 +66,15 @@ const data = loadData();
 const app = document.querySelector('#app');
 
 function render(activeId) {
+  currentActiveView = activeId;
   app.innerHTML = '';
+
+  const skipLink = document.createElement('a');
+  skipLink.href = '#main-content';
+  skipLink.className = 'skip-link';
+  skipLink.textContent = 'Zum Inhalt springen';
+  app.appendChild(skipLink);
+
 
   const layout = document.createElement('div');
   layout.className = 'layout';
@@ -84,13 +92,16 @@ function render(activeId) {
       const button = document.createElement('button');
       button.textContent = view.label;
       button.className = view.id === activeId ? 'active' : '';
-      button.addEventListener('click', () => render(view.id));
+      button.addEventListener('click', () => { location.hash = view.id; });
+      if (view.id === activeId) button.setAttribute('aria-current', 'page');
       nav.appendChild(button);
     });
   });
 
   const content = document.createElement('main');
   content.className = 'content';
+  content.id = 'main-content';
+  content.tabIndex = -1;
 
   const current = views.find((view) => view.id === activeId) || views[0];
   const h1 = document.createElement('h1');
@@ -103,7 +114,36 @@ function render(activeId) {
   app.appendChild(layout);
 }
 
-render('start');
+
+let currentActiveView = null;
+
+function renderFromHash() {
+  const hash = location.hash.replace('#', '');
+
+  if (!hash) {
+    if (currentActiveView !== 'start') render('start');
+    return;
+  }
+
+  const isViewHash = views.some(v => v.id === hash);
+  if (isViewHash) {
+    if (currentActiveView !== hash) {
+      render(hash);
+      // Optional focus management for genuine view changes
+      const mainContent = document.getElementById('main-content');
+      if (mainContent) mainContent.focus();
+    }
+  } else {
+    // If it's an unknown hash but nothing is rendered yet (initial load), fallback to start
+    if (currentActiveView === null) {
+      render('start');
+    }
+    // Otherwise, ignore the unknown hash (allows in-page anchors like #main-content to work)
+  }
+}
+
+window.addEventListener('hashchange', renderFromHash);
+renderFromHash();
 
 const currentVersion = __APP_VERSION__;
 
