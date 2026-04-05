@@ -6,7 +6,34 @@ function createSectionBlock(section) {
   heading.textContent = section.heading;
   sectionEl.appendChild(heading);
 
-  if (section.bullets.length > 0) {
+  if (section.blocks && section.blocks.length > 0) {
+    let currentUl = null;
+
+    section.blocks.forEach((block) => {
+      if (block.type === 'bullet') {
+        if (!currentUl) {
+          currentUl = document.createElement('ul');
+          sectionEl.appendChild(currentUl);
+        }
+        const li = document.createElement('li');
+        li.textContent = normalizeInlineMarkdown(block.text);
+        currentUl.appendChild(li);
+      } else if (block.type === 'code') {
+        currentUl = null;
+        const pre = document.createElement('pre');
+        const code = document.createElement('code');
+        code.textContent = block.text;
+        pre.appendChild(code);
+        sectionEl.appendChild(pre);
+      } else {
+        currentUl = null;
+        const p = document.createElement('p');
+        p.textContent = normalizeInlineMarkdown(block.text);
+        sectionEl.appendChild(p);
+      }
+    });
+  } else if (section.bullets && section.bullets.length > 0) {
+    // Fallback for old structure if any
     const ul = document.createElement('ul');
     section.bullets.forEach((bullet) => {
       const li = document.createElement('li');
@@ -40,8 +67,8 @@ function createFileCard(entry) {
 
   entry.sections.forEach((section, index) => {
     if (index === 0 && section.heading === entry.title) {
-      if (section.bullets.length > 0) {
-        const bulletOnly = createSectionBlock({ heading: '', bullets: section.bullets });
+      if ((section.blocks && section.blocks.length > 0) || (section.bullets && section.bullets.length > 0)) {
+        const bulletOnly = createSectionBlock({ heading: '', blocks: section.blocks, bullets: section.bullets });
         const heading = bulletOnly.querySelector('h4');
         if (heading) heading.remove();
         card.appendChild(bulletOnly);
@@ -83,28 +110,70 @@ function createHtmlFileCard(report) {
   return card;
 }
 
-export function renderOverview(root, data) {
+export function renderStart(root, data) {
+  const article = document.createElement('article');
+  article.className = 'start-page card';
+
+  const intro = document.createElement('p');
+  intro.textContent = 'Willkommen zur Projekt-Dokumentation. Diese Oberfläche dient der strukturierten Einsicht in den Entwicklungsprozess, um Beobachtungen, Hypothesen und Entscheidungen nachvollziehbar zu machen.';
+  article.appendChild(intro);
+
+  if (data.projektplan) {
+    const focusSection = document.createElement('section');
+    focusSection.className = 'section-block project-context-block';
+
+    const h4 = document.createElement('h4');
+    h4.textContent = 'Worum geht es in diesem Projekt?';
+    focusSection.appendChild(h4);
+
+    // Find the first non-empty text block in Projektplan
+    let firstText = 'Ein Projektplan ist hinterlegt.';
+    for (const section of data.projektplan.sections) {
+      const blocks = section.blocks ?? [];
+      const tb = blocks.find(b => b.type === 'text' && b.text.length > 20);
+      if (tb) {
+        firstText = tb.text;
+        break;
+      }
+    }
+
+    const p = document.createElement('p');
+    p.textContent = firstText;
+
+    focusSection.appendChild(p);
+    article.appendChild(focusSection);
+  }
+
+  const cardsContainer = document.createElement('div');
+  cardsContainer.className = 'status-cards';
+
   const areas = [
-    { label: 'Tagebuch', count: data.tagebuch.length },
-    { label: 'Beobachtungen', count: data.beobachtungen.length },
-    { label: 'Entscheidungen', count: data.entscheidungen.length },
-    { label: 'Hypothesen', count: data.hypothesen ? 1 : 0, single: true },
-    { label: 'Reflexion', count: data.reflexion ? 1 : 0, single: true },
-    { label: 'Projektplan', count: data.projektplan ? 1 : 0, single: true },
-    { label: 'ICF-Reports', count: data.icfReports.length },
-    { label: 'Meta', count: data.meta.length },
-    { label: 'Modelle', count: data.models.length }
+    { label: 'Projektplan', status: data.projektplan ? 'Vorhanden' : 'Fehlt' },
+    { label: 'Tagebuch-Einträge', status: data.tagebuch.length },
+    { label: 'Beobachtungen', status: data.beobachtungen.length },
+    { label: 'Entscheidungen', status: data.entscheidungen.length },
+    { label: 'ICF-Verlauf', status: data.icfReports.length > 0 ? 'Vorhanden' : 'Fehlt' }
   ];
-  const ul = document.createElement('ul');
-  ul.className = 'overview-list';
 
   areas.forEach((area) => {
-    const li = document.createElement('li');
-    li.textContent = area.single ? `${area.label}: Dokument ${area.count > 0 ? 'vorhanden' : 'fehlt'}` : `${area.label}: ${area.count}`;
-    ul.appendChild(li);
+    const card = document.createElement('div');
+    card.className = 'status-card';
+
+    const label = document.createElement('div');
+    label.className = 'status-label';
+    label.textContent = area.label;
+
+    const value = document.createElement('div');
+    value.className = 'status-value';
+    value.textContent = area.status;
+
+    card.appendChild(label);
+    card.appendChild(value);
+    cardsContainer.appendChild(card);
   });
 
-  root.appendChild(ul);
+  article.appendChild(cardsContainer);
+  root.appendChild(article);
 }
 
 export function renderTagebuch(root, data) {
@@ -118,7 +187,7 @@ export function renderBeobachtungen(root, data) {
 export function renderEntscheidungen(root, data) {
   data.entscheidungen.forEach((entry) => {
     const card = document.createElement('article');
-    card.className = 'card';
+    card.className = 'card decision-card';
 
     const title = document.createElement('h3');
     title.textContent = entry.title;
@@ -138,6 +207,9 @@ export function renderEntscheidungen(root, data) {
         blockCard.appendChild(subtitle);
       }
 
+      const detailsContainer = document.createElement('div');
+      detailsContainer.className = 'decision-details-grid';
+
       const details = {
         Maßnahme: decisionBlock.massnahme,
         Begründung: decisionBlock.begruendung,
@@ -147,7 +219,7 @@ export function renderEntscheidungen(root, data) {
 
       Object.entries(details).forEach(([label, values]) => {
         const detailSection = document.createElement('section');
-        detailSection.className = 'section-block';
+        detailSection.className = 'section-block detail-box';
 
         const h5 = document.createElement('h5');
         h5.textContent = label;
@@ -162,9 +234,10 @@ export function renderEntscheidungen(root, data) {
         });
 
         detailSection.appendChild(ul);
-        blockCard.appendChild(detailSection);
+        detailsContainer.appendChild(detailSection);
       });
 
+      blockCard.appendChild(detailsContainer);
       card.appendChild(blockCard);
     });
 
@@ -236,4 +309,135 @@ export function renderModels(root, data) {
     return;
   }
   data.models.forEach(entry => root.appendChild(createFileCard(entry)));
+}
+
+export function renderAktuellerStand(root, data) {
+  const article = document.createElement('article');
+  article.className = 'stand-section card';
+
+  const intro = document.createElement('p');
+  intro.textContent = 'Kompakter Überblick über den aktuellen Projektstand, extrahiert aus den jüngsten Dokumentationen.';
+  article.appendChild(intro);
+
+  if (data.projektplan) {
+    const section = document.createElement('section');
+    section.className = 'section-block';
+    const heading = document.createElement('h4');
+    heading.textContent = 'Projektkontext';
+    section.appendChild(heading);
+
+    let firstText = 'Projektplan ist angelegt.';
+    for (const s of data.projektplan.sections) {
+      const blocks = s.blocks ?? [];
+      const tb = blocks.find(b => b.type === 'text' && b.text.length > 20);
+      if (tb) {
+        firstText = tb.text;
+        break;
+      }
+    }
+    const p = document.createElement('p');
+    p.textContent = firstText;
+    section.appendChild(p);
+    article.appendChild(section);
+  }
+
+  if (data.tagebuch && data.tagebuch.length > 0) {
+    const latestTagebuch = data.tagebuch[0];
+    const section = document.createElement('section');
+    section.className = 'section-block';
+    const heading = document.createElement('h4');
+    heading.textContent = 'Zuletzt passiert';
+    section.appendChild(heading);
+
+    const titleP = document.createElement('p');
+    const strongTitle = document.createElement('strong');
+    strongTitle.textContent = latestTagebuch.title;
+    titleP.appendChild(strongTitle);
+    section.appendChild(titleP);
+
+    let contentSnippet = '';
+    for (const s of latestTagebuch.sections) {
+      const blocks = s.blocks ?? [];
+      const tb = blocks.find(b => b.type === 'text' || b.type === 'bullet');
+      if (tb) {
+        contentSnippet = tb.text;
+        break;
+      }
+    }
+
+    if (contentSnippet) {
+      const p = document.createElement('p');
+      p.textContent = contentSnippet;
+      section.appendChild(p);
+    }
+    article.appendChild(section);
+  }
+
+  if (data.entscheidungen && data.entscheidungen.length > 0) {
+    const latestDecision = data.entscheidungen[0];
+    const section = document.createElement('section');
+    section.className = 'section-block';
+    const heading = document.createElement('h4');
+    heading.textContent = 'Letzte Entscheidung / Steuerung';
+    section.appendChild(heading);
+
+    const titleP = document.createElement('p');
+    const strongTitle = document.createElement('strong');
+    strongTitle.textContent = latestDecision.title;
+    titleP.appendChild(strongTitle);
+    section.appendChild(titleP);
+
+    if (latestDecision.decisionBlocks && latestDecision.decisionBlocks.length > 0) {
+       const block = latestDecision.decisionBlocks[0];
+       if (block.massnahme.length > 0) {
+         const p = document.createElement('p');
+         p.textContent = 'Maßnahme: ' + block.massnahme[0];
+         section.appendChild(p);
+       } else if (block.begruendung.length > 0) {
+         const p = document.createElement('p');
+         p.textContent = 'Begründung: ' + block.begruendung[0];
+         section.appendChild(p);
+       }
+    }
+    article.appendChild(section);
+  }
+
+  if (data.beobachtungen && data.beobachtungen.length > 0) {
+    const latestObs = data.beobachtungen[0];
+    const section = document.createElement('section');
+    section.className = 'section-block';
+    const heading = document.createElement('h4');
+    heading.textContent = 'Zentrale Beobachtung';
+    section.appendChild(heading);
+
+    let contentSnippet = latestObs.title;
+    for (const s of latestObs.sections) {
+      const blocks = s.blocks ?? [];
+      const tb = blocks.find(b => b.type === 'text' || b.type === 'bullet');
+      if (tb) {
+        contentSnippet = tb.text;
+        break;
+      }
+    }
+    const p = document.createElement('p');
+    p.textContent = contentSnippet;
+    section.appendChild(p);
+    article.appendChild(section);
+  }
+
+  const icfSection = document.createElement('section');
+  icfSection.className = 'section-block';
+  const icfHeading = document.createElement('h4');
+  icfHeading.textContent = 'Evidenz & Rahmen';
+  icfSection.appendChild(icfHeading);
+  const icfP = document.createElement('p');
+  if (data.icfReports.length > 0) {
+    icfP.textContent = 'ICF-Verlauf liegt vor und stützt die Beobachtungen mit normierter Evidenz.';
+  } else {
+    icfP.textContent = 'Noch keine normierten ICF-Reports verknüpft.';
+  }
+  icfSection.appendChild(icfP);
+  article.appendChild(icfSection);
+
+  root.appendChild(article);
 }

@@ -1,44 +1,103 @@
 function lines(markdown) {
-  return markdown.split(/\r?\n/).map((line) => line.trim());
+  return markdown.split(/\r?\n/);
 }
 
 export function parseMarkdownSections(markdown) {
   const rawLines = lines(markdown);
   const sections = [];
-  let current = { heading: 'Inhalt', bullets: [] };
+  let current = { heading: 'Inhalt', blocks: [] };
 
-  for (const line of rawLines) {
-    if (!line) continue;
+  let inCodeBlock = false;
+  let codeContent = [];
+
+
+  let currentTextBlock = null;
+
+  for (const rawLine of rawLines) {
+    const line = rawLine.trim();
+
+    if (line.startsWith('```')) {
+      if (currentTextBlock) {
+        current.blocks.push(currentTextBlock);
+        currentTextBlock = null;
+      }
+      if (inCodeBlock) {
+        current.blocks.push({ type: 'code', text: codeContent.join('\n') });
+        inCodeBlock = false;
+        codeContent = [];
+      } else {
+        inCodeBlock = true;
+      }
+      continue;
+    }
+
+    if (inCodeBlock) {
+      codeContent.push(rawLine);
+      continue;
+    }
+
+    if (!line) {
+      if (currentTextBlock) {
+        current.blocks.push(currentTextBlock);
+        currentTextBlock = null;
+      }
+      continue;
+    }
 
     if (/^#{1,6}\s+/.test(line)) {
-      if (current.heading || current.bullets.length) {
+      if (currentTextBlock) {
+        current.blocks.push(currentTextBlock);
+        currentTextBlock = null;
+      }
+      if (current.heading || current.blocks.length) {
         sections.push(current);
       }
       current = {
         heading: line.replace(/^#{1,6}\s+/, '').trim(),
-        bullets: []
+        blocks: []
       };
       continue;
     }
 
     if (/^-\s+/.test(line)) {
-      current.bullets.push(line.replace(/^-\s+/, '').trim());
+      if (currentTextBlock) {
+        current.blocks.push(currentTextBlock);
+        currentTextBlock = null;
+      }
+      current.blocks.push({ type: 'bullet', text: line.replace(/^-\s+/, '').trim() });
       continue;
     }
 
     if (/^\d+\.\s+/.test(line)) {
-      current.bullets.push(line.replace(/^\d+\.\s+/, '').trim());
+      if (currentTextBlock) {
+        current.blocks.push(currentTextBlock);
+        currentTextBlock = null;
+      }
+      current.blocks.push({ type: 'bullet', text: line.replace(/^\d+\.\s+/, '').trim() });
       continue;
     }
 
-    current.bullets.push(line.trim());
+    if (currentTextBlock) {
+      currentTextBlock.text += ' ' + line;
+    } else {
+      currentTextBlock = { type: 'text', text: line };
+    }
   }
 
-  if (current.heading || current.bullets.length) {
+  if (currentTextBlock) {
+    current.blocks.push(currentTextBlock);
+  }
+
+
+  if (inCodeBlock) {
+    current.blocks.push({ type: 'code', text: codeContent.join('\n') });
+  }
+
+  if (current.heading || current.blocks.length) {
     sections.push(current);
   }
 
-  return sections.filter((section) => section.bullets.length > 0 || section.heading !== 'Inhalt');
+  return sections.filter((section) => section.blocks.length > 0 || section.heading !== 'Inhalt');
 }
 
 export function firstHeading(markdown, fallback) {
@@ -104,7 +163,8 @@ export function parseDecisionBlocks(markdown) {
   const blocks = [];
   let current = createDecisionBlock();
 
-  rawLines.forEach((line) => {
+  rawLines.forEach((rawLine) => {
+    const line = rawLine.trim();
     if (/^##\s+/.test(line)) {
       if (current.massnahme.length || current.begruendung.length || current.ziel.length || current.pruefhinweis.length) {
         blocks.push(current);
