@@ -129,7 +129,8 @@ export function renderStart(root, data) {
     // Find the first non-empty text block in Projektplan
     let firstText = 'Ein Projektplan ist hinterlegt.';
     for (const section of data.projektplan.sections) {
-      const tb = section.blocks.find(b => b.type === 'text' && b.text.length > 20);
+      const blocks = section.blocks ?? [];
+      const tb = blocks.find(b => b.type === 'text' && b.text.length > 20);
       if (tb) {
         firstText = tb.text;
         break;
@@ -327,7 +328,8 @@ export function renderAktuellerStand(root, data) {
 
     let firstText = 'Projektplan ist angelegt.';
     for (const s of data.projektplan.sections) {
-      const tb = s.blocks.find(b => b.type === 'text' && b.text.length > 20);
+      const blocks = s.blocks ?? [];
+      const tb = blocks.find(b => b.type === 'text' && b.text.length > 20);
       if (tb) {
         firstText = tb.text;
         break;
@@ -355,7 +357,8 @@ export function renderAktuellerStand(root, data) {
 
     let contentSnippet = '';
     for (const s of latestTagebuch.sections) {
-      const tb = s.blocks.find(b => b.type === 'text' || b.type === 'bullet');
+      const blocks = s.blocks ?? [];
+      const tb = blocks.find(b => b.type === 'text' || b.type === 'bullet');
       if (tb) {
         contentSnippet = tb.text;
         break;
@@ -409,7 +412,8 @@ export function renderAktuellerStand(root, data) {
 
     let contentSnippet = latestObs.title;
     for (const s of latestObs.sections) {
-      const tb = s.blocks.find(b => b.type === 'text' || b.type === 'bullet');
+      const blocks = s.blocks ?? [];
+      const tb = blocks.find(b => b.type === 'text' || b.type === 'bullet');
       if (tb) {
         contentSnippet = tb.text;
         break;
