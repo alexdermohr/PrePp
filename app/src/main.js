@@ -100,7 +100,7 @@ function render(activeId) {
   app.appendChild(layout);
 }
 
-render('overview');
+render('start');
 
 const currentVersion = __APP_VERSION__;
 
