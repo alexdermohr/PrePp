@@ -12,6 +12,7 @@ um Lernen, Reflexion und Weiterentwicklung zu ermöglichen.
 - `docs/tagebuch/` – Beschreibung von Ereignissen (ohne Interpretation)
 - `docs/beobachtungen/` – strukturierte Muster und Auffälligkeiten
 - `docs/entscheidungen/` – getroffene Maßnahmen und deren Begründung
+- `docs/feedback/` – direkte Perspektive / Rückmeldung von Ali
 - `docs/hypothesen.md` – explizite Annahmen
 - `docs/reflexion.md` – Bewertung von Wirkungen
 
@@ -20,7 +21,7 @@ um Lernen, Reflexion und Weiterentwicklung zu ermöglichen.
 
 ## Prinzip
 
-Beobachtung, Interpretation und Entscheidung werden getrennt dokumentiert.
+Beobachtung, Interpretation und Entscheidung werden getrennt dokumentiert. Neben Beobachtung, Interpretation und Entscheidung wird subjektives Feedback als eigene Quelle dokumentiert und nicht mit Beobachtung vermischt.
 
 ## Visualisierung
 

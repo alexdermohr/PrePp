@@ -441,3 +441,14 @@ export function renderAktuellerStand(root, data) {
 
   root.appendChild(article);
 }
+
+
+export function renderFeedback(root, data) {
+  if (!data.feedback || data.feedback.length === 0) {
+    const p = document.createElement('p');
+    p.textContent = 'Bislang kein Feedback erfasst.';
+    root.appendChild(p);
+    return;
+  }
+  data.feedback.forEach((entry) => root.appendChild(createFileCard(entry)));
+}

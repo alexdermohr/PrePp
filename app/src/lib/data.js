@@ -91,6 +91,7 @@ function buildICFReports() {
 
 export function loadData() {
   const tagebuch = byFolder('tagebuch').reverse().map(([path, content]) => parseFile(path, content));
+  const feedback = byFolder('feedback').reverse().map(([path, content]) => parseFile(path, content));
   const beobachtungen = byFolder('beobachtungen').reverse().map(([path, content]) => parseFile(path, content));
   const entscheidungen = byFolder('entscheidungen').reverse().map(([path, content]) => parseDecisionFile(path, content));
 
@@ -117,6 +118,7 @@ export function loadData() {
 
   return {
     tagebuch,
+    feedback,
     beobachtungen,
     entscheidungen,
     hypothesen,
