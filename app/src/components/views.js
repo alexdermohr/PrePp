@@ -12,12 +12,12 @@ function extractFirstSnippet(sections) {
     const blocks = s.blocks ?? [];
 
     for (const b of blocks) {
-      if (b.type === 'text' || b.type === 'bullet') {
+      if (b.type === 'text') {
         if (!fallbackText) fallbackText = b.text;
-
-        if (b.text.length > 20) {
-          return b.text;
-        }
+        if (b.text.length > 20) return b.text;
+      } else if (b.type === 'list' && b.items && b.items.length > 0) {
+        if (!fallbackText) fallbackText = b.items[0];
+        if (b.items[0].length > 20) return b.items[0];
       }
     }
   }
@@ -41,6 +41,40 @@ function createSummarySection(title, contentSnippet) {
   return section;
 }
 
+const blockRenderers = {
+  text: (b, container) => {
+    const p = document.createElement('p');
+    p.textContent = b.text;
+    container.appendChild(p);
+  },
+  list: (b, container) => {
+    const ul = document.createElement('ul');
+    b.items.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item;
+      ul.appendChild(li);
+    });
+    container.appendChild(ul);
+  },
+  code: (b, container) => {
+    const pre = document.createElement('pre');
+    const code = document.createElement('code');
+    code.textContent = b.text;
+    pre.appendChild(code);
+    container.appendChild(pre);
+  }
+};
+
+function renderBlock(block, container) {
+  if (blockRenderers[block.type]) {
+    blockRenderers[block.type](block, container);
+  } else {
+    const p = document.createElement('p');
+    p.textContent = block.text || JSON.stringify(block);
+    container.appendChild(p);
+  }
+}
+
 function createSectionBlock(section) {
   const sectionEl = document.createElement('section');
   sectionEl.className = 'section-block';
@@ -50,49 +84,10 @@ function createSectionBlock(section) {
   sectionEl.appendChild(heading);
 
   if (section.blocks && section.blocks.length > 0) {
-    let currentUl = null;
-
-    section.blocks.forEach((block) => {
-      if (block.type === 'bullet') {
-        if (!currentUl) {
-          currentUl = document.createElement('ul');
-          sectionEl.appendChild(currentUl);
-        }
-        const li = document.createElement('li');
-        li.textContent = normalizeInlineMarkdown(block.text);
-        currentUl.appendChild(li);
-      } else if (block.type === 'code') {
-        currentUl = null;
-        const pre = document.createElement('pre');
-        const code = document.createElement('code');
-        code.textContent = block.text;
-        pre.appendChild(code);
-        sectionEl.appendChild(pre);
-      } else {
-        currentUl = null;
-        const p = document.createElement('p');
-        p.textContent = normalizeInlineMarkdown(block.text);
-        sectionEl.appendChild(p);
-      }
-    });
-  } else if (section.bullets && section.bullets.length > 0) {
-    // Fallback for old structure if any
-    const ul = document.createElement('ul');
-    section.bullets.forEach((bullet) => {
-      const li = document.createElement('li');
-      li.textContent = normalizeInlineMarkdown(bullet);
-      ul.appendChild(li);
-    });
-    sectionEl.appendChild(ul);
+    section.blocks.forEach((block) => renderBlock(block, sectionEl));
   }
 
   return sectionEl;
-}
-
-function normalizeInlineMarkdown(text) {
-  return text
-    .replace(/\*\*(.*?)\*\*/g, '$1')
-    .replace(/`([^`]+)`/g, '$1');
 }
 
 function createFileCard(entry) {
@@ -110,8 +105,8 @@ function createFileCard(entry) {
 
   entry.sections.forEach((section, index) => {
     if (index === 0 && section.heading === entry.title) {
-      if ((section.blocks && section.blocks.length > 0) || (section.bullets && section.bullets.length > 0)) {
-        const bulletOnly = createSectionBlock({ heading: '', blocks: section.blocks, bullets: section.bullets });
+      if (section.blocks && section.blocks.length > 0) {
+        const bulletOnly = createSectionBlock({ heading: '', blocks: section.blocks });
         const heading = bulletOnly.querySelector('h4');
         if (heading) heading.remove();
         card.appendChild(bulletOnly);
@@ -143,8 +138,8 @@ function createHtmlFileCard(report) {
   iframe.className = 'icf-report-frame';
 
   // Use srcdoc with raw content
+  iframe.setAttribute('sandbox', 'allow-same-origin');
   iframe.srcdoc = entry.content;
-  iframe.setAttribute('sandbox', '');
 
   iframe.loading = 'lazy';
   iframe.title = `ICF Report: ${report.title}`;
@@ -274,7 +269,7 @@ export function renderEntscheidungen(root, data) {
         const list = values.length > 0 ? values : ['Nicht explizit angegeben'];
         list.forEach((value) => {
           const li = document.createElement('li');
-          li.textContent = normalizeInlineMarkdown(value);
+          li.textContent = value;
           ul.appendChild(li);
         });
 
@@ -516,7 +511,7 @@ export function renderHypothesen(root, data) {
       const list = values.length > 0 ? values : ['noch unklar'];
       list.forEach((value) => {
         const li = document.createElement('li');
-        li.textContent = normalizeInlineMarkdown(value);
+        li.textContent = value;
         ul.appendChild(li);
       });
 
