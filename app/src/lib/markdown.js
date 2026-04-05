@@ -187,22 +187,25 @@ export function parseDecisionBlocks(markdown) {
 
 
 export function normalizeHypothesisStatus(statusStr) {
+  if (!statusStr || !statusStr.trim()) return null;
   const s = statusStr.toLowerCase().trim();
   if (s.includes('aktiv geprüft') || s.includes('aktiv geprueft')) return 'aktiv_geprueft';
   if (s.includes('vorläufig gestützt') || s.includes('vorlaeufig gestuetzt')) return 'vorlaeufig_gestuetzt';
   if (s.includes('fraglich')) return 'fraglich';
   if (s.includes('widerlegt')) return 'widerlegt';
   if (s.includes('pausiert')) return 'pausiert';
-  return 'offen'; // Default
+  if (s.includes('offen')) return 'offen';
+  return null;
 }
 
 export function normalizeHypothesisCategory(categoryStr) {
+  if (!categoryStr || !categoryStr.trim()) return null;
   const c = categoryStr.toLowerCase().trim();
   if (c.includes('verhaltens') && c.includes('regulations')) return 'Verhaltens- und Regulationshypothese';
   if (c.includes('situations') || c.includes('kontext')) return 'Situations- / Kontext-Hypothese';
   if (c.includes('system')) return 'Systemhypothese';
   if (c.includes('methodisch')) return 'methodische Hypothese';
-  return 'Allgemeine Hypothese';
+  return null;
 }
 
 function createHypothesisBlock(id = '', heading = 'Hypothese') {
@@ -216,8 +219,8 @@ function createHypothesisBlock(id = '', heading = 'Hypothese') {
     pruefweg: [],
     status: [],
     steuerungsrelevanz: [],
-    normalizedStatus: 'offen',
-    normalizedCategory: 'Allgemeine Hypothese'
+    normalizedStatus: null,
+    normalizedCategory: null
   };
 }
 

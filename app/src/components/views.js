@@ -518,9 +518,9 @@ export function renderFeedback(root, data) {
 
 
 export function renderHypothesen(root, data) {
-  if (!data.hypothesen || !data.hypothesen.hypothesisBlocks) {
+  if (!data.hypothesen || !data.hypothesen.hypothesisBlocks || data.hypothesen.hypothesisBlocks.length === 0) {
     const p = document.createElement('p');
-    p.textContent = 'Keine Hypothesen gefunden.';
+    p.textContent = 'Keine strukturierten Hypothesen gefunden.';
     root.appendChild(p);
     return;
   }
@@ -544,7 +544,7 @@ export function renderHypothesen(root, data) {
       'Alternativerklärung': block.alternativerklaerung,
       'Prüfweg': block.pruefweg,
       'Status': block.status,
-      'Kategorie': block.normalizedCategory ? [block.normalizedCategory] : block.kategorie,
+      'Kategorie': block.kategorie.length > 0 ? block.kategorie : (block.normalizedCategory ? [block.normalizedCategory] : []),
       'Gestützt durch': block.gestuetztDurch,
       'Steuerungsrelevanz': block.steuerungsrelevanz
     };
