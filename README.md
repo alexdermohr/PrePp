@@ -21,7 +21,7 @@ um Lernen, Reflexion und Weiterentwicklung zu ermöglichen.
 
 ## Prinzip
 
-Beobachtung, Interpretation und Entscheidung werden getrennt dokumentiert. Neben Beobachtung, Interpretation und Entscheidung wird subjektives Feedback als eigene Quelle dokumentiert und nicht mit Beobachtung vermischt.
+Beobachtung, Interpretation, Entscheidung und subjektive Rückmeldung der Zielperson werden als unterschiedliche Quellen getrennt dokumentiert.
 
 ## Visualisierung
 

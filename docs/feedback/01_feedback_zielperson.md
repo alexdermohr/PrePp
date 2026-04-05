@@ -9,7 +9,7 @@
 ## Eintragsformat
 ### Datum: YYYY-MM-DD
 - Kontext:
-- Erhebungsart: direkt / Auswahl / Skala / nicht erhoben
+- Erhebungsart: direkt / paraphrasiert / Auswahl / Skala / nicht erhoben
 - Quellentreue: wörtlich / sinngemäß / strukturiert / nicht erhoben
 - Frage:
 - Antwort:

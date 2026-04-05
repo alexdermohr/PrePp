@@ -8,4 +8,4 @@
 6. Personenbezogene und identifizierende Angaben werden vermieden; die Zielperson heißt hier schlicht X.
 
 7. Subjektives Feedback der Zielperson wird als eigene Quelle dokumentiert.
-8. Paraphrasiertes Feedback wird explizit als paraphrasiert markiert.
+8. Die Form der Rückmeldung (z. B. wörtlich, paraphrasiert, Auswahl, Skala, nicht erhoben) wird explizit markiert.

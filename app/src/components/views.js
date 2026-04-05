@@ -435,13 +435,28 @@ export function renderAktuellerStand(root, data) {
     heading.textContent = 'Jüngstes Feedback (Subjektive Perspektive)';
     section.appendChild(heading);
 
+
     const titleP = document.createElement('p');
     const strongTitle = document.createElement('strong');
     strongTitle.textContent = latestFeedback.title;
     titleP.appendChild(strongTitle);
     section.appendChild(titleP);
 
+    let contentSnippet = 'Feedback-Dokument vorhanden.';
+    for (const s of latestFeedback.sections) {
+      const blocks = s.blocks ?? [];
+      const tb = blocks.find(b => b.type === 'text' || b.type === 'bullet');
+      if (tb) {
+        contentSnippet = tb.text;
+        break;
+      }
+    }
+    const p = document.createElement('p');
+    p.textContent = contentSnippet;
+    section.appendChild(p);
+
     article.appendChild(section);
+
   }
 
   const icfSection = document.createElement('section');
