@@ -133,8 +133,13 @@ function renderFromHash() {
       const mainContent = document.getElementById('main-content');
       if (mainContent) mainContent.focus();
     }
+  } else {
+    // If it's an unknown hash but nothing is rendered yet (initial load), fallback to start
+    if (currentActiveView === null) {
+      render('start');
+    }
+    // Otherwise, ignore the unknown hash (allows in-page anchors like #main-content to work)
   }
-  // Unknown hashes (like #main-content or other internal anchors) are ignored by the router
 }
 
 window.addEventListener('hashchange', renderFromHash);
