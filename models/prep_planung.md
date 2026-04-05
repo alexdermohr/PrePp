@@ -19,7 +19,7 @@ Das folgende Modell skizziert die Logik der "Prep - Planung", wie sie dem Projek
              |                  Zielerreichung ?
              |                        |
              |                        v
-             |               Rückmeldung von Ali
+             |               Rückmeldung der Zielperson
              |                (Schleife zurück)
 ```
 

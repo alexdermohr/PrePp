@@ -152,6 +152,7 @@ export function renderStart(root, data) {
     { label: 'Tagebuch-Einträge', status: data.tagebuch.length },
     { label: 'Beobachtungen', status: data.beobachtungen.length },
     { label: 'Entscheidungen', status: data.entscheidungen.length },
+    { label: 'Feedback-Einträge', status: data.feedback ? data.feedback.length : 0 },
     { label: 'ICF-Reports', status: data.icfReports.length > 0 ? 'Vorhanden' : 'Fehlt' }
   ];
 
@@ -422,6 +423,24 @@ export function renderAktuellerStand(root, data) {
     const p = document.createElement('p');
     p.textContent = contentSnippet;
     section.appendChild(p);
+    article.appendChild(section);
+  }
+
+
+  if (data.feedback && data.feedback.length > 0) {
+    const latestFeedback = data.feedback[0];
+    const section = document.createElement('section');
+    section.className = 'section-block';
+    const heading = document.createElement('h4');
+    heading.textContent = 'Jüngstes Feedback (Subjektive Perspektive)';
+    section.appendChild(heading);
+
+    const titleP = document.createElement('p');
+    const strongTitle = document.createElement('strong');
+    strongTitle.textContent = latestFeedback.title;
+    titleP.appendChild(strongTitle);
+    section.appendChild(titleP);
+
     article.appendChild(section);
   }
 

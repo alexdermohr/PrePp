@@ -12,7 +12,7 @@ um Lernen, Reflexion und Weiterentwicklung zu ermöglichen.
 - `docs/tagebuch/` – Beschreibung von Ereignissen (ohne Interpretation)
 - `docs/beobachtungen/` – strukturierte Muster und Auffälligkeiten
 - `docs/entscheidungen/` – getroffene Maßnahmen und deren Begründung
-- `docs/feedback/` – direkte Perspektive / Rückmeldung von Ali
+- `docs/feedback/` – direkte Perspektive / Rückmeldung der Zielperson
 - `docs/hypothesen.md` – explizite Annahmen
 - `docs/reflexion.md` – Bewertung von Wirkungen
 
