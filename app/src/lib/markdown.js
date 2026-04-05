@@ -10,17 +10,29 @@ export function parseMarkdownSections(markdown) {
   let inCodeBlock = false;
   let codeContent = [];
 
-
   let currentTextBlock = null;
+  let currentListBlock = null;
+
+  function flushText() {
+    if (currentTextBlock) {
+      current.blocks.push(currentTextBlock);
+      currentTextBlock = null;
+    }
+  }
+
+  function flushList() {
+    if (currentListBlock) {
+      current.blocks.push(currentListBlock);
+      currentListBlock = null;
+    }
+  }
 
   for (const rawLine of rawLines) {
     const line = rawLine.trim();
 
     if (line.startsWith('```')) {
-      if (currentTextBlock) {
-        current.blocks.push(currentTextBlock);
-        currentTextBlock = null;
-      }
+      flushText();
+      flushList();
       if (inCodeBlock) {
         current.blocks.push({ type: 'code', text: codeContent.join('\n') });
         inCodeBlock = false;
@@ -37,18 +49,14 @@ export function parseMarkdownSections(markdown) {
     }
 
     if (!line) {
-      if (currentTextBlock) {
-        current.blocks.push(currentTextBlock);
-        currentTextBlock = null;
-      }
+      flushText();
+      flushList();
       continue;
     }
 
     if (/^#{1,6}\s+/.test(line)) {
-      if (currentTextBlock) {
-        current.blocks.push(currentTextBlock);
-        currentTextBlock = null;
-      }
+      flushText();
+      flushList();
       if (current.heading || current.blocks.length) {
         sections.push(current);
       }
@@ -60,34 +68,40 @@ export function parseMarkdownSections(markdown) {
     }
 
     if (/^-\s+/.test(line)) {
-      if (currentTextBlock) {
-        current.blocks.push(currentTextBlock);
-        currentTextBlock = null;
+      flushText();
+      if (!currentListBlock) {
+        currentListBlock = { type: 'list', items: [] };
       }
-      current.blocks.push({ type: 'bullet', text: line.replace(/^-\s+/, '').trim() });
+      // Inline markdown processing moved to the parser
+      let plainText = line.replace(/^-\s+/, '').trim();
+      plainText = plainText.replace(/\*\*(.*?)\*\*/g, '$1').replace(/`([^`]+)`/g, '$1');
+      currentListBlock.items.push(plainText);
       continue;
     }
 
     if (/^\d+\.\s+/.test(line)) {
-      if (currentTextBlock) {
-        current.blocks.push(currentTextBlock);
-        currentTextBlock = null;
+      flushText();
+      if (!currentListBlock) {
+        currentListBlock = { type: 'list', items: [] };
       }
-      current.blocks.push({ type: 'bullet', text: line.replace(/^\d+\.\s+/, '').trim() });
+      let plainText = line.replace(/^\d+\.\s+/, '').trim();
+      plainText = plainText.replace(/\*\*(.*?)\*\*/g, '$1').replace(/`([^`]+)`/g, '$1');
+      currentListBlock.items.push(plainText);
       continue;
     }
 
+    flushList();
+
+    let plainText = line.replace(/\*\*(.*?)\*\*/g, '$1').replace(/`([^`]+)`/g, '$1');
     if (currentTextBlock) {
-      currentTextBlock.text += ' ' + line;
+      currentTextBlock.text += ' ' + plainText;
     } else {
-      currentTextBlock = { type: 'text', text: line };
+      currentTextBlock = { type: 'text', text: plainText };
     }
   }
 
-  if (currentTextBlock) {
-    current.blocks.push(currentTextBlock);
-  }
-
+  flushText();
+  flushList();
 
   if (inCodeBlock) {
     current.blocks.push({ type: 'code', text: codeContent.join('\n') });
