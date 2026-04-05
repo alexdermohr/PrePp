@@ -21,7 +21,7 @@
 ## H3 – Angebotswahl zur Vermeidung von Herausforderungen
 - **Aussage:** Möglicherweise wählt X bereits bekannte Handlungsangebote Dritter bevorzugt, um neuen, noch unbekannten Projektherausforderungen auszuweichen.
 - **Kategorie:** Verhaltens- und Regulationshypothese
-- **Gestützt durch:** Tagebuch: Tag 2; Beobachtungen: Fokus und Ausweichverhalten
+- **Gestützt durch:** Tagebuch: Tag 2; noch unklar
 - **Alternativerklärung:** Die Bevorzugung bekannter Angebote resultiert aus einem Bedürfnis nach Autonomie oder aus Erschöpfung, nicht zwingend aus Angst vor Neuem.
 - **Prüfweg:** X schrittweise an neue, kleine Teilaufgaben heranführen, die als "bereits bekannt" geframed werden können. Tritt das Ausweichverhalten dennoch auf?
 - **Status:** offen
@@ -41,7 +41,7 @@
 - **Kategorie:** Verhaltens- und Regulationshypothese
 - **Gestützt durch:** noch unklar
 - **Alternativerklärung:** Das Verhalten dient nicht primär der Reduktion von Anspannung, sondern der Stimulation (Unterstimulation) oder ist Teil eines sozialen Austauschs.
-- **Prüfweg:** Beobachtung auf frühe Stress-Signale (z. B. Unruhe) vor dem Verhalten. Tritt das Verhalten häufiger in "Leelauf"-Phasen oder in Anforderungsphasen auf?
+- **Prüfweg:** Beobachtung auf frühe Stress-Signale (z. B. Unruhe) vor dem Verhalten. Tritt das Verhalten häufiger in "Leerlauf"-Phasen oder in Anforderungsphasen auf?
 - **Status:** offen
 - **Steuerungsrelevanz:** relevant für Regulation und Systemarchitektur
 
@@ -59,7 +59,7 @@
 - **Kategorie:** Systemhypothese
 - **Gestützt durch:** Entscheidung: Systemarchitektur und Regulation
 - **Alternativerklärung:** Die fehlende Verbindlichkeit liegt nicht an bequemen Alternativen, sondern daran, dass das Projektangebot die aktuellen Interessen oder das Leistungsniveau von X noch nicht passgenau trifft.
-- **Prüfweg:** Reduktion der Parallelangebote an bestimmten Tagen und genaue Dokumentation, ob die Beteiligung im Projekt dann steigt oder sich der Rückzug auf andere Weise (z.B. Schuldistanz) äußert.
+- **Prüfweg:** Reduktion der Parallelangebote an bestimmten Tagen und genaue Dokumentation, ob die Beteiligung im Projekt dann steigt oder sich der Rückzug auf andere Weise (z. B. Schuldistanz) äußert.
 - **Status:** fraglich
 - **Steuerungsrelevanz:** relevant für strukturelle Entscheidungen im Gesamtsystem und Absprachen mit Kooperationspartnern
 

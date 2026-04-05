@@ -151,6 +151,7 @@ export function renderStart(root, data) {
     { label: 'Projektplan', status: data.projektplan ? 'Vorhanden' : 'Fehlt' },
     { label: 'Tagebuch-Einträge', status: data.tagebuch.length },
     { label: 'Beobachtungen', status: data.beobachtungen.length },
+    { label: 'Hypothesen', status: (data.hypothesen?.hypothesisBlocks || []).length > 0 ? `${data.hypothesen.hypothesisBlocks.length} strukturiert` : '0' },
     { label: 'Entscheidungen', status: data.entscheidungen.length },
     { label: 'Feedback-Einträge', status: data.feedback ? data.feedback.length : 0 },
     { label: 'ICF-Reports', status: data.icfReports.length > 0 ? 'Vorhanden' : 'Fehlt' }
@@ -539,13 +540,13 @@ export function renderHypothesen(root, data) {
     detailsContainer.className = 'hypothesis-details-grid';
 
     const details = {
-      'Status': block.status,
-      'Kategorie': block.kategorie,
-      'Steuerungsrelevanz': block.steuerungsrelevanz,
       'Aussage': block.aussage,
-      'Gestützt durch': block.gestuetztDurch,
       'Alternativerklärung': block.alternativerklaerung,
-      'Prüfweg': block.pruefweg
+      'Prüfweg': block.pruefweg,
+      'Status': block.status,
+      'Kategorie': block.normalizedCategory ? [block.normalizedCategory] : block.kategorie,
+      'Gestützt durch': block.gestuetztDurch,
+      'Steuerungsrelevanz': block.steuerungsrelevanz
     };
 
     Object.entries(details).forEach(([label, values]) => {
