@@ -50,7 +50,7 @@ const viewGroups = [
   {
     heading: 'Evidenz & Rahmen',
     views: [
-      { id: 'icf-reports', label: 'ICF-Reports', render: renderICFReports },
+      { id: 'icf-reports', label: 'ICF-Verlauf', render: renderICFReports },
       { id: 'modelle', label: 'Modelle', render: renderModels },
       { id: 'meta', label: 'Meta', render: renderMeta }
     ]
@@ -71,7 +71,7 @@ function render(activeId) {
   const nav = document.createElement('nav');
   nav.className = 'sidebar';
 
-    viewGroups.forEach((group) => {
+  viewGroups.forEach((group) => {
     const header = document.createElement('div');
     header.className = 'sidebar-group-label';
     header.textContent = group.heading;
