@@ -95,11 +95,7 @@ function render(activeId) {
       link.textContent = view.label;
       link.className = view.id === activeId ? 'active' : '';
 
-      if (view.id === activeId) {
-        link.setAttribute('aria-current', 'page');
-      } else {
-        link.removeAttribute('aria-current');
-      }
+      if (view.id === activeId) link.setAttribute('aria-current', 'page');
       nav.appendChild(link);
     });
   });
