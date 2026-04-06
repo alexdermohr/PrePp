@@ -2,9 +2,9 @@
 
 ## Maßnahme
 Projekt wird kleinschrittig umgesetzt, mit Fokus auf Selbstwirksamkeit von X.
-Siehe: docs/intervention/pause_protokoll.md
+Siehe: [Pause-Protokoll](../intervention/pause_protokoll.md)
 
-## Konkrete Umsetzung (morgen)
+## Konkrete Umsetzung (nächster Schritt)
 - X trifft Entscheidung zu:
   - Standort ODER
   - Design ODER

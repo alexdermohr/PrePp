@@ -2,7 +2,7 @@
 
 ## Maßnahme
 Ein einfaches, standardisiertes Pause-Protokoll wird eingeführt.
-Siehe: docs/intervention/pause_protokoll.md
+Siehe: [Pause-Protokoll](../intervention/pause_protokoll.md)
 
 ## Bezug zur Hypothese
 Diese Entscheidung prüft Hypothese H11 (Aggression als Strategie bei Kontrollverlust).
