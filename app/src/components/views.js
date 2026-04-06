@@ -294,7 +294,7 @@ export function renderEntscheidungen(root, data) {
         list.forEach((value) => {
           const li = document.createElement('li');
           renderInlineText(li, value);
-        ul.appendChild(li);
+          ul.appendChild(li);
         });
 
         detailSection.appendChild(ul);
@@ -341,6 +341,7 @@ export function renderICFReports(root, data) {
     if (report.html) {
       const details = document.createElement('details');
       details.className = 'icf-html-details';
+      details.open = true;
       const summary = document.createElement('summary');
       summary.textContent = 'HTML-Ansicht einblenden';
       details.appendChild(summary);
