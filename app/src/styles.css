@@ -99,13 +99,12 @@ p, li {
 .sidebar a {
   display: block;
   text-decoration: none;
-  border: none; /* Removed border */
+  border: none;
   background: transparent;
   color: #d1d5db;
   text-align: left;
   padding: 0.5rem 0.75rem;
   border-radius: 0.4rem;
-  cursor: pointer;
   font-size: 0.95rem;
 }
 
