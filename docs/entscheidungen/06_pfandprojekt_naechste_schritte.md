@@ -2,6 +2,7 @@
 
 ## Maßnahme
 Projekt wird kleinschrittig umgesetzt, mit Fokus auf Selbstwirksamkeit von X.
+Siehe: docs/intervention/pause_protokoll.md
 
 ## Konkrete Umsetzung (morgen)
 - X trifft Entscheidung zu:
@@ -24,7 +25,7 @@ Große Umsetzungsschritte erhöhen Risiko für Kontrollverlust und Eskalation.
 - soziale Interaktion ermöglichen
 - Projekt schrittweise voranbringen
 
-## Prüfhinweis
-- Hat X selbst entschieden?
-- Wurde genau ein Schritt umgesetzt?
-- Gab es stabile Interaktion ohne Eskalation?
+## Messkriterien
+- Wurde „Pause“ genutzt? (ja/nein)
+- Kam es zur Eskalation? (ja/nein)
+- Wurde Handlung abgeschlossen? (ja/nein)

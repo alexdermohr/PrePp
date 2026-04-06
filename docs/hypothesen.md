@@ -95,6 +95,6 @@
 - **Kategorie:** Verhaltens- und Regulationshypothese
 - **Gestützt durch:** noch unklar
 - **Alternativerklärung:** Physiologische Übererregung (Arousal) verhindert Zugriff auf vorhandene Strategien; Gruppendynamik verstärkt Verhalten (Aufmerksamkeit, Machtgewinn)
-- **Prüfweg:** Beobachten: tritt Aggression nach Kontrollverlust auf? Test: explizite Exit-Strategien anbieten und Wirkung prüfen
+- **Prüfweg:** Beobachten: tritt Aggression nach Kontrollverlust auf? Test: explizite Exit-Strategien anbieten und Wirkung prüfen. Zusätzlich: Häufigkeit und Kontext von Eskalationen protokollieren
 - **Status:** offen
 - **Steuerungsrelevanz:** hoch

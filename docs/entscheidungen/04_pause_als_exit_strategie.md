@@ -2,6 +2,10 @@
 
 ## Maßnahme
 Ein einfaches, standardisiertes Pause-Protokoll wird eingeführt.
+Siehe: docs/intervention/pause_protokoll.md
+
+## Bezug zur Hypothese
+Diese Entscheidung prüft Hypothese H11 (Aggression als Strategie bei Kontrollverlust).
 
 ## Begründung
 Exit-Optionen erhöhen Handlungsfähigkeit unter Stress und können Aggression als Eskalationsstrategie ersetzen.
@@ -10,7 +14,7 @@ Exit-Optionen erhöhen Handlungsfähigkeit unter Stress und können Aggression a
 - Reduktion von Eskalationen
 - Aufbau alternativer Handlungsstrategien
 
-## Prüfhinweis
-Wirksamkeit zeigt sich, wenn:
-- X aktiv „Pause“ nutzt
-- Eskalationen seltener oder kürzer werden
+## Messkriterien
+- Anzahl Eskalationen pro Einheit wird dokumentiert
+- Dauer von Eskalationen wird grob geschätzt
+- Nutzung von „Pause“ wird gezählt
