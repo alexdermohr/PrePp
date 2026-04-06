@@ -15,11 +15,6 @@
 - **Begründung:** Soziale Reibung und formelle Anforderungen scheinen X aktuell zu überfordern und zu Rückzug zu führen. Das Scaffolding soll diese Situationen entlasten.
 - **Prüfhinweis / Beobachtungskriterium:** Bleibt X in begleiteten formellen Interaktionen physisch präsent, ohne sich abzuwenden oder zurückzuziehen?
 
-## Eliminierung von Leerlauf
-- **Maßnahme:** Nach intensiven Aktivitätsphasen wird testweise sofort die nächste Struktur oder Aufgabe angeschlossen.
-- **Begründung:** Der Übergang von Aktivität zu unstrukturierter Zeit ist fragil und könnte als Eskalationsraum fungieren.
-- **Prüfhinweis / Beobachtungskriterium:** Gibt es eine Reduktion von Grenzüberschreitungen in Übergangsphasen, wenn unmittelbar Anschlussaufgaben angeboten werden?
-
 ## Vorab-Klärung von Eigentumsregeln
 - **Maßnahme:** Eigentumsgrenzen (z. B. Essen der Projektleitung) werden experimentell im Vorfeld, in ruhigen Situationen, klar benannt, um zu prüfen, ob dies präventiv wirkt.
 - **Begründung:** Die Klärung im Konfliktmoment könnte den Druck erhöhen und Eskalationen begünstigen.
