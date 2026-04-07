@@ -25,7 +25,12 @@ const viewGroups = [
     heading: 'Projekt',
     views: [
       { id: 'projektplan', label: 'Projektplan', render: renderProjektplan },
-      // Temporär deaktiviert: zu interpretativ, nicht deterministisch aus Quellen ableitbar
+      // Deaktiviert: „Aktueller Stand“ erzeugt eine interpretative Aggregation,
+      // die aktuell nicht strikt deterministisch aus den zugrunde liegenden Dokumenten ableitbar ist.
+      // Daher bewusst nicht im UI enthalten.
+      // Reaktivierung nur sinnvoll, wenn:
+      // - klare Ableitungsregeln definiert sind ODER
+      // - der interpretative Charakter explizit gekennzeichnet wird
       // { id: 'aktueller_stand', label: 'Aktueller Stand', render: renderAktuellerStand }
     ]
   },
