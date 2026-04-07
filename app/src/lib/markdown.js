@@ -182,6 +182,14 @@ export function parseDecisionBlocks(markdown) {
   const rawLines = lines(markdown);
   const blocks = [];
   let current = createDecisionBlock();
+
+  // Tracks which section is currently active when parsing headings
+  // Supported headings:
+  // - Maßnahme / Massnahme
+  // - Begründung / Begruendung
+  // - Ziel
+  // - Messkriterien / Prüfhinweis / Pruefhinweis
+  // - Bezug zur Hypothese
   let activeSection = null;
 
   rawLines.forEach((rawLine) => {
@@ -204,6 +212,7 @@ export function parseDecisionBlocks(markdown) {
       } else if (headingText === 'bezug zur hypothese') {
         activeSection = 'bezugZurHypothese';
         return;
+      // "Konkrete Umsetzung" is consciously treated as an operative "Maßnahme"
       } else if (headingText === 'konkrete umsetzung' || headingText.startsWith('konkrete umsetzung')) {
         activeSection = 'massnahme';
         return;

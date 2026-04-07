@@ -277,7 +277,7 @@ export function renderEntscheidungen(root, data) {
         Begründung: decisionBlock.begruendung,
         Ziel: decisionBlock.ziel,
         'Bezug zur Hypothese': decisionBlock.bezugZurHypothese,
-        Messkriterien: decisionBlock.pruefhinweis
+        'Prüfhinweis / Messkriterien': decisionBlock.pruefhinweis
       };
 
       Object.entries(details).forEach(([label, values]) => {
