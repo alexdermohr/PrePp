@@ -22,17 +22,17 @@ function renderInlineText(container, text) {
 
         let url = match[2];
 
-        // Very simple mapping for the most critical view: "intervention" tools
-        // So ../intervention/pause_protokoll.md points realistically to a blank Github/raw
-        // or hash navigation. Since hash routing isn't fully aware of individual docs in all categories,
-        // we will link relative Markdown URLs nicely to a target.
-
         if (url.endsWith('.md')) {
-           // Just keep the url as an href so it looks clickable but doesn't break the app
-           a.href = url;
-           a.target = '_blank';
+           // Provide a stable fallback hash target for internal .md files
+           // to avoid breaking the SPA or opening raw file paths.
+           a.href = '#entscheidungen';
+           a.title = url;
         } else {
            a.href = url;
+           if (url.startsWith('http')) {
+               a.target = '_blank';
+               a.rel = 'noopener noreferrer';
+           }
         }
         container.appendChild(a);
       }
