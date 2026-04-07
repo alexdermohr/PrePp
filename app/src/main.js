@@ -11,8 +11,7 @@ import {
   renderProjektplan,
   renderICFReports,
   renderMeta,
-  renderModels,
-  renderAktuellerStand
+  renderModels
 } from './components/views';
 
 const viewGroups = [
