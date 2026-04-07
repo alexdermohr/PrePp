@@ -638,12 +638,7 @@ export function renderHypothesen(root, data) {
 }
 
 export function renderIntervention(root, data) {
-  if (!data.intervention || data.intervention.length === 0) {
-    const p = document.createElement('p');
-    p.textContent = 'Keine Interventionen vorhanden.';
-    root.appendChild(p);
-    return;
-  }
+  if (!data.intervention || data.intervention.length === 0) return renderEmptyState(root, 'Keine Interventionen vorhanden.');
   data.intervention.forEach((entry) => {
     renderSimpleDoc(root, entry);
   });
