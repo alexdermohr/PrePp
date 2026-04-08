@@ -16,7 +16,6 @@
 - Valenz: positiv | neutral | negativ | ambivalent | unklar
 - Handlungswunsch der Zielperson:
 - Unsicherheit:
-- Trennungshinweis: "Dieser Block enthält Feedback, keine Interpretation."
 
 ## Erhebungsmodi
 
@@ -44,7 +43,6 @@ Der gewählte Modus muss stets dokumentiert werden. Ist ein Feedback "nicht erho
 - Valenz: positiv | neutral | negativ | ambivalent | unklar
 - Handlungswunsch der Zielperson: <z.B. "Möchte das nächste Mal lieber Aufgabe Y übernehmen">
 - Unsicherheit: <Gering / Mittel / Hoch mit kurzer Begründung>
-- Trennungshinweis: "Dieser Block enthält Feedback, keine Interpretation."
 
 ### Datum: <YYYY-MM-DD>
 - Kontext: <Kurzbeschreibung der Situation>
@@ -55,4 +53,3 @@ Der gewählte Modus muss stets dokumentiert werden. Ist ein Feedback "nicht erho
 - Valenz: positiv | neutral | negativ | ambivalent | unklar
 - Handlungswunsch der Zielperson: <nicht erhoben>
 - Unsicherheit: <Mittel. Skalenverständnis vorausgesetzt.>
-- Trennungshinweis: "Dieser Block enthält Feedback, keine Interpretation."
