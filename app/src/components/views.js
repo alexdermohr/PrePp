@@ -87,6 +87,18 @@ function renderEmptyState(root, text) {
   root.appendChild(p);
 }
 
+function sanitizeImageUrl(url) {
+  if (!url) return null;
+  if (url.startsWith('/images/')) return url;
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
+      return url;
+    }
+  } catch(e) {}
+  return null;
+}
+
 function extractFirstSnippet(sections) {
   let fallbackText = '';
 
@@ -141,8 +153,16 @@ const blockRenderers = {
     container.appendChild(listEl);
   },
   image: (b, container) => {
+    const safeUrl = sanitizeImageUrl(b.url);
+    if (!safeUrl) {
+       const fallback = document.createElement('p');
+       fallback.className = 'meta';
+       fallback.textContent = '[Bild konnte nicht geladen werden]';
+       container.appendChild(fallback);
+       return;
+    }
     const img = document.createElement('img');
-    img.src = b.url;
+    img.src = safeUrl;
     img.alt = b.alt || 'Projektbild';
     img.className = 'content-image';
     img.loading = 'lazy';
@@ -286,8 +306,9 @@ export function renderStart(root, data) {
   };
 
   const latestImage = getLatestDiaryImage();
+  const safeHeroUrl = latestImage ? sanitizeImageUrl(latestImage.url) : null;
 
-  if (latestImage) {
+  if (safeHeroUrl) {
     const resultSection = document.createElement('section');
     resultSection.className = 'section-block project-context-block';
 
@@ -296,7 +317,7 @@ export function renderStart(root, data) {
     resultSection.appendChild(h4);
 
     const img = document.createElement('img');
-    img.src = latestImage.url;
+    img.src = safeHeroUrl;
     img.alt = latestImage.alt || 'Projektbild';
     img.className = 'content-image hero-image';
     // Loading lazy is omitted here to keep hero image fast
