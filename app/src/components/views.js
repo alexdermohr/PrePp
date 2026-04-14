@@ -140,6 +140,18 @@ const blockRenderers = {
     });
     container.appendChild(listEl);
   },
+  image: (b, container) => {
+    const img = document.createElement('img');
+    img.src = b.url;
+    img.alt = b.alt;
+    img.className = 'content-image';
+    img.style.maxWidth = '100%';
+    img.style.display = 'block';
+    img.style.marginTop = '1rem';
+    img.style.marginBottom = '1rem';
+    img.style.borderRadius = '4px';
+    container.appendChild(img);
+  },
   code: (b, container) => {
     const pre = document.createElement('pre');
     const code = document.createElement('code');
@@ -263,6 +275,42 @@ export function renderStart(root, data) {
     p.textContent = firstText;
     focusSection.appendChild(p);
     article.appendChild(focusSection);
+  }
+
+
+  // Find most recent image in tagebuch
+  let latestImage = null;
+  for (const entry of data.tagebuch) {
+    if (latestImage) break;
+    for (const section of entry.sections) {
+      if (latestImage) break;
+      const imgBlock = section.blocks?.find(b => b.type === 'image');
+      if (imgBlock) {
+        latestImage = imgBlock;
+      }
+    }
+  }
+
+  if (latestImage) {
+    const resultSection = document.createElement('section');
+    resultSection.className = 'section-block project-context-block';
+
+    const h4 = document.createElement('h4');
+    h4.textContent = 'Aktuelles Ergebnis';
+    resultSection.appendChild(h4);
+
+    const img = document.createElement('img');
+    img.src = latestImage.url;
+    img.alt = latestImage.alt;
+    img.className = 'content-image hero-image';
+    img.style.maxWidth = '100%';
+    img.style.display = 'block';
+    img.style.marginTop = '1rem';
+    img.style.borderRadius = '8px';
+    img.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';
+    resultSection.appendChild(img);
+
+    article.appendChild(resultSection);
   }
 
   const cardsContainer = document.createElement('div');

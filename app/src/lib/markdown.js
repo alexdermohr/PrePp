@@ -30,6 +30,13 @@ export function parseMarkdownSections(markdown) {
   for (const rawLine of rawLines) {
     const line = rawLine.trim();
 
+    if (/^!\[(.*)\]\((.*)\)$/.test(line)) {
+      flushText();
+      flushList();
+      const match = line.match(/^!\[(.*)\]\((.*)\)$/);
+      current.blocks.push({ type: 'image', alt: match[1], url: match[2] });
+      continue;
+    }
     if (line.startsWith('```')) {
       flushText();
       flushList();
