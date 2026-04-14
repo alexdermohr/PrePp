@@ -143,13 +143,9 @@ const blockRenderers = {
   image: (b, container) => {
     const img = document.createElement('img');
     img.src = b.url;
-    img.alt = b.alt;
+    img.alt = b.alt || 'Projektbild';
     img.className = 'content-image';
-    img.style.maxWidth = '100%';
-    img.style.display = 'block';
-    img.style.marginTop = '1rem';
-    img.style.marginBottom = '1rem';
-    img.style.borderRadius = '4px';
+    img.loading = 'lazy';
     container.appendChild(img);
   },
   code: (b, container) => {
@@ -278,18 +274,18 @@ export function renderStart(root, data) {
   }
 
 
-  // Find most recent image in tagebuch
-  let latestImage = null;
-  for (const entry of data.tagebuch) {
-    if (latestImage) break;
-    for (const section of entry.sections) {
-      if (latestImage) break;
-      const imgBlock = section.blocks?.find(b => b.type === 'image');
-      if (imgBlock) {
-        latestImage = imgBlock;
+  // Find first image of the most recent diary entry containing an image
+  const getLatestDiaryImage = () => {
+    for (const entry of data.tagebuch) {
+      for (const section of entry.sections) {
+        const imgBlock = section.blocks?.find(b => b.type === 'image');
+        if (imgBlock) return imgBlock;
       }
     }
-  }
+    return null;
+  };
+
+  const latestImage = getLatestDiaryImage();
 
   if (latestImage) {
     const resultSection = document.createElement('section');
@@ -301,13 +297,9 @@ export function renderStart(root, data) {
 
     const img = document.createElement('img');
     img.src = latestImage.url;
-    img.alt = latestImage.alt;
+    img.alt = latestImage.alt || 'Projektbild';
     img.className = 'content-image hero-image';
-    img.style.maxWidth = '100%';
-    img.style.display = 'block';
-    img.style.marginTop = '1rem';
-    img.style.borderRadius = '8px';
-    img.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';
+    // Loading lazy is omitted here to keep hero image fast
     resultSection.appendChild(img);
 
     article.appendChild(resultSection);
