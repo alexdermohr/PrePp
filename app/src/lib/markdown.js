@@ -48,6 +48,14 @@ export function parseMarkdownSections(markdown) {
       continue;
     }
 
+    const imgMatch = line.match(/^!\[(.*)\]\((.*)\)$/);
+    if (imgMatch) {
+      flushText();
+      flushList();
+      current.blocks.push({ type: 'image', alt: imgMatch[1], url: imgMatch[2] });
+      continue;
+    }
+
     if (!line) {
       flushText();
       flushList();

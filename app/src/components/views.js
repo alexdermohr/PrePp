@@ -87,6 +87,18 @@ function renderEmptyState(root, text) {
   root.appendChild(p);
 }
 
+function sanitizeImageUrl(url) {
+  if (!url) return null;
+  if (url.startsWith('/images/')) return url;
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
+      return url;
+    }
+  } catch(e) {}
+  return null;
+}
+
 function extractFirstSnippet(sections) {
   let fallbackText = '';
 
@@ -139,6 +151,22 @@ const blockRenderers = {
       listEl.appendChild(li);
     });
     container.appendChild(listEl);
+  },
+  image: (b, container) => {
+    const safeUrl = sanitizeImageUrl(b.url);
+    if (!safeUrl) {
+       const fallback = document.createElement('p');
+       fallback.className = 'meta';
+       fallback.textContent = '[Bild konnte nicht geladen werden]';
+       container.appendChild(fallback);
+       return;
+    }
+    const img = document.createElement('img');
+    img.src = safeUrl;
+    img.alt = b.alt || 'Projektbild';
+    img.className = 'content-image';
+    img.loading = 'lazy';
+    container.appendChild(img);
   },
   code: (b, container) => {
     const pre = document.createElement('pre');
@@ -263,6 +291,39 @@ export function renderStart(root, data) {
     p.textContent = firstText;
     focusSection.appendChild(p);
     article.appendChild(focusSection);
+  }
+
+
+  // Find first image of the most recent diary entry containing an image
+  const getLatestDiaryImage = () => {
+    for (const entry of data.tagebuch) {
+      for (const section of entry.sections) {
+        const imgBlock = section.blocks?.find(b => b.type === 'image');
+        if (imgBlock) return imgBlock;
+      }
+    }
+    return null;
+  };
+
+  const latestImage = getLatestDiaryImage();
+  const safeHeroUrl = latestImage ? sanitizeImageUrl(latestImage.url) : null;
+
+  if (safeHeroUrl) {
+    const resultSection = document.createElement('section');
+    resultSection.className = 'section-block project-context-block';
+
+    const h4 = document.createElement('h4');
+    h4.textContent = 'Aktuelles Ergebnis';
+    resultSection.appendChild(h4);
+
+    const img = document.createElement('img');
+    img.src = safeHeroUrl;
+    img.alt = latestImage.alt || 'Projektbild';
+    img.className = 'content-image hero-image';
+    // Loading lazy is omitted here to keep hero image fast
+    resultSection.appendChild(img);
+
+    article.appendChild(resultSection);
   }
 
   const cardsContainer = document.createElement('div');
