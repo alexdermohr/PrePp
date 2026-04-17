@@ -2,9 +2,17 @@
 
 # Gruppennachweis: Kompilierte Fassung
 
-> Dieses Dokument ist die laufende Arbeitsfassung des Gruppennachweises.
-> Es darf auch mit offenen Punkten (`[OFFEN]`) gepflegt werden.
-> Es ist die einzige Zieltextebene des Repos.
+> **Dieses Dokument ist die laufende Arbeitsfassung des Gruppennachweises.**
+> Kapitel können abschnittsweise übernommen werden, sobald sie den Status `structured` erreicht haben.
+> `[OFFEN]`-Markierungen sind in dieser Fassung ausdrücklich erlaubt und kennzeichnen bekannte Lücken.
+> Es ist die einzige Zieltextebene des Repos — nicht ein fernes Endprodukt, sondern das wachsende Zieldokument.
+
+## Arbeitsregel
+
+- Kapitel mit Status `draft` dürfen als Entwurfstexte eingefügt werden, müssen aber als `[ENTWURF]` markiert sein.
+- Kapitel mit Status `structured` dürfen als Arbeitsfassung eingefügt werden.
+- Kapitel mit Status `integrated` gelten als inhaltlich abgeschlossen.
+- `[OFFEN]`-Punkte bleiben sichtbar, bis sie explizit aufgelöst sind.
 
 ## Kapitelreihenfolge
 
@@ -22,4 +30,4 @@
 
 ---
 
-*(Kompilierter Text wird hier eingefügt, sobald Kapitel den Status `integrated` erreichen)*
+*(Kapiteltext wird hier abschnittsweise eingefügt, sobald einzelne Kapitel mindestens Status `structured` erreichen)*

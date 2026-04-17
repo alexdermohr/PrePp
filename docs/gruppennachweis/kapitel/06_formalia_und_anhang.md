@@ -18,7 +18,7 @@
 | Dokumentation kurz und regelmäßig | 7+ Tageseinträge | `docs/tagebuch/*.md` |
 | Keine identifizierenden Angaben | Zielperson als X, Mitschüler als Y | Alle Dateien |
 | Feedback als eigene Quelle | Separater Ordner mit 3 Einträgen | `docs/feedback/*.md` |
-| Form der Rückmeldung markiert | [OFFEN] Noch nicht systematisch umgesetzt | — |
+| Form der Rückmeldung markiert | [OFFEN] Nacharbeitsregel definiert (s. u.) | `meta/arbeitsregeln.md` Regel 8 |
 
 ## 6.3 Anhang
 
@@ -34,6 +34,9 @@
 
 ## Offene Punkte
 
-- [OFFEN] Systematische Markierung der Feedback-Form (wörtlich, paraphrasiert, etc.)
+- [OFFEN] **Arbeitsregel 8 operationalisieren (Nacharbeitsregel):**
+  Jede Feedback-Datei in `docs/feedback/` soll künftig die Form der Rückmeldung explizit markieren:
+  `wörtlich | paraphrasiert | Auswahl | Skala | nicht erhoben`
+  Dies entspricht `meta/arbeitsregeln.md`, Regel 8. Sobald die Feedback-Dateien aktualisiert sind, ist dieser Punkt als erfüllt zu markieren.
 - [OFFEN] Formale Anforderungen an den Gruppennachweis (Umfang, Abgabeformat) klären
 - [OFFEN] Anhangsliste vervollständigen und als nummerierte Anhänge formatieren

@@ -32,31 +32,36 @@
 ## 3.5 ICF-CY: Körperfunktionen und -strukturen
 
 > Pflicht: mind. 2 Beispiele mit ICF-Code und Bewertung
+> Bewertungsskala: 0 = keine, 1 = leichte, 2 = mäßige, 3 = schwere, 4 = vollständige Beeinträchtigung; + = Ressource
 
-- [OFFEN] Beispiel 1 mit Code + Bewertung
-  → Quelle: `docs/icf-reports/`
-- [OFFEN] Beispiel 2 mit Code + Bewertung
-  → Quelle: `docs/icf-reports/`
+| Code | Benennung | Bewertung | Einordnung | Quelle |
+|---|---|---|---|---|
+| b1266 | Selbstvertrauen | 2 | Entwicklungsbedarf | `docs/icf-reports/` |
+| b1263 | Psychische Stabilität | 2 – leicht reizbar | Entwicklungsbedarf | `docs/icf-reports/` |
+| b1262 | Gewissenhaftigkeit | +3 – Hang zur Pedanterie | Ressource (mit Risiko Überstrukturierung) | `docs/icf-reports/` |
+| b1264 | Offenheit gegenüber neuen Erfahrungen | +2 – neugierig, wissbegierig | Ressource | `docs/icf-reports/` |
 
 ## 3.6 ICF-CY: Aktivitäten und Partizipation
 
 > Pflicht: mind. 2 Beispiele mit ICF-Code und Bewertung
 
-- d2401 (Komplexe Aufgaben in einer Gruppe durchführen): X zeigt Eigeninitiative bei praktischen Tätigkeiten
-  → Quelle: `docs/beobachtungen/01_verhalten_in_situationen.md`, `docs/icf-reports/`
-- d7400 (Formelle Beziehungen): Rückzugsverhalten in formellen Kontexten
-  → Quelle: `docs/beobachtungen/01_verhalten_in_situationen.md`, `docs/icf-reports/`
-- d865 (Komplexe wirtschaftliche Transaktionen): Pfandprojekt als Kontext
-  → Quelle: `docs/icf-reports/`
-- [OFFEN] Bewertungen (Leistung / Kapazität) ergänzen
+| Code | Benennung | Bewertung | Einordnung | Quelle |
+|---|---|---|---|---|
+| d2401 | Mit Stress umgehen | 3 – reagiert unter Stress leicht gereizt, verweigernd und aggressiv | Entwicklungsbedarf | `docs/icf-reports/`, H8 |
+| d7400 | Mit Autoritätspersonen umgehen | 1 – neigt dazu, formelle Distanz zu ignorieren | Entwicklungsbedarf | `docs/icf-reports/`, H2 |
+| d865 | Komplexe wirtschaftliche Transaktionen | +2 – Flaschen sammeln, monetarisieren, Buchhaltung führen | Ressource | `docs/icf-reports/` |
+| d7504 | Informelle Beziehungen zu Seinesgleichen (Peers) | 3 – unsicher gegenüber Gleichaltrigen | Entwicklungsbedarf | `docs/icf-reports/`, H9 |
 
 ## 3.7 ICF-CY: Umweltfaktoren
 
 > Pflicht: mind. 2 Beispiele mit ICF-Code und Bewertung
 
-- [OFFEN] Umweltfaktoren mit ICF-Codes (e-Codes) aus ICF-Reports ableiten (z. B. Mitschüler Y als sozialer Umweltfaktor, Systemarchitektur als institutioneller Umweltfaktor)
-  → Quelle: `docs/entscheidungen/03_systemarchitektur_und_regulation.md`, `docs/reflexion.md`
-- [OFFEN] Bewertungen ergänzen
+| Code | Benennung | Bewertung | Einordnung | Quelle |
+|---|---|---|---|---|
+| e330 | Autoritätspersonen | +3 – guter Kontakt zu Sozialpädagogen an der Schule (eher erwachsenenfixiert) | Ressource | `docs/icf-reports/` |
+| e430 | Individuelle Einstellungen von Autoritätspersonen | +3 – fachlich und menschlich fitte, zugewandte Sozialpädagogen | Ressource | `docs/icf-reports/` |
+| e310 | Engster Familienkreis | +2 – Vater und Geschwister | Ressource | `docs/icf-reports/` |
+| e315 | Erweiterter Familienkreis | +3 – unterstützender Onkel | Ressource | `docs/icf-reports/` |
 
 ## 3.8 Weitere Beteiligte
 
@@ -66,6 +71,7 @@
 
 ## Offene Punkte
 
-- [OFFEN] ICF-Codes für Körperfunktionen/-strukturen (Abschnitte 3.5) aus ICF-Reports ableiten
-- [OFFEN] Alle Bewertungen (Leistung / Kapazität) für ICF-Einträge ergänzen
+- [OFFEN] Abschnitt 3.2: Allgemeine Charakterisierung aus Projektplan und Tagebuch verdichten
+- [OFFEN] Abschnitt 3.1: Weitere demografische Angaben ergänzen (datenschutzkonform)
+- [OFFEN] Alle Bewertungen gegen den ICF-Report rückprüfen, sobald neue Reports vorliegen
 - [OFFEN] Feedback der Zielperson systematisch zusammenfassen → Quelle: `docs/feedback/*.md`
