@@ -1,3 +1,33 @@
+function resolveInternalMarkdownPath(url, contextPath) {
+  if (
+    !contextPath ||
+    !url ||
+    url.startsWith("/") ||
+    url.startsWith("http") ||
+    url.startsWith("docs/")
+  ) {
+    return url;
+  }
+
+  const contextDir = contextPath.substring(0, contextPath.lastIndexOf("/"));
+  let resolvedUrl = url;
+
+  if (resolvedUrl.startsWith("./")) {
+    resolvedUrl = resolvedUrl.substring(2);
+  }
+
+  if (resolvedUrl.startsWith("../")) {
+    const upLevels = (resolvedUrl.match(/\.\.\//g) || []).length;
+    const parts = contextDir.split("/");
+    const resolvedDir = parts.slice(0, parts.length - upLevels).join("/");
+    resolvedUrl = resolvedDir + "/" + resolvedUrl.replace(/\.\.\//g, "");
+  } else {
+    resolvedUrl = contextDir + "/" + resolvedUrl;
+  }
+
+  return resolvedUrl;
+}
+
 function renderInlineText(container, text, contextPath = null) {
   if (!text) return;
   // Simple regex to split text into tokens
@@ -24,31 +54,34 @@ function renderInlineText(container, text, contextPath = null) {
         if (url.endsWith(".md")) {
           const a = document.createElement("a");
           a.textContent = match[1];
+
+          let resolvedUrl = resolveInternalMarkdownPath(url, contextPath);
+          a.title = resolvedUrl;
+
           // Map internal .md files to meaningful app views
-          a.title = url;
-          if (url.includes("/beobachtungen/")) {
+          if (resolvedUrl.includes("/beobachtungen/")) {
             a.href = "#beobachtungen";
-          } else if (url.includes("/feedback/")) {
+          } else if (resolvedUrl.includes("/feedback/")) {
             a.href = "#feedback";
-          } else if (url.includes("/tagebuch/")) {
+          } else if (resolvedUrl.includes("/tagebuch/")) {
             a.href = "#tagebuch";
-          } else if (url.includes("/entscheidungen/")) {
+          } else if (resolvedUrl.includes("/entscheidungen/")) {
             a.href = "#entscheidungen";
-          } else if (url.includes("/hypothesen.md")) {
+          } else if (resolvedUrl.includes("/hypothesen.md")) {
             a.href = "#hypothesen";
-          } else if (url.includes("/projektplan.md")) {
+          } else if (resolvedUrl.includes("/projektplan.md")) {
             a.href = "#projektplan";
-          } else if (url.includes("/reflexion.md")) {
+          } else if (resolvedUrl.includes("/reflexion.md")) {
             a.href = "#reflexion";
-          } else if (url.includes("/meta/")) {
+          } else if (resolvedUrl.includes("/meta/")) {
             a.href = "#meta";
-          } else if (url.includes("/models/")) {
+          } else if (resolvedUrl.includes("/models/")) {
             a.href = "#modelle";
-          } else if (url.includes("/intervention/")) {
+          } else if (resolvedUrl.includes("/intervention/")) {
             a.href = "#intervention";
-          } else if (url.includes("/gruppennachweis/kapitel/")) {
+          } else if (resolvedUrl.includes("/gruppennachweis/kapitel/")) {
             a.href = "#gruppennachweis-kapitel";
-          } else if (url.includes("/gruppennachweis/_compiled.md")) {
+          } else if (resolvedUrl.includes("/gruppennachweis/_compiled.md")) {
             a.href = "#gruppennachweis";
           } else if (
             url.includes("/gruppennachweis/_contract.md") ||
