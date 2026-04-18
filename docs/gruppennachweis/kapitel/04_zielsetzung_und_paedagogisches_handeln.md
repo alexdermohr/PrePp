@@ -37,7 +37,7 @@ Getroffene Entscheidungen als Handlungsanpassungen:
 - Intrinsische Motivation als zentrales Prinzip: auf Eigenmotivation statt Druck setzen
   → Quelle: [docs/projektplan.md](../../projektplan.md) (Phase 1, Phase 2)
 - Feedback der Zielperson als eigenständige Quelle
-  → Quelle: [docs/feedback/*.md](../../feedback/01_feedback_zielperson.md), [meta/arbeitsregeln.md](../../../meta/arbeitsregeln.md) (Regel 7)
+  → Quelle: `docs/feedback/*.md`, [meta/arbeitsregeln.md](../../../meta/arbeitsregeln.md) (Regel 7)
 - [OFFEN] Partizipationsgrad systematisch dokumentieren
 
 ## 4.4 Fachliche Begründung der Handlungsschritte

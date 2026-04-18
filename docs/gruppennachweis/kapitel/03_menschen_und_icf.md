@@ -74,4 +74,4 @@
 - [OFFEN] Abschnitt 3.2: Allgemeine Charakterisierung aus Projektplan und Tagebuch verdichten
 - [OFFEN] Abschnitt 3.1: Weitere demografische Angaben ergänzen (datenschutzkonform)
 - [OFFEN] Alle Bewertungen gegen den ICF-Report rückprüfen, sobald neue Reports vorliegen
-- [OFFEN] Feedback der Zielperson systematisch zusammenfassen → Quelle: [docs/feedback/*.md](../../feedback/01_feedback_zielperson.md)
+- [OFFEN] Feedback der Zielperson systematisch zusammenfassen → Quelle: `docs/feedback/*.md`

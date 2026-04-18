@@ -17,7 +17,7 @@
 | Reflexion prüft Wirkung, nicht Absicht | Reflexionspunkte fokussieren auf beobachtete Effekte | [docs/reflexion.md](../../reflexion.md) |
 | Dokumentation kurz und regelmäßig | 7+ Tageseinträge | [docs/tagebuch/*.md](../../tagebuch/00_vorlauf.md) |
 | Keine identifizierenden Angaben | Zielperson als X, Mitschüler als Y | Alle Dateien |
-| Feedback als eigene Quelle | Separater Ordner mit 3 Einträgen | [docs/feedback/*.md](../../feedback/01_feedback_zielperson.md) |
+| Feedback als eigene Quelle | Separater Ordner mit 3 Einträgen | `docs/feedback/*.md` |
 | Form der Rückmeldung markiert | [OFFEN] Nacharbeitsregel definiert (s. u.) | [meta/arbeitsregeln.md](../../../meta/arbeitsregeln.md) Regel 8 |
 
 ## 6.3 Anhang

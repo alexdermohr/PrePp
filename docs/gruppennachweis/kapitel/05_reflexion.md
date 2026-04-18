@@ -7,7 +7,7 @@
 - [docs/reflexion.md](../../reflexion.md) – Gesamtreflexion
 - [docs/entscheidungen/*.md](../../entscheidungen/01_konsequenzen.md) – Entscheidungen und deren Wirkungen
 - [docs/hypothesen.md](../../hypothesen.md) – Hypothesenstatus
-- [docs/feedback/*.md](../../feedback/01_feedback_zielperson.md) – Perspektive der Zielperson
+- `docs/feedback/*.md` – Perspektive der Zielperson
 
 ## 5.1 Zielerreichung
 
