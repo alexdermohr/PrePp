@@ -801,7 +801,11 @@ export function renderHypothesen(root, data) {
 
     const aussageSpan = document.createElement("span");
     if (block.aussage.length > 0) {
-      renderInlineText(aussageSpan, block.aussage.join(" "));
+      renderInlineText(
+        aussageSpan,
+        block.aussage.join(" "),
+        data.hypothesen?.path,
+      );
     } else {
       aussageSpan.textContent = "Aussage noch unklar";
     }
@@ -865,7 +869,7 @@ export function renderHypothesen(root, data) {
       const list = values.length > 0 ? values : ["nicht explizit angegeben"];
       list.forEach((value) => {
         const li = document.createElement("li");
-        renderInlineText(li, value, entry.path);
+        renderInlineText(li, value, data.hypothesen?.path);
         ul.appendChild(li);
       });
       detailSection.appendChild(ul);
