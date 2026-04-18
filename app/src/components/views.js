@@ -188,16 +188,16 @@ function createSummarySection(title, contentSnippet) {
 }
 
 const blockRenderers = {
-  text: (b, container) => {
+  text: (b, container, contextPath) => {
     const p = document.createElement("p");
-    renderInlineText(p, b.text);
+    renderInlineText(p, b.text, contextPath);
     container.appendChild(p);
   },
-  list: (b, container) => {
+  list: (b, container, contextPath) => {
     const listEl = document.createElement(b.ordered ? "ol" : "ul");
     b.items.forEach((item) => {
       const li = document.createElement("li");
-      renderInlineText(li, item);
+      renderInlineText(li, item, contextPath);
       listEl.appendChild(li);
     });
     container.appendChild(listEl);
@@ -227,9 +227,9 @@ const blockRenderers = {
   },
 };
 
-function renderBlock(block, container) {
+function renderBlock(block, container, contextPath) {
   if (blockRenderers[block.type]) {
-    blockRenderers[block.type](block, container);
+    blockRenderers[block.type](block, container, contextPath);
   } else {
     const p = document.createElement("p");
     p.className = "unknown-block-type";
@@ -238,7 +238,7 @@ function renderBlock(block, container) {
   }
 }
 
-function createSectionBlock(section) {
+function createSectionBlock(section, contextPath) {
   const sectionEl = document.createElement("section");
   sectionEl.className = "section-block";
 
@@ -247,7 +247,9 @@ function createSectionBlock(section) {
   sectionEl.appendChild(heading);
 
   if (section.blocks && section.blocks.length > 0) {
-    section.blocks.forEach((block) => renderBlock(block, sectionEl));
+    section.blocks.forEach((block) =>
+      renderBlock(block, sectionEl, contextPath),
+    );
   }
 
   return sectionEl;
@@ -269,10 +271,13 @@ function createFileCard(entry) {
   entry.sections.forEach((section, index) => {
     if (index === 0 && section.heading === entry.title) {
       if (section.blocks && section.blocks.length > 0) {
-        const bulletOnly = createSectionBlock({
-          heading: "",
-          blocks: section.blocks,
-        });
+        const bulletOnly = createSectionBlock(
+          {
+            heading: "",
+            blocks: section.blocks,
+          },
+          entry.path,
+        );
         const heading = bulletOnly.querySelector("h4");
         if (heading) heading.remove();
         card.appendChild(bulletOnly);
@@ -280,7 +285,7 @@ function createFileCard(entry) {
       return;
     }
 
-    card.appendChild(createSectionBlock(section));
+    card.appendChild(createSectionBlock(section, entry.path));
   });
 
   return card;
