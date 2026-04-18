@@ -820,7 +820,7 @@ export function renderFeedback(root, data, params) {
   renderEntries(root, data.feedback, params);
 }
 
-export function renderHypothesen(root, data) {
+export function renderHypothesen(root, data, params) {
   if (
     !data.hypothesen ||
     !data.hypothesen.hypothesisBlocks ||
@@ -828,9 +828,15 @@ export function renderHypothesen(root, data) {
   )
     return renderEmptyState(root, "Keine strukturierten Hypothesen gefunden.");
 
-  data.hypothesen.hypothesisBlocks.forEach((block) => {
+  const shouldHighlightSource =
+    normalizeSourcePath(params?.get("src")) === data.hypothesen.path;
+
+  data.hypothesen.hypothesisBlocks.forEach((block, index) => {
     const card = document.createElement("article");
     card.className = "card hypothesis-card";
+    if (shouldHighlightSource && index === 0) {
+      card.classList.add("highlight");
+    }
 
     // Titel = Aussage
     const title = document.createElement("h3");
