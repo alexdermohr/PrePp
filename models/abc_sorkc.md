@@ -29,10 +29,10 @@ ABC ist die reduzierte Kurzform, SORKC die erweiterte funktionale Analyse.
 
 ## II. Kernlogik
 
-- **A/S**: Was geht voraus?
-- **B/R**: Was wird gezeigt?
+- **S/A**: Was geht voraus?
+- **O**: Welche Organismusfaktoren wirken mit?
+- **R/B**: Was wird gezeigt?
 - **C**: Was folgt darauf?
-- **O**: Welche Organismusfaktoren beeinflussen die Reaktion?
 - **K**: Wie regelmäßig ist die Kopplung?
 
 ## III. Epistemische Einordnung

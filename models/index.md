@@ -35,3 +35,9 @@ Dieser Index ordnet den Modellkorpus als Werkzeugkasten.
 - Modelle sind komplementär, nicht konkurrierend.
 - Fallzuordnungen sind heuristisch und alternativ deutbar.
 - Kein Einzelmodell überstimmt akute Sicherheitslogik (STF).
+
+## 4) Hinweis zur Navigation im Renderer
+
+- Interne Markdown-Links auf `.md`-Dateien werden im aktuellen Frontend als interne Referenzen aufgelöst.
+- Relative Pfade wie `./abc_sorkc.md` werden kontextbezogen auf `models/` normalisiert.
+- Technische Grundlage: Link- und Pfadauflösung in `app/src/components/views.js` sowie Abschnitts-/Listen-Parsing in `app/src/lib/markdown.js`.
