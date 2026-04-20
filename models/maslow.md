@@ -1,5 +1,9 @@
 # Modell: Maslowsche Bedürfnishierarchie
 
+## Modelltyp
+
+**NEED** (Bedürfnis) – beschreibt aktive Mangelzustände und deren Einfluss auf Verhalten. Keine Zustands- oder Leistungsaussage.
+
 ## I. Dialektische Eröffnung
 
 ### **These**
@@ -195,12 +199,13 @@ Annahmen:
 
 > **Beobachtungseinheit** = ein zusammenhängender Kontakt- oder Projektabschnitt (z. B. eine Projekteinheit, ein Pausenblock, ein Gespräch). Keine feste Zeitdauer – orientiert sich am Format des Beobachtungsrasters (vgl. `docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md`).
 
-
-* **Aktivierung eines Bedürfnisses:** Wenn mindestens 2 Indikatoren einer Dimension gleichzeitig über mindestens 2 Beobachtungseinheiten auftreten
+* **Aktivierung eines Bedürfnisses:** Wenn mehrere Indikatoren einer Dimension konsistent über mehrere Beobachtungseinheiten auftreten (Richtwert, keine feste Schwelle)
 * **Kipppunkt (Bedürfnisfrustration):** Wenn Indikatoren sich in Intensität steigern (z. B. von Rückzug zu verbaler Eskalation) oder wenn Verhalten nach Intervention nicht deeskaliert
-* **Deaktivierung:** Wenn Indikatoren über 3 Einheiten nicht mehr beobachtbar sind
+* **Deaktivierung:** Wenn Indikatoren anhaltend nicht mehr beobachtbar sind (Richtwert, keine feste Schwelle)
 
 ### C. Entscheidungslogik
+
+**Vorbedingung für alle Regeln:** IF Zustand plausibel identifiziert UND keine Gegenindikatoren aktiv → THEN Intervention
 
 * IF physiologische Indikatoren präsent → THEN Grundversorgung sicherstellen (Pause, Essen, Trinken), bevor inhaltliche Arbeit beginnt
 * IF Sicherheitsindikatoren präsent → THEN Umgebung stabilisieren (vertraute Personen, bekannte Abläufe, Vorhersagbarkeit erhöhen)
@@ -233,13 +238,13 @@ Annahmen:
 
 **Situation 1:** „In Situationen, die praktisches Handeln erfordern (z. B. Pfand sammeln, Preise vergleichen, Einkaufen), übernimmt X die Initiative, gibt Laufwege vor, führt Tätigkeiten selbstständig aus" (01_verhalten_in_situationen)
 
-→ **Zuordnung:** Ich-Bedürfnis (Kompetenz, Selbstwirksamkeit) ist adressiert → Verhalten zeigt Aktivierung auf dieser Ebene
+→ **Zuordnung:** Könnte auf ein aktives Ich-Bedürfnis (Kompetenz, Selbstwirksamkeit) hinweisen [HEURISTISCH] – Unsicherheit: 0.45 – Alternative: intrinsische Aufgabenmotivation ohne Bedürfnisfrustration (→ Y-D: optimale Aktivierung)
 
 → **Handlung:** Handlungsorientierte Aufgaben gezielt einsetzen, um Kompetenzerleben zu stabilisieren
 
 **Situation 2:** „Gespräche mit formellen Rollenpersonen: X spricht seltener, spricht sehr leise, wendet den Körper ab, vermeidet Blickkontakt oder verlässt den Sichtbereich" (01_verhalten_in_situationen)
 
-→ **Zuordnung:** Sicherheitsbedürfnis möglicherweise nicht gedeckt in formellen Kontexten
+→ **Zuordnung:** Könnte auf ein unerfülltes Sicherheitsbedürfnis in formellen Kontexten hinweisen [HEURISTISCH] – Unsicherheit: 0.45 – Alternative: Überaktivierung durch soziale Leistungserwartung (→ Y-D/STF)
 
 → **Handlung:** Formelle Interaktionen schrittweise aufbauen, Vorhersagbarkeit erhöhen, vertraute Begleitperson einbeziehen
 
@@ -269,6 +274,6 @@ aber die Menschen laufen quer durch sie hindurch.
 
 * **Zustand:** Bedürfnisfrustration in einer oder mehreren Dimensionen
 * **Indikatoren:** Rückzug, Vermeidung, Impulsivität, Kontaktsuche, Eigeninitiative (je nach Dimension)
-* **Schwelle:** ≥ 2 Indikatoren einer Dimension über ≥ 2 Beobachtungseinheiten
+* **Schwelle:** Mehrere konsistente Indikatoren einer Dimension über mehrere Beobachtungseinheiten (Richtwert, keine feste Zahl)
 * **Handlung:** Dimension identifizieren → zugehörige Intervention auslösen (Grundversorgung / Stabilisierung / Zugehörigkeit / Kompetenz / Gestaltungsraum)
 * **Unsicherheit:** 0.18 – Modell gibt Orientierung, keine Determination; Bedürfniszuordnung immer interpretationsabhängig

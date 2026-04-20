@@ -1,5 +1,9 @@
 # Modell: Big Five
 
+## Modelltyp
+
+**TRAIT** (Disposition) – beschreibt stabile Persönlichkeitstendenzen über Situationen hinweg. Keine Zustands- oder Bedürfnisaussage. Traits erklären nicht, wann Verhalten auftritt, sondern in welche Richtung es tendiert.
+
 ## I. Dialektische Eröffnung
 
 ### **These**
@@ -210,11 +214,13 @@ Annahmen:
 
 ### B. Schwellen
 
-* **Trait-Identifikation:** Wenn ≥ 3 Indikatoren einer Dimension über ≥ 5 Beobachtungseinheiten konsistent auftreten (konsistent = in ≥ 4 von 5 Einheiten beobachtbar; gelegentliche Abweichung ist erwartbar und kein Ausschlusskriterium)
+* **Trait-Identifikation:** Wenn mehrere Indikatoren einer Dimension konsistent über mehrere Beobachtungseinheiten auftreten (Richtwert, keine feste Zahl; gelegentliche Abweichung ist erwartbar und kein Ausschlusskriterium)
 * **Trait-Aktivierung (situativ):** Wenn Trait-konsistentes Verhalten in einer neuen Situation erstmalig auftritt
 * **Trait-Kontra-Verhalten:** Wenn Verhalten dem identifizierten Trait widerspricht → Situation prüfen (Situationsdruck kann Traits überlagern)
 
 ### C. Entscheidungslogik
+
+**Vorbedingung für alle Regeln:** IF Trait-Muster plausibel identifiziert UND keine Gegenindikatoren aktiv UND keine akute Dysregulation → THEN Intervention
 
 * IF hohe Offenheit → THEN neue Aufgaben und Explorationsräume anbieten
 * IF niedrige Offenheit → THEN bekannte Strukturen beibehalten, Neues schrittweise einführen
@@ -251,7 +257,7 @@ Annahmen:
 
 **Situation 1:** „In Situationen, die praktisches Handeln erfordern, übernimmt X die Initiative, gibt Laufwege vor, führt Tätigkeiten selbstständig aus" (01_verhalten_in_situationen)
 
-→ **Zuordnung:** Möglicher Hinweis auf niedrige Offenheit (Präferenz für praktische, bekannte Aufgaben) ODER hohe Gewissenhaftigkeit (Zielorientierung, Durchführung) [HEURISTISCH] – Unsicherheit: 0.55
+→ **Zuordnung:** Könnte auf niedrige Offenheit (Präferenz für Bekanntes) ODER hohe Gewissenhaftigkeit (Zielorientierung) hinweisen [HEURISTISCH] – Unsicherheit: 0.55 – Alternative: aufgabenspezifische optimale Aktivierung ohne Trait-Bezug (→ Y-D)
 
 → **Handlung:** Handlungsorientierte Aufgaben als Stärke nutzen; neue Aufgabentypen schrittweise einführen
 
@@ -286,6 +292,6 @@ Nur leider ohne Bedienungsanleitung.
 
 * **Zustand:** Trait-konsistentes Verhaltensmuster erkennbar
 * **Indikatoren:** Je Dimension spezifische beobachtbare Verhaltensweisen (siehe Indikatorentabelle)
-* **Schwelle:** ≥ 3 Indikatoren einer Dimension über ≥ 5 Beobachtungseinheiten konsistent
+* **Schwelle:** Mehrere Indikatoren einer Dimension konsistent über mehrere Beobachtungseinheiten (Richtwert, keine feste Zahl)
 * **Handlung:** Aufgaben- und Umgebungsgestaltung an Trait-Profil anpassen (Struktur, Sozialform, Komplexität, Vorhersagbarkeit)
 * **Unsicherheit:** 0.12 – Modell empirisch robust, aber Anwendung auf Einzelfall ohne standardisierte Messung heuristisch

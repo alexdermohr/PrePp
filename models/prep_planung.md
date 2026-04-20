@@ -1,5 +1,9 @@
 # Modell: Prep - Planung
 
+## Modelltyp
+
+**PLANNING** (Planungsrahmen) – beschreibt keine psychologischen Zustände, Traits oder Bedürfnisse, sondern eine Handlungsstruktur für pädagogische Interventionen. Setzt voraus, dass andere Modelle (NEED, STATE) bereits geprüft wurden.
+
 Das folgende Modell skizziert die Logik der "Prep - Planung", wie sie dem Projekt "Schulhof verschönern" zugrunde liegt.
 
 ```text
@@ -59,11 +63,13 @@ Das folgende Modell skizziert die Logik der "Prep - Planung", wie sie dem Projek
 ### B. Schwellen
 
 * **Aktivität gilt als partizipativ:** Wenn Zielperson mindestens 1 inhaltlich relevante Entscheidung innerhalb der Aktivität selbst trifft (nicht nur Ja/Nein, sondern gestaltende Wahl) UND Rückmeldung eingeholt und berücksichtigt wird
-* **Empowerment erkennbar:** Wenn Zielperson in ≥ 2 Einheiten Eigeninitiative zeigt UND Kompetenzerleben berichtet oder beobachtet wird
+* **Empowerment erkennbar:** Wenn Zielperson über mehrere Einheiten Eigeninitiative zeigt UND Kompetenzerleben berichtet oder beobachtet wird (Richtwert, keine feste Schwelle)
 * **Zielerreichung positiv:** Wenn geplantes Ergebnis eintritt ODER Abweichung dokumentiert und reflektiert wird
 * **Kipppunkt (Planung gescheitert):** Wenn Aktivität nicht stattfindet ODER Zielperson Beteiligung verweigert ODER kein Bezug zu Förderbedarf erkennbar
 
 ### C. Entscheidungslogik
+
+**Vorbedingung für alle Regeln:** IF Planungselement plausibel beurteilbar UND Zielperson im Toleranzfenster UND Grundbedürfnisse gedeckt → THEN Intervention
 
 * IF Förderbedarf unklar → THEN Planung stoppen, Diagnostik vertiefen
 * IF Interessen nicht einbezogen → THEN Aktivität gemeinsam mit Zielperson umgestalten
@@ -98,13 +104,13 @@ Das folgende Modell skizziert die Logik der "Prep - Planung", wie sie dem Projek
 
 **Situation 1:** „In Situationen, die praktisches Handeln erfordern (z. B. Pfand sammeln, Preise vergleichen, Einkaufen), übernimmt X die Initiative" (01_verhalten_in_situationen)
 
-→ **Zuordnung:** Prep-Planung funktioniert – Aktivität (Pfandprojekt) adressiert Interessen und Ressourcen; Partizipation ist erkennbar (Eigeninitiative); Empowerment zeigt sich in Selbstständigkeit
+→ **Zuordnung:** Könnte darauf hinweisen, dass Prep-Planung greift – Aktivität adressiert Interessen; Partizipation erkennbar (Eigeninitiative); Empowerment in Selbstständigkeit sichtbar [HEURISTISCH] – Unsicherheit: 0.35 – Alternative: aufgabenbedingte Stärke ohne Bezug zur Planungsstruktur (→ Y-D: optimale Aktivierung)
 
 → **Handlung:** Aktivitätstyp beibehalten; Verantwortung schrittweise erweitern; Zielerreichung dokumentieren
 
 **Situation 2:** „Wenn Grenzen unvermittelt gesetzt werden, reagiert X mit lauten verbalen Äußerungen, Beleidigungen und physischen Handlungen" (02_umgang_mit_grenzen)
 
-→ **Zuordnung:** Partizipation fehlt – Grenzsetzung ohne Einbezug der Zielperson; Empowerment-Rahmen verletzt
+→ **Zuordnung:** Könnte auf fehlende Partizipation hinweisen – Grenzsetzung ohne Einbezug der Zielperson; Empowerment-Rahmen möglicherweise verletzt [HEURISTISCH] – Unsicherheit: 0.40 – Alternative: Reaktion auf Hyperarousal unabhängig von Planungsstruktur (→ STF)
 
 → **Handlung:** Grenzen wenn möglich vorher gemeinsam vereinbaren; Konsequenzen transparent und vorhersagbar gestalten
 
@@ -137,6 +143,6 @@ Die Macht, den Plan zu sprengen.
 
 * **Zustand:** Planung einer partizipativen, empowerment-orientierten Aktivität
 * **Indikatoren:** Förderbedarf adressiert, Interessen einbezogen, Partizipation erkennbar, Eigeninitiative, Zielerreichung
-* **Schwelle:** Partizipativ: ≥ 1 Entscheidung durch Zielperson + Rückmeldung; Empowerment: ≥ 2× Eigeninitiative; Kipppunkt: Verweigerung oder kein Förderbedarfsbezug
+* **Schwelle:** Partizipativ: mindestens eine gestaltende Entscheidung durch Zielperson + Rückmeldung; Empowerment: Eigeninitiative über mehrere Einheiten erkennbar; Kipppunkt: Verweigerung oder kein Förderbedarfsbezug (Richtwerte, keine festen Zahlen)
 * **Handlung:** Förderbedarf unklar → stoppen; Interessen fehlen → umgestalten; keine Partizipation → Spielräume schaffen; Ziel nicht erreicht → reflektieren und anpassen
 * **Unsicherheit:** 0.25 – Planungsstruktur nachvollziehbar, aber Wirksamkeit im Einzelfall nicht vorhersagbar

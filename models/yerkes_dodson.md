@@ -1,5 +1,9 @@
 # Modell: Yerkes-Dodson-Gesetz
 
+## Modelltyp
+
+**PERFORMANCE** (Leistung) – beschreibt die Beziehung zwischen Aktivierungsniveau und Leistungsfähigkeit. Keine Aussage über Bedürfnislagen, stabile Persönlichkeitsmerkmale oder Dysregulation.
+
 ## Begriff und Herkunft
 
 Das Yerkes-Dodson-Gesetz (1908) beschreibt den Zusammenhang zwischen Aktivierung (Erregung, Stress) und Leistungsfähigkeit.
@@ -131,12 +135,14 @@ zu:
 
 ### B. Schwellen
 
-* **Eintritt Unteraktivierung:** Wenn ≥ 2 Unteraktivierungs-Indikatoren über ≥ 10 Minuten bestehen UND Aufgabenbearbeitung nicht stattfindet (10 Min. als Richtwert: kürzer = möglicherweise nur Orientierungsphase; länger = Risiko der Übersehen; kontextabhängig anpassbar)
-* **Eintritt Überaktivierung:** Wenn Fehlerrate erkennbar steigt UND ≥ 1 Überaktivierungs-Indikator beobachtbar ist
-* **Optimale Zone:** Wenn Aufgabenbearbeitung stattfindet UND mindestens 2 Optimalzone-Indikatoren erkennbar sind
+* **Eintritt Unteraktivierung:** Wenn mehrere Unteraktivierungs-Indikatoren anhaltend bestehen UND Aufgabenbearbeitung nicht stattfindet (Richtwert, keine feste Zeitangabe; kurze Passivphasen können Orientierung sein)
+* **Eintritt Überaktivierung:** Wenn Fehlerrate erkennbar steigt UND mindestens ein Überaktivierungs-Indikator beobachtbar ist (Richtwert, keine feste Schwelle)
+* **Optimale Zone:** Wenn Aufgabenbearbeitung stattfindet UND mehrere Optimalzone-Indikatoren erkennbar sind (Richtwert, keine feste Schwelle)
 * **Kipppunkt:** Wenn Aufgabenabbruch oder Verweigerung eintritt
 
 ### C. Entscheidungslogik
+
+**Vorbedingung für alle Regeln:** IF Zustand plausibel identifiziert UND keine Gegenindikatoren aktiv → THEN Intervention
 
 * IF Unteraktivierung → THEN Aktivierung erhöhen (Aufgabenwechsel, Bedeutsamkeit herstellen, soziale Einbindung, Handlungsorientierung)
 * IF Überaktivierung → THEN Aktivierung senken (Aufgabenkomplexität reduzieren, Teilziele setzen, Pause anbieten, Unterstützung geben)
@@ -168,7 +174,7 @@ zu:
 
 **Situation 1:** „In Situationen, die praktisches Handeln erfordern (z. B. Pfand sammeln, Preise vergleichen, Einkaufen), übernimmt X die Initiative, gibt Laufwege vor, führt Tätigkeiten selbstständig aus" (01_verhalten_in_situationen)
 
-→ **Zuordnung:** Optimale Aktivierung – handlungsorientierte Aufgaben erzeugen passende Aktivierung bei X
+→ **Zuordnung:** Könnte auf optimale Aktivierung durch handlungsorientierte Aufgaben hinweisen [HEURISTISCH] – Unsicherheit: 0.40 – Alternative: aktives Ich-Bedürfnis (→ Maslow) oder Trait-bedingte Stärke in praktischen Aufgaben (→ Big Five)
 
 → **Handlung:** Aufgabentyp beibehalten; Komplexität schrittweise steigern, solange Engagement anhält
 
@@ -202,6 +208,6 @@ Leider hat niemand X gesagt, wo genau „dazwischen" liegt.
 
 * **Zustand:** Aktivierungsniveau nicht im Optimum für aktuelle Aufgabe
 * **Indikatoren:** Passivität/Desinteresse (unter) oder Hektik/Fehler/Abbruch (über)
-* **Schwelle:** Unteraktivierung: ≥ 2 Indikatoren über ≥ 10 Min.; Überaktivierung: Fehleranstieg + ≥ 1 Indikator; Kipppunkt: Aufgabenabbruch
+* **Schwelle:** Unteraktivierung: mehrere Indikatoren anhaltend + keine Aufgabenbearbeitung; Überaktivierung: Fehleranstieg + mindestens ein Indikator; Kipppunkt: Aufgabenabbruch (Richtwerte, keine festen Zahlen)
 * **Handlung:** Unteraktivierung → Aktivierung erhöhen (Aufgabenwechsel, Bedeutsamkeit); Überaktivierung → Aktivierung senken (Komplexität reduzieren, Teilziele)
 * **Unsicherheit:** 0.25 – Optimum individuell und aufgabenabhängig; ohne Messdaten nur heuristisch bestimmbar

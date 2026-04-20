@@ -1,5 +1,9 @@
 # Modell: Stresstoleranzfenster
 
+## Modelltyp
+
+**STATE** (Zustand) – beschreibt aktuelles Erregungsniveau und Regulationsfähigkeit. Keine Aussage über stabile Persönlichkeitsmerkmale oder Bedürfnislagen.
+
 ## I. Dialektische Eröffnung
 
 ### **These**
@@ -199,12 +203,14 @@ Annahmen:
 
 ### B. Schwellen
 
-* **Eintritt Hyperarousal:** Wenn ≥ 2 Hyperarousal-Indikatoren gleichzeitig auftreten UND Verhalten auf verbale Ansprache nicht modulierbar ist (Hinweis: Hyperarousal wird an Intensität gemessen, nicht an Dauer – im Gegensatz zu Hypoarousal, das an Persistenz gemessen wird, da es sich subtiler zeigt)
-* **Eintritt Hypoarousal:** Wenn ≥ 2 Hypoarousal-Indikatoren über ≥ 5 Minuten bestehen UND kein Kontaktangebot angenommen wird
-* **Rückkehr ins Fenster:** Wenn Kontaktaufnahme wieder möglich ist UND mindestens 1 Toleranzfenster-Indikator beobachtbar ist
+* **Eintritt Hyperarousal:** Wenn mehrere Hyperarousal-Indikatoren gleichzeitig auftreten UND Verhalten auf verbale Ansprache nicht modulierbar ist (Richtwert, keine feste Schwelle; Hyperarousal wird an Intensität gemessen, Hypoarousal an Persistenz – da letzteres subtiler einsetzt)
+* **Eintritt Hypoarousal:** Wenn mehrere Hypoarousal-Indikatoren anhaltend bestehen UND kein Kontaktangebot angenommen wird (Richtwert, keine feste Zeitangabe)
+* **Rückkehr ins Fenster:** Wenn Kontaktaufnahme wieder möglich ist UND mindestens ein Toleranzfenster-Indikator beobachtbar ist (Richtwert, keine feste Schwelle)
 * **Kipppunkt (Eskalation):** Wenn Hyperarousal-Verhalten in physische Handlungen übergeht (Gegenstände werfen, Annähern an andere, Umstoßen)
 
 ### C. Entscheidungslogik
+
+**Vorbedingung für alle Regeln:** IF Zustand plausibel identifiziert UND keine Gegenindikatoren aktiv → THEN Intervention
 
 * IF Hyperarousal-Indikatoren präsent → THEN Reizreduktion (Raum wechseln, Stimmen senken, keine Forderungen stellen), Pause anbieten, abwarten
 * IF Hypoarousal-Indikatoren präsent → THEN vorsichtige Aktivierung (leise Ansprache, sensorische Angebote, Nähe ohne Forderung)
@@ -236,13 +242,13 @@ Annahmen:
 
 **Situation 1:** „X agiert impulsiv mit verbalen Ausfälligkeiten ('verpiss dich', 'lass mich in Ruhe, du ekeliger Mensch') sowie physischen Handlungen (wie das Annähern an Gegenstände anderer oder das Umstoßen von Dingen)" (01_verhalten_in_situationen)
 
-→ **Zuordnung:** Hyperarousal – Kampf-/Fluchtreaktion; Impulsivität; verbale Eskalation
+→ **Zuordnung:** Deutet auf Hyperarousal hin – Kampf-/Fluchtreaktion, Impulsivität, verbale Eskalation [HEURISTISCH] – Unsicherheit: 0.35 – Alternative: bewusste Grenzziehung ohne Dysregulation (→ Gegenindikator prüfen)
 
 → **Handlung:** Reizreduktion, Pause anbieten, keine Forderungen stellen, Sicherheit gewährleisten
 
 **Situation 2:** „Nach Konflikten oder Eskalationen und dem zeitweisen Verlassen der Situation kehrt X wiederholt zurück in den Kontakt mit der Projektleitung und beteiligt sich erneut an Projektaktivitäten" (01_verhalten_in_situationen)
 
-→ **Zuordnung:** Rückkehr ins Toleranzfenster – Kontaktaufnahme wieder möglich, kooperatives Verhalten
+→ **Zuordnung:** Deutet auf Rückkehr ins Toleranzfenster hin – Kontaktaufnahme wieder möglich, kooperatives Verhalten [HEURISTISCH] – Unsicherheit: 0.30 – Alternative: instrumentelles Verhalten zur Wiederherstellung sozialer Beziehung (→ Maslow: soziales Bedürfnis)
 
 → **Handlung:** Rückkehr bestätigen, ohne Eskalation zu thematisieren; Aktivität anbieten; Stabilisierung ermöglichen
 
@@ -273,6 +279,6 @@ sondern:
 
 * **Zustand:** Erregungsniveau außerhalb des Toleranzfensters (Hyper- oder Hypoarousal)
 * **Indikatoren:** Verbale Impulsivität, körperliche Anspannung, Rückzug, reduzierte Ansprechbarkeit (je nach Richtung)
-* **Schwelle:** ≥ 2 Indikatoren gleichzeitig; Hyperarousal: nicht modulierbar durch Ansprache; Hypoarousal: ≥ 5 Min. ohne Kontaktannahme
+* **Schwelle:** Mehrere Indikatoren gleichzeitig (Richtwert); Hyperarousal: nicht modulierbar durch Ansprache; Hypoarousal: anhaltend ohne Kontaktannahme
 * **Handlung:** Hyperarousal → Reizreduktion, Pause; Hypoarousal → vorsichtige Aktivierung; Toleranzfenster → Arbeit möglich
 * **Unsicherheit:** 0.20 – Zustandsgrenzen nicht exakt bestimmbar; Indikatoren interpretationsabhängig
