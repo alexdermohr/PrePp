@@ -195,6 +195,73 @@ Annahmen:
 
 ---
 
+## XIII. Operationalisierung
+
+### A. Indikatoren (beobachtbar)
+
+| Zustand | Indikator (beobachtbar) |
+|---|---|
+| Hyperarousal | Erhöhte Lautstärke; schnelle/hektische Bewegungen; verbale Impulsivität; körperliche Anspannung; Wut-/Angstausdruck; Unfähigkeit, Anweisungen zu folgen |
+| Toleranzfenster | Blickkontakt möglich; angemessene Reaktionszeit; kooperatives Verhalten; sprachliche Differenzierung; emotionale Modulierbarkeit |
+| Hypoarousal | Reduzierte Ansprechbarkeit; verlangsamte Reaktionen; leere Mimik; Rückzug aus Interaktion; monotone oder fehlende Sprache |
+
+### B. Schwellen
+
+* **Eintritt Hyperarousal:** Wenn ≥ 2 Hyperarousal-Indikatoren gleichzeitig auftreten UND Verhalten auf verbale Ansprache nicht modulierbar ist
+* **Eintritt Hypoarousal:** Wenn ≥ 2 Hypoarousal-Indikatoren über ≥ 5 Minuten bestehen UND kein Kontaktangebot angenommen wird
+* **Rückkehr ins Fenster:** Wenn Kontaktaufnahme wieder möglich ist UND mindestens 1 Toleranzfenster-Indikator beobachtbar ist
+* **Kipppunkt (Eskalation):** Wenn Hyperarousal-Verhalten in physische Handlungen übergeht (Gegenstände werfen, Annähern an andere, Umstoßen)
+
+### C. Entscheidungslogik
+
+* IF Hyperarousal-Indikatoren präsent → THEN Reizreduktion (Raum wechseln, Stimmen senken, keine Forderungen stellen), Pause anbieten, abwarten
+* IF Hypoarousal-Indikatoren präsent → THEN vorsichtige Aktivierung (leise Ansprache, sensorische Angebote, Nähe ohne Forderung)
+* IF Toleranzfenster-Indikatoren präsent → THEN Lern- und Arbeitsangebote möglich, Reflexion anstoßen
+* IF Kipppunkt erreicht → THEN Sicherheit priorisieren, Situation deeskalieren, keine inhaltliche Arbeit
+
+### D. Gegenindikatoren (wann gilt Modell NICHT)
+
+* Wenn Verhalten willentlich gesteuert und instrumentell eingesetzt wird (z. B. gezielte Provokation bei vollem Bewusstsein)
+* Wenn Über-/Untererregung medikamentös bedingt ist → medizinische Abklärung hat Vorrang
+* Wenn Verhalten primär auf unerfüllte Grundbedürfnisse zurückgeht → Maslow hat Vorrang
+* Bei komplexer Traumatisierung → Modell zu vereinfacht, Fachberatung nötig
+
+---
+
+## XIV. Konflikte mit anderen Modellen
+
+| Konflikt | Widerspruch | Vorrang |
+|---|---|---|
+| STF vs. Maslow | STF beschreibt Erregungsniveau; Maslow beschreibt Bedürfnislage. Rückzug kann Hypoarousal (STF) ODER unerfülltes Sicherheitsbedürfnis (Maslow) sein. | STF bei akuter Zustandsveränderung. Maslow bei stabiler, wiederkehrender Verhaltenstendenz. |
+| STF vs. Yerkes-Dodson | STF beschreibt dysfunktionale Zustände außerhalb des Fensters; Y-D beschreibt optimale Aktivierung für Leistung. Ein Mensch kann im Toleranzfenster sein, aber suboptimal aktiviert (Y-D). | STF bei Frage: „Ist Regulation möglich?" Y-D bei Frage: „Ist Leistung optimal?" |
+| STF vs. Big Five | Hoher Neurotizismus (Big Five) kann das Toleranzfenster verengen. Trait-bedingte Empfindlichkeit wird fälschlich als Dysregulation interpretiert. | Big Five bei dauerhafter Vulnerabilität. STF bei situativer Zustandsänderung. |
+
+---
+
+## XV. Anwendung im Projektkontext
+
+### Typische Situation (aus `docs/beobachtungen`)
+
+**Situation 1:** „X agiert impulsiv mit verbalen Ausfälligkeiten ('verpiss dich', 'lass mich in Ruhe, du ekeliger Mensch') sowie physischen Handlungen (wie das Annähern an Gegenstände anderer oder das Umstoßen von Dingen)" (01_verhalten_in_situationen)
+
+→ **Zuordnung:** Hyperarousal – Kampf-/Fluchtreaktion; Impulsivität; verbale Eskalation
+
+→ **Handlung:** Reizreduktion, Pause anbieten, keine Forderungen stellen, Sicherheit gewährleisten
+
+**Situation 2:** „Nach Konflikten oder Eskalationen und dem zeitweisen Verlassen der Situation kehrt X wiederholt zurück in den Kontakt mit der Projektleitung und beteiligt sich erneut an Projektaktivitäten" (01_verhalten_in_situationen)
+
+→ **Zuordnung:** Rückkehr ins Toleranzfenster – Kontaktaufnahme wieder möglich, kooperatives Verhalten
+
+→ **Handlung:** Rückkehr bestätigen, ohne Eskalation zu thematisieren; Aktivität anbieten; Stabilisierung ermöglichen
+
+**Situation 3:** „Wurde ‚Pause' genutzt? / Kam es zur Eskalation? / Dauer der Eskalation" (03_beobachtungsraster)
+
+→ **Zuordnung:** Das Beobachtungsraster operationalisiert bereits STF-Indikatoren: Pause = Regulationsversuch; Eskalation = Austritt aus dem Fenster; Dauer = Rückkehrzeit
+
+→ **Handlung:** Raster systematisch führen, um Muster zu identifizieren (Auslöser, Dauer, Rückkehrfähigkeit)
+
+---
+
 ## 🪶 Humor
 
 Das Modell heißt „Fenster“,
@@ -207,3 +274,13 @@ Und die eigentliche Frage ist dann nicht:
 „War ich im Fenster?“
 sondern:
 „Wie komme ich wieder rein?“
+
+---
+
+## Entscheidungszusammenfassung
+
+* **Zustand:** Erregungsniveau außerhalb des Toleranzfensters (Hyper- oder Hypoarousal)
+* **Indikatoren:** Verbale Impulsivität, körperliche Anspannung, Rückzug, reduzierte Ansprechbarkeit (je nach Richtung)
+* **Schwelle:** ≥ 2 Indikatoren gleichzeitig; Hyperarousal: nicht modulierbar durch Ansprache; Hypoarousal: ≥ 5 Min. ohne Kontaktannahme
+* **Handlung:** Hyperarousal → Reizreduktion, Pause; Hypoarousal → vorsichtige Aktivierung; Toleranzfenster → Arbeit möglich
+* **Unsicherheit:** 0.20 – Zustandsgrenzen nicht exakt bestimmbar; Indikatoren interpretationsabhängig

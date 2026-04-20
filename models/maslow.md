@@ -102,18 +102,10 @@ Verhalten ist Ergebnis von Spannungen zwischen Bedürfnissen
 
 ## VI. Epistemische Einordnung
 
-**Belegt:**
-
-* Existenz grundlegender Bedürfnisdimensionen
-
-**Plausibel:**
-
-* Interaktion und Überlagerung von Bedürfnissen
-
-**Spekulativ:**
-
-* starre Hierarchie
-* universelle Reihenfolge
+* Existenz grundlegender Bedürfnisdimensionen [BELEGT] – Unsicherheit: 0.10 – kontextunabhängig
+* Interaktion und Überlagerung von Bedürfnissen [PLAUSIBEL] – Unsicherheit: 0.30 – kontextabhängig (kulturell, individuell)
+* starre Hierarchie [HEURISTISCH] – Unsicherheit: 0.70 – empirisch nicht repliziert
+* universelle Reihenfolge [HEURISTISCH] – Unsicherheit: 0.75 – kulturell variabel
 
 ---
 
@@ -187,6 +179,75 @@ Annahmen:
 
 ---
 
+## XIII. Operationalisierung
+
+### A. Indikatoren (beobachtbar)
+
+| Bedürfnisdimension | Indikator (beobachtbar) |
+|---|---|
+| Physiologisch | Äußerungen über Hunger/Durst; Müdigkeit; motorische Unruhe ohne erkennbaren sozialen Auslöser |
+| Sicherheit | Vermeidung unbekannter Situationen; Rückzug aus dem Sichtbereich; leises Sprechen; Körper abwenden; Blickkontakt vermeiden |
+| Sozial | Kontaktsuche nach Eskalation; Rückkehr in Gruppenaktivität; Entschuldigung nach Konflikt |
+| Ich-Bedürfnisse | Eigeninitiative bei Aufgaben; Übernahme von Leitungsrollen; Einfordern von Anerkennung |
+| Selbstverwirklichung | Selbstständige Ausführung komplexer Handlungen; eigene Lösungswege; Vorschläge zur Gestaltung |
+
+### B. Schwellen
+
+* **Aktivierung eines Bedürfnisses:** Wenn mindestens 2 Indikatoren einer Dimension gleichzeitig über mindestens 2 Beobachtungseinheiten auftreten
+* **Kipppunkt (Bedürfnisfrustration):** Wenn Indikatoren sich in Intensität steigern (z. B. von Rückzug zu verbaler Eskalation) oder wenn Verhalten nach Intervention nicht deeskaliert
+* **Deaktivierung:** Wenn Indikatoren über 3 Einheiten nicht mehr beobachtbar sind
+
+### C. Entscheidungslogik
+
+* IF physiologische Indikatoren präsent → THEN Grundversorgung sicherstellen (Pause, Essen, Trinken), bevor inhaltliche Arbeit beginnt
+* IF Sicherheitsindikatoren präsent → THEN Umgebung stabilisieren (vertraute Personen, bekannte Abläufe, Vorhersagbarkeit erhöhen)
+* IF soziale Indikatoren präsent → THEN Zugehörigkeitsangebote machen (Gruppenaktivität, Kontaktmöglichkeit)
+* IF Ich-Bedürfnis-Indikatoren präsent → THEN Kompetenzerleben ermöglichen (Aufgaben mit sichtbarem Ergebnis, Verantwortung übertragen)
+* IF Selbstverwirklichungs-Indikatoren präsent → THEN Gestaltungsraum öffnen (Wahlmöglichkeiten, Eigenverantwortung)
+
+### D. Gegenindikatoren (wann gilt Modell NICHT)
+
+* Wenn Verhalten primär durch akute Stressreaktion gesteuert wird → Stresstoleranzfenster hat Vorrang
+* Wenn Verhalten strategisch/instrumentell ist (z. B. Provokation zur Aufmerksamkeitssteuerung) → Bedürfnisinterpretation unzulässig
+* Wenn kulturelle oder biografische Prägung das Verhalten erklärt, ohne dass ein Mangel vorliegt
+* In akuten Krisensituationen (Dissoziation, Kontrollverlust) → kein Bedürfnismodell anwendbar
+
+---
+
+## XIV. Konflikte mit anderen Modellen
+
+| Konflikt | Widerspruch | Vorrang |
+|---|---|---|
+| Maslow vs. Stresstoleranzfenster | Maslow ordnet Verhalten nach Bedürfnisdimension; STF ordnet nach Erregungsniveau. Rückzug könnte Sicherheitsbedürfnis (Maslow) ODER Hypoarousal (STF) sein. | STF hat Vorrang bei akuter Dysregulation. Maslow hat Vorrang bei stabiler, aber unerfüllter Bedürfnislage. |
+| Maslow vs. Yerkes-Dodson | Maslow erklärt keine Leistungsdynamik. Yerkes-Dodson erklärt keine Bedürfnisstruktur. Ein Mensch mit unerfülltem Sicherheitsbedürfnis kann dennoch unter optimaler Aktivierung leisten. | Yerkes-Dodson bei Leistungseinschätzung. Maslow bei Verhaltenseinordnung. |
+| Maslow vs. Big Five | Persönlichkeitstraits (z. B. hoher Neurotizismus) können Bedürfnisausdruck verzerren: hohe Ängstlichkeit wird als Sicherheitsbedürfnis gelesen, obwohl Trait-bedingt. | Big Five bei stabiler Persönlichkeitseinschätzung. Maslow bei situativer Verhaltensänderung. |
+
+---
+
+## XV. Anwendung im Projektkontext
+
+### Typische Situation (aus `docs/beobachtungen`)
+
+**Situation 1:** „In Situationen, die praktisches Handeln erfordern (z. B. Pfand sammeln, Preise vergleichen, Einkaufen), übernimmt X die Initiative, gibt Laufwege vor, führt Tätigkeiten selbstständig aus" (01_verhalten_in_situationen)
+
+→ **Zuordnung:** Ich-Bedürfnis (Kompetenz, Selbstwirksamkeit) ist adressiert → Verhalten zeigt Aktivierung auf dieser Ebene
+
+→ **Handlung:** Handlungsorientierte Aufgaben gezielt einsetzen, um Kompetenzerleben zu stabilisieren
+
+**Situation 2:** „Gespräche mit formellen Rollenpersonen: X spricht seltener, spricht sehr leise, wendet den Körper ab, vermeidet Blickkontakt oder verlässt den Sichtbereich" (01_verhalten_in_situationen)
+
+→ **Zuordnung:** Sicherheitsbedürfnis möglicherweise nicht gedeckt in formellen Kontexten
+
+→ **Handlung:** Formelle Interaktionen schrittweise aufbauen, Vorhersagbarkeit erhöhen, vertraute Begleitperson einbeziehen
+
+**Situation 3:** „X zeigt wiederkehrend schnelle Wechsel bezüglich Ressourcen: Erst fordert er strikte Einteilung, kurz darauf verlangt er den sofortigen Konsum" (02_umgang_mit_grenzen)
+
+→ **Zuordnung:** Möglicher Konflikt zwischen physiologischem Bedürfnis (sofortiger Konsum) und Sicherheitsbedürfnis (Vorrat sichern) [HEURISTISCH] – Unsicherheit: 0.50
+
+→ **Handlung:** Ressourcenverfügbarkeit transparent machen; Entscheidungsspielraum innerhalb klarer Grenzen schaffen
+
+---
+
 ## 🪶 Humor
 
 Maslow wird oft wie eine Treppe gelesen:
@@ -198,3 +259,13 @@ und streitest gleichzeitig um Zugehörigkeit.
 
 Die Pyramide steht –
 aber die Menschen laufen quer durch sie hindurch.
+
+---
+
+## Entscheidungszusammenfassung
+
+* **Zustand:** Bedürfnisfrustration in einer oder mehreren Dimensionen
+* **Indikatoren:** Rückzug, Vermeidung, Impulsivität, Kontaktsuche, Eigeninitiative (je nach Dimension)
+* **Schwelle:** ≥ 2 Indikatoren einer Dimension über ≥ 2 Beobachtungseinheiten
+* **Handlung:** Dimension identifizieren → zugehörige Intervention auslösen (Grundversorgung / Stabilisierung / Zugehörigkeit / Kompetenz / Gestaltungsraum)
+* **Unsicherheit:** 0.18 – Modell gibt Orientierung, keine Determination; Bedürfniszuordnung immer interpretationsabhängig
