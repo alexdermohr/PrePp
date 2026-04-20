@@ -193,6 +193,9 @@ Annahmen:
 
 ### B. Schwellen
 
+> **Beobachtungseinheit** = ein zusammenhängender Kontakt- oder Projektabschnitt (z. B. eine Projekteinheit, ein Pausenblock, ein Gespräch). Keine feste Zeitdauer – orientiert sich am Format des Beobachtungsrasters (vgl. `docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md`).
+
+
 * **Aktivierung eines Bedürfnisses:** Wenn mindestens 2 Indikatoren einer Dimension gleichzeitig über mindestens 2 Beobachtungseinheiten auftreten
 * **Kipppunkt (Bedürfnisfrustration):** Wenn Indikatoren sich in Intensität steigern (z. B. von Rückzug zu verbaler Eskalation) oder wenn Verhalten nach Intervention nicht deeskaliert
 * **Deaktivierung:** Wenn Indikatoren über 3 Einheiten nicht mehr beobachtbar sind

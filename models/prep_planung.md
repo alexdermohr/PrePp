@@ -58,7 +58,7 @@ Das folgende Modell skizziert die Logik der "Prep - Planung", wie sie dem Projek
 
 ### B. Schwellen
 
-* **Aktivität gilt als partizipativ:** Wenn Zielperson mindestens 1 Entscheidung innerhalb der Aktivität selbst trifft UND Rückmeldung eingeholt wird
+* **Aktivität gilt als partizipativ:** Wenn Zielperson mindestens 1 inhaltlich relevante Entscheidung innerhalb der Aktivität selbst trifft (nicht nur Ja/Nein, sondern gestaltende Wahl) UND Rückmeldung eingeholt und berücksichtigt wird
 * **Empowerment erkennbar:** Wenn Zielperson in ≥ 2 Einheiten Eigeninitiative zeigt UND Kompetenzerleben berichtet oder beobachtet wird
 * **Zielerreichung positiv:** Wenn geplantes Ergebnis eintritt ODER Abweichung dokumentiert und reflektiert wird
 * **Kipppunkt (Planung gescheitert):** Wenn Aktivität nicht stattfindet ODER Zielperson Beteiligung verweigert ODER kein Bezug zu Förderbedarf erkennbar

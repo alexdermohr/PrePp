@@ -106,19 +106,11 @@ Regulation = Bedeutungs- und Wahrnehmungsprozess
 
 ## VI. Epistemische Einordnung
 
-**Belegt:**
-
-* Existenz von Über- und Untererregungszuständen
-* Zusammenhang mit Stressreaktionen
-
-**Plausibel:**
-
-* Konzept eines „optimalen Fensters“
-
-**Spekulativ:**
-
-* exakte Grenzen dieses Fensters
-* universelle Anwendbarkeit in allen Kontexten
+* Existenz von Über- und Untererregungszuständen [BELEGT] – Unsicherheit: 0.10 – kontextunabhängig
+* Zusammenhang mit Stressreaktionen [BELEGT] – Unsicherheit: 0.12 – kontextunabhängig
+* Konzept eines „optimalen Fensters“ [PLAUSIBEL] – Unsicherheit: 0.30 – kontextabhängig (individuell, situativ)
+* exakte Grenzen dieses Fensters [HEURISTISCH] – Unsicherheit: 0.70 – nicht standardisiert messbar
+* universelle Anwendbarkeit in allen Kontexten [HEURISTISCH] – Unsicherheit: 0.65 – kulturell und individuell variabel
 
 ---
 
@@ -207,7 +199,7 @@ Annahmen:
 
 ### B. Schwellen
 
-* **Eintritt Hyperarousal:** Wenn ≥ 2 Hyperarousal-Indikatoren gleichzeitig auftreten UND Verhalten auf verbale Ansprache nicht modulierbar ist
+* **Eintritt Hyperarousal:** Wenn ≥ 2 Hyperarousal-Indikatoren gleichzeitig auftreten UND Verhalten auf verbale Ansprache nicht modulierbar ist (Hinweis: Hyperarousal wird an Intensität gemessen, nicht an Dauer – im Gegensatz zu Hypoarousal, das an Persistenz gemessen wird, da es sich subtiler zeigt)
 * **Eintritt Hypoarousal:** Wenn ≥ 2 Hypoarousal-Indikatoren über ≥ 5 Minuten bestehen UND kein Kontaktangebot angenommen wird
 * **Rückkehr ins Fenster:** Wenn Kontaktaufnahme wieder möglich ist UND mindestens 1 Toleranzfenster-Indikator beobachtbar ist
 * **Kipppunkt (Eskalation):** Wenn Hyperarousal-Verhalten in physische Handlungen übergeht (Gegenstände werfen, Annähern an andere, Umstoßen)

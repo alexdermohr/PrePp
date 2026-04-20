@@ -210,7 +210,7 @@ Annahmen:
 
 ### B. Schwellen
 
-* **Trait-Identifikation:** Wenn ≥ 3 Indikatoren einer Dimension über ≥ 5 Beobachtungseinheiten konsistent auftreten
+* **Trait-Identifikation:** Wenn ≥ 3 Indikatoren einer Dimension über ≥ 5 Beobachtungseinheiten konsistent auftreten (konsistent = in ≥ 4 von 5 Einheiten beobachtbar; gelegentliche Abweichung ist erwartbar und kein Ausschlusskriterium)
 * **Trait-Aktivierung (situativ):** Wenn Trait-konsistentes Verhalten in einer neuen Situation erstmalig auftritt
 * **Trait-Kontra-Verhalten:** Wenn Verhalten dem identifizierten Trait widerspricht → Situation prüfen (Situationsdruck kann Traits überlagern)
 

@@ -131,7 +131,7 @@ zu:
 
 ### B. Schwellen
 
-* **Eintritt Unteraktivierung:** Wenn ≥ 2 Unteraktivierungs-Indikatoren über ≥ 10 Minuten bestehen UND Aufgabenbearbeitung nicht stattfindet
+* **Eintritt Unteraktivierung:** Wenn ≥ 2 Unteraktivierungs-Indikatoren über ≥ 10 Minuten bestehen UND Aufgabenbearbeitung nicht stattfindet (10 Min. als Richtwert: kürzer = möglicherweise nur Orientierungsphase; länger = Risiko der Übersehen; kontextabhängig anpassbar)
 * **Eintritt Überaktivierung:** Wenn Fehlerrate erkennbar steigt UND ≥ 1 Überaktivierungs-Indikator beobachtbar ist
 * **Optimale Zone:** Wenn Aufgabenbearbeitung stattfindet UND mindestens 2 Optimalzone-Indikatoren erkennbar sind
 * **Kipppunkt:** Wenn Aufgabenabbruch oder Verweigerung eintritt
@@ -174,7 +174,7 @@ zu:
 
 **Situation 2:** „Wenn X zwischen einer Projekt-Herausforderung und einem bereits bekannten Handlungsangebot durch Dritte wählen kann, entscheidet er sich für das bereits bekannte Angebot" (02_umgang_mit_grenzen)
 
-→ **Zuordnung:** Mögliche Vermeidung von Überaktivierung – unbekannte Herausforderung erzeugt zu hohe Aktivierung; bekanntes Angebot liegt im Optimum [HEURISTISCH] – Unsicherheit: 0.45
+→ **Zuordnung:** Mögliche Vermeidung von Überaktivierung – unbekannte Herausforderung erzeugt zu hohe Aktivierung; bekanntes Angebot liegt im Optimum [HEURISTISCH] – Unsicherheit: 0.60
 
 → **Handlung:** Herausforderung in kleinere, bekannte Teilschritte zerlegen; Übergang graduell gestalten
 
