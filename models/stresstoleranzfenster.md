@@ -203,19 +203,20 @@ Annahmen:
 
 ### B. Schwellen
 
-* **Eintritt Hyperarousal:** Wenn mehrere Hyperarousal-Indikatoren gleichzeitig auftreten UND Verhalten auf verbale Ansprache nicht modulierbar ist (Richtwert, keine feste Schwelle; Hyperarousal wird an Intensität gemessen, Hypoarousal an Persistenz – da letzteres subtiler einsetzt)
-* **Eintritt Hypoarousal:** Wenn mehrere Hypoarousal-Indikatoren anhaltend bestehen UND kein Kontaktangebot angenommen wird (Richtwert, keine feste Zeitangabe)
+* **Eintritt Hyperarousal:** Wenn mehrere (mindestens zwei) Hyperarousal-Indikatoren gleichzeitig auftreten UND Verhalten auf verbale Ansprache nicht modulierbar ist (Richtwert, keine feste Schwelle; Hyperarousal wird an Intensität gemessen, Hypoarousal an Persistenz – da letzteres subtiler einsetzt)
+* **Eintritt Hypoarousal:** Wenn mehrere (mindestens zwei) Hypoarousal-Indikatoren über eine für die Situation relevante Dauer bestehen UND kein Kontaktangebot angenommen wird – kontextabhängig (Richtwert, keine feste Zeitangabe)
 * **Rückkehr ins Fenster:** Wenn Kontaktaufnahme wieder möglich ist UND mindestens ein Toleranzfenster-Indikator beobachtbar ist (Richtwert, keine feste Schwelle)
 * **Kipppunkt (Eskalation):** Wenn Hyperarousal-Verhalten in physische Handlungen übergeht (Gegenstände werfen, Annähern an andere, Umstoßen)
 
 ### C. Entscheidungslogik
 
-**Vorbedingung für alle Regeln:** IF Zustand plausibel identifiziert UND keine Gegenindikatoren aktiv → THEN Intervention
+**Vorbedingung für alle Regeln:** IF Hinweise auf Zustand vorliegen UND keine Gegenindikatoren aktiv → THEN Intervention
 
 * IF Hyperarousal-Indikatoren präsent → THEN Reizreduktion (Raum wechseln, Stimmen senken, keine Forderungen stellen), Pause anbieten, abwarten
 * IF Hypoarousal-Indikatoren präsent → THEN vorsichtige Aktivierung (leise Ansprache, sensorische Angebote, Nähe ohne Forderung)
 * IF Toleranzfenster-Indikatoren präsent → THEN Lern- und Arbeitsangebote möglich, Reflexion anstoßen
 * IF Kipppunkt erreicht → THEN Sicherheit priorisieren, Situation deeskalieren, keine inhaltliche Arbeit
+* IF Dysregulation (Hyper- oder Hypoarousal) → THEN alle anderen Modelle aussetzen; STF-Logik hat Vorrang
 
 ### D. Gegenindikatoren (wann gilt Modell NICHT)
 
@@ -279,6 +280,6 @@ sondern:
 
 * **Zustand:** Erregungsniveau außerhalb des Toleranzfensters (Hyper- oder Hypoarousal)
 * **Indikatoren:** Verbale Impulsivität, körperliche Anspannung, Rückzug, reduzierte Ansprechbarkeit (je nach Richtung)
-* **Schwelle:** Mehrere Indikatoren gleichzeitig (Richtwert); Hyperarousal: nicht modulierbar durch Ansprache; Hypoarousal: anhaltend ohne Kontaktannahme
+* **Schwelle:** Mehrere (mindestens zwei) Indikatoren gleichzeitig (Richtwert); Hyperarousal: nicht modulierbar durch Ansprache; Hypoarousal: über eine für die Situation relevante Dauer ohne Kontaktannahme – kontextabhängig
 * **Handlung:** Hyperarousal → Reizreduktion, Pause; Hypoarousal → vorsichtige Aktivierung; Toleranzfenster → Arbeit möglich
 * **Unsicherheit:** 0.20 – Zustandsgrenzen nicht exakt bestimmbar; Indikatoren interpretationsabhängig

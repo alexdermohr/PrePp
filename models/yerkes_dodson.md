@@ -135,14 +135,14 @@ zu:
 
 ### B. Schwellen
 
-* **Eintritt Unteraktivierung:** Wenn mehrere Unteraktivierungs-Indikatoren anhaltend bestehen UND Aufgabenbearbeitung nicht stattfindet (Richtwert, keine feste Zeitangabe; kurze Passivphasen können Orientierung sein)
+* **Eintritt Unteraktivierung:** Wenn mehrere (mindestens zwei) Unteraktivierungs-Indikatoren über eine für die Situation relevante Dauer bestehen UND Aufgabenbearbeitung nicht stattfindet – kontextabhängig (Richtwert, keine feste Zeitangabe; kurze Passivphasen können Orientierung sein)
 * **Eintritt Überaktivierung:** Wenn Fehlerrate erkennbar steigt UND mindestens ein Überaktivierungs-Indikator beobachtbar ist (Richtwert, keine feste Schwelle)
-* **Optimale Zone:** Wenn Aufgabenbearbeitung stattfindet UND mehrere Optimalzone-Indikatoren erkennbar sind (Richtwert, keine feste Schwelle)
+* **Optimale Zone:** Wenn Aufgabenbearbeitung stattfindet UND mehrere (mindestens zwei) Optimalzone-Indikatoren erkennbar sind (Richtwert, keine feste Schwelle)
 * **Kipppunkt:** Wenn Aufgabenabbruch oder Verweigerung eintritt
 
 ### C. Entscheidungslogik
 
-**Vorbedingung für alle Regeln:** IF Zustand plausibel identifiziert UND keine Gegenindikatoren aktiv → THEN Intervention
+**Vorbedingung für alle Regeln:** IF Hinweise auf Zustand vorliegen UND keine Gegenindikatoren aktiv UND Person befindet sich im Toleranzfenster (STF prüfen) → THEN Intervention
 
 * IF Unteraktivierung → THEN Aktivierung erhöhen (Aufgabenwechsel, Bedeutsamkeit herstellen, soziale Einbindung, Handlungsorientierung)
 * IF Überaktivierung → THEN Aktivierung senken (Aufgabenkomplexität reduzieren, Teilziele setzen, Pause anbieten, Unterstützung geben)
@@ -208,6 +208,6 @@ Leider hat niemand X gesagt, wo genau „dazwischen" liegt.
 
 * **Zustand:** Aktivierungsniveau nicht im Optimum für aktuelle Aufgabe
 * **Indikatoren:** Passivität/Desinteresse (unter) oder Hektik/Fehler/Abbruch (über)
-* **Schwelle:** Unteraktivierung: mehrere Indikatoren anhaltend + keine Aufgabenbearbeitung; Überaktivierung: Fehleranstieg + mindestens ein Indikator; Kipppunkt: Aufgabenabbruch (Richtwerte, keine festen Zahlen)
+* **Schwelle:** Unteraktivierung: mehrere (mindestens zwei) Indikatoren über eine für die Situation relevante Dauer + keine Aufgabenbearbeitung – kontextabhängig; Überaktivierung: Fehleranstieg + mindestens ein Indikator; Kipppunkt: Aufgabenabbruch (Richtwerte, keine festen Zahlen)
 * **Handlung:** Unteraktivierung → Aktivierung erhöhen (Aufgabenwechsel, Bedeutsamkeit); Überaktivierung → Aktivierung senken (Komplexität reduzieren, Teilziele)
 * **Unsicherheit:** 0.25 – Optimum individuell und aufgabenabhängig; ohne Messdaten nur heuristisch bestimmbar

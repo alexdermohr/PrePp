@@ -214,13 +214,13 @@ Annahmen:
 
 ### B. Schwellen
 
-* **Trait-Identifikation:** Wenn mehrere Indikatoren einer Dimension konsistent über mehrere Beobachtungseinheiten auftreten (Richtwert, keine feste Zahl; gelegentliche Abweichung ist erwartbar und kein Ausschlusskriterium)
+* **Trait-Identifikation:** Wenn mehrere (mindestens zwei) Indikatoren einer Dimension wiederkehrend über mehrere Beobachtungseinheiten auftreten (Richtwert, keine feste Zahl; gelegentliche Abweichung ist erwartbar und kein Ausschlusskriterium)
 * **Trait-Aktivierung (situativ):** Wenn Trait-konsistentes Verhalten in einer neuen Situation erstmalig auftritt
 * **Trait-Kontra-Verhalten:** Wenn Verhalten dem identifizierten Trait widerspricht → Situation prüfen (Situationsdruck kann Traits überlagern)
 
 ### C. Entscheidungslogik
 
-**Vorbedingung für alle Regeln:** IF Trait-Muster plausibel identifiziert UND keine Gegenindikatoren aktiv UND keine akute Dysregulation → THEN Intervention
+**Vorbedingung für alle Regeln:** IF Hinweise auf Trait-Muster vorliegen UND keine Gegenindikatoren aktiv UND keine akute Dysregulation → THEN Intervention
 
 * IF hohe Offenheit → THEN neue Aufgaben und Explorationsräume anbieten
 * IF niedrige Offenheit → THEN bekannte Strukturen beibehalten, Neues schrittweise einführen
@@ -292,6 +292,6 @@ Nur leider ohne Bedienungsanleitung.
 
 * **Zustand:** Trait-konsistentes Verhaltensmuster erkennbar
 * **Indikatoren:** Je Dimension spezifische beobachtbare Verhaltensweisen (siehe Indikatorentabelle)
-* **Schwelle:** Mehrere Indikatoren einer Dimension konsistent über mehrere Beobachtungseinheiten (Richtwert, keine feste Zahl)
+* **Schwelle:** Mehrere (mindestens zwei) Indikatoren einer Dimension wiederkehrend über mehrere Beobachtungseinheiten (Richtwert, keine feste Zahl)
 * **Handlung:** Aufgaben- und Umgebungsgestaltung an Trait-Profil anpassen (Struktur, Sozialform, Komplexität, Vorhersagbarkeit)
 * **Unsicherheit:** 0.12 – Modell empirisch robust, aber Anwendung auf Einzelfall ohne standardisierte Messung heuristisch

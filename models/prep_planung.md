@@ -2,7 +2,7 @@
 
 ## Modelltyp
 
-**PLANNING** (Planungsrahmen) – beschreibt keine psychologischen Zustände, Traits oder Bedürfnisse, sondern eine Handlungsstruktur für pädagogische Interventionen. Setzt voraus, dass andere Modelle (NEED, STATE) bereits geprüft wurden.
+**Rahmenmodell (PLANNING)** – kein psychologisches Modell, sondern eine Handlungsstruktur für pädagogische Interventionen. Setzt die Anwendung der anderen Modelle voraus: Regulationszustand (STF), Bedürfnislagen (Maslow) und Aktivierungsniveau (Y-D) müssen vor Planung geprüft sein. Traits (Big Five) informieren die individuelle Anpassung.
 
 Das folgende Modell skizziert die Logik der "Prep - Planung", wie sie dem Projekt "Schulhof verschönern" zugrunde liegt.
 
@@ -69,7 +69,7 @@ Das folgende Modell skizziert die Logik der "Prep - Planung", wie sie dem Projek
 
 ### C. Entscheidungslogik
 
-**Vorbedingung für alle Regeln:** IF Planungselement plausibel beurteilbar UND Zielperson im Toleranzfenster UND Grundbedürfnisse gedeckt → THEN Intervention
+**Vorbedingung für alle Regeln:** IF Hinweise auf Planungselement vorliegen UND Zielperson im Toleranzfenster (STF) UND Grundbedürfnisse gedeckt (Maslow) → THEN Intervention
 
 * IF Förderbedarf unklar → THEN Planung stoppen, Diagnostik vertiefen
 * IF Interessen nicht einbezogen → THEN Aktivität gemeinsam mit Zielperson umgestalten

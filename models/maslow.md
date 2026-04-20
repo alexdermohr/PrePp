@@ -199,19 +199,21 @@ Annahmen:
 
 > **Beobachtungseinheit** = ein zusammenhängender Kontakt- oder Projektabschnitt (z. B. eine Projekteinheit, ein Pausenblock, ein Gespräch). Keine feste Zeitdauer – orientiert sich am Format des Beobachtungsrasters (vgl. `docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md`).
 
-* **Aktivierung eines Bedürfnisses:** Wenn mehrere Indikatoren einer Dimension konsistent über mehrere Beobachtungseinheiten auftreten (Richtwert, keine feste Schwelle)
+* **Aktivierung eines Bedürfnisses:** Wenn mehrere (mindestens zwei) Indikatoren einer Dimension wiederkehrend über mehrere Beobachtungseinheiten auftreten (Richtwert, keine feste Schwelle)
 * **Kipppunkt (Bedürfnisfrustration):** Wenn Indikatoren sich in Intensität steigern (z. B. von Rückzug zu verbaler Eskalation) oder wenn Verhalten nach Intervention nicht deeskaliert
-* **Deaktivierung:** Wenn Indikatoren anhaltend nicht mehr beobachtbar sind (Richtwert, keine feste Schwelle)
+* **Deaktivierung:** Wenn Indikatoren über eine für die Situation relevante Dauer nicht mehr beobachtbar sind – kontextabhängig (Richtwert, keine feste Schwelle)
 
 ### C. Entscheidungslogik
 
-**Vorbedingung für alle Regeln:** IF Zustand plausibel identifiziert UND keine Gegenindikatoren aktiv → THEN Intervention
+**Vorbedingung für alle Regeln:** IF Hinweise auf Zustand vorliegen UND keine Gegenindikatoren aktiv → THEN Intervention
 
 * IF physiologische Indikatoren präsent → THEN Grundversorgung sicherstellen (Pause, Essen, Trinken), bevor inhaltliche Arbeit beginnt
 * IF Sicherheitsindikatoren präsent → THEN Umgebung stabilisieren (vertraute Personen, bekannte Abläufe, Vorhersagbarkeit erhöhen)
 * IF soziale Indikatoren präsent → THEN Zugehörigkeitsangebote machen (Gruppenaktivität, Kontaktmöglichkeit)
 * IF Ich-Bedürfnis-Indikatoren präsent → THEN Kompetenzerleben ermöglichen (Aufgaben mit sichtbarem Ergebnis, Verantwortung übertragen)
 * IF Selbstverwirklichungs-Indikatoren präsent → THEN Gestaltungsraum öffnen (Wahlmöglichkeiten, Eigenverantwortung)
+* IF Hinweise auf Dysregulation (STF) → THEN Maslow aussetzen, Regulation hat Vorrang
+* IF Grundbedürfnis (physiologisch / Sicherheit) nicht gedeckt → THEN keine Intervention auf höheren Ebenen
 
 ### D. Gegenindikatoren (wann gilt Modell NICHT)
 
@@ -274,6 +276,6 @@ aber die Menschen laufen quer durch sie hindurch.
 
 * **Zustand:** Bedürfnisfrustration in einer oder mehreren Dimensionen
 * **Indikatoren:** Rückzug, Vermeidung, Impulsivität, Kontaktsuche, Eigeninitiative (je nach Dimension)
-* **Schwelle:** Mehrere konsistente Indikatoren einer Dimension über mehrere Beobachtungseinheiten (Richtwert, keine feste Zahl)
+* **Schwelle:** Mehrere (mindestens zwei) wiederkehrende Indikatoren einer Dimension über mehrere Beobachtungseinheiten (Richtwert, keine feste Zahl)
 * **Handlung:** Dimension identifizieren → zugehörige Intervention auslösen (Grundversorgung / Stabilisierung / Zugehörigkeit / Kompetenz / Gestaltungsraum)
 * **Unsicherheit:** 0.18 – Modell gibt Orientierung, keine Determination; Bedürfniszuordnung immer interpretationsabhängig
