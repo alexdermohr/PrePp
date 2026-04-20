@@ -90,14 +90,10 @@ Im vorhandenen Prep-Planungsmodell wird Aktivierung nicht explizit benannt, ist 
 
 ## Epistemische Einordnung
 
-Belegt:
-- Zusammenhang zwischen Aktivierung und Leistung
-
-Plausibel:
-- Kontextabhängigkeit der optimalen Aktivierung
-
-Spekulativ:
-- konkrete Anwendung auf einzelne Verhaltensmuster ohne Messdaten
+* Zusammenhang zwischen Aktivierung und Leistung [BELEGT] – Unsicherheit: 0.10 – kontextunabhängig
+* Umgekehrt U-förmige Beziehung bei komplexen Aufgaben [BELEGT] – Unsicherheit: 0.15 – repliziert in Laborstudien
+* Kontextabhängigkeit der optimalen Aktivierung [PLAUSIBEL] – Unsicherheit: 0.30 – situativ variabel
+* Konkrete Anwendung auf einzelne Verhaltensmuster ohne Messdaten [HEURISTISCH] – Unsicherheit: 0.65 – keine Validierung im Einzelfall
 
 ---
 
@@ -120,3 +116,92 @@ Die zentrale pädagogische Frage verschiebt sich damit von:
 zu:
 
 → „Wie gestalten wir Bedingungen, unter denen funktionale Aktivierung entsteht?“
+
+---
+
+## Operationalisierung
+
+### A. Indikatoren (beobachtbar)
+
+| Aktivierungsniveau | Indikator (beobachtbar) |
+|---|---|
+| Unteraktivierung | Desinteresse; Passivität; verlangsamte Reaktionen; Gähnen; Ablenkungsverhalten; kein Engagement bei Aufgaben |
+| Optimale Aktivierung | Fokussierte Aufmerksamkeit; aufgabenbezogene Äußerungen; angemessenes Arbeitstempo; Eigeninitiative; Problemlöseversuch |
+| Überaktivierung | Hektik; Fehleranstieg; Frustration bei Aufgaben; Impulsivität; Abbruch von Aufgaben; Überforderungsäußerungen |
+
+### B. Schwellen
+
+* **Eintritt Unteraktivierung:** Wenn ≥ 2 Unteraktivierungs-Indikatoren über ≥ 10 Minuten bestehen UND Aufgabenbearbeitung nicht stattfindet
+* **Eintritt Überaktivierung:** Wenn Fehlerrate erkennbar steigt UND ≥ 1 Überaktivierungs-Indikator beobachtbar ist
+* **Optimale Zone:** Wenn Aufgabenbearbeitung stattfindet UND mindestens 2 Optimalzone-Indikatoren erkennbar sind
+* **Kipppunkt:** Wenn Aufgabenabbruch oder Verweigerung eintritt
+
+### C. Entscheidungslogik
+
+* IF Unteraktivierung → THEN Aktivierung erhöhen (Aufgabenwechsel, Bedeutsamkeit herstellen, soziale Einbindung, Handlungsorientierung)
+* IF Überaktivierung → THEN Aktivierung senken (Aufgabenkomplexität reduzieren, Teilziele setzen, Pause anbieten, Unterstützung geben)
+* IF optimale Aktivierung → THEN Bedingungen beibehalten, keine Störung
+* IF Kipppunkt → THEN Aufgabe anpassen oder unterbrechen, nicht auf Durchhalten bestehen
+
+### D. Gegenindikatoren (wann gilt Modell NICHT)
+
+* Wenn Leistungsabfall nicht auf Aktivierung, sondern auf fehlende Kompetenz zurückgeht → Modell nicht anwendbar
+* Wenn Dysregulation vorliegt (Stresstoleranzfenster verlassen) → STF hat Vorrang, Y-D beschreibt nur Leistung innerhalb des Toleranzfensters
+* Wenn motivationale Faktoren dominieren (z. B. bewusste Verweigerung) → kein Aktivierungsproblem
+* Wenn Aufgabe nicht leistungsbezogen ist (z. B. freies Spiel) → Modell nicht sinnvoll anwendbar
+
+---
+
+## Konflikte mit anderen Modellen
+
+| Konflikt | Widerspruch | Vorrang |
+|---|---|---|
+| Y-D vs. Stresstoleranzfenster | Y-D beschreibt Leistung als Funktion von Aktivierung; STF beschreibt Regulationsfähigkeit. Ein Mensch kann im Toleranzfenster sein, aber suboptimal aktiviert für eine Aufgabe. | STF bei Frage nach Regulationsfähigkeit. Y-D bei Frage nach Leistungsoptimierung. Y-D setzt voraus, dass Person im Toleranzfenster ist. |
+| Y-D vs. Maslow | Y-D ignoriert Bedürfnislagen. Ein Mensch mit unerfülltem Sicherheitsbedürfnis zeigt möglicherweise Überaktivierung, die nicht durch Aufgabenanpassung lösbar ist. | Maslow bei grundlegender Bedürfnisfrustration. Y-D bei aufgabenbezogener Leistungsoptimierung. |
+| Y-D vs. Big Five | Persönlichkeitstraits beeinflussen das individuelle Optimum: Hoher Neurotizismus → engeres Aktivierungsfenster; hohe Extraversion → höheres Optimum. Y-D behandelt alle gleich. | Big Five zur Einschätzung des individuellen Optimums. Y-D als allgemeine Heuristik. |
+
+---
+
+## Anwendung im Projektkontext
+
+### Typische Situation (aus `docs/beobachtungen`)
+
+**Situation 1:** „In Situationen, die praktisches Handeln erfordern (z. B. Pfand sammeln, Preise vergleichen, Einkaufen), übernimmt X die Initiative, gibt Laufwege vor, führt Tätigkeiten selbstständig aus" (01_verhalten_in_situationen)
+
+→ **Zuordnung:** Optimale Aktivierung – handlungsorientierte Aufgaben erzeugen passende Aktivierung bei X
+
+→ **Handlung:** Aufgabentyp beibehalten; Komplexität schrittweise steigern, solange Engagement anhält
+
+**Situation 2:** „Wenn X zwischen einer Projekt-Herausforderung und einem bereits bekannten Handlungsangebot durch Dritte wählen kann, entscheidet er sich für das bereits bekannte Angebot" (02_umgang_mit_grenzen)
+
+→ **Zuordnung:** Mögliche Vermeidung von Überaktivierung – unbekannte Herausforderung erzeugt zu hohe Aktivierung; bekanntes Angebot liegt im Optimum [HEURISTISCH] – Unsicherheit: 0.45
+
+→ **Handlung:** Herausforderung in kleinere, bekannte Teilschritte zerlegen; Übergang graduell gestalten
+
+**Situation 3:** „Gespräche mit formellen Rollenpersonen: X spricht seltener, spricht sehr leise" (01_verhalten_in_situationen)
+
+→ **Zuordnung:** Möglicherweise Überaktivierung in sozialer Leistungssituation → Leistung (sprachliche Beteiligung) fällt ab [HEURISTISCH] – Unsicherheit: 0.50
+
+→ **Handlung:** Aktivierungsniveau senken (informellere Gesprächsform, bekannte Struktur, keine Blickkontakt-Forderung)
+
+---
+
+## 🪶 Humor
+
+Das Yerkes-Dodson-Gesetz sagt im Grunde:
+
+„Zu wenig Stress – du schläfst ein.
+Zu viel Stress – du fällst um.
+Irgendwo dazwischen liegt Produktivität."
+
+Leider hat niemand X gesagt, wo genau „dazwischen" liegt.
+
+---
+
+## Entscheidungszusammenfassung
+
+* **Zustand:** Aktivierungsniveau nicht im Optimum für aktuelle Aufgabe
+* **Indikatoren:** Passivität/Desinteresse (unter) oder Hektik/Fehler/Abbruch (über)
+* **Schwelle:** Unteraktivierung: ≥ 2 Indikatoren über ≥ 10 Min.; Überaktivierung: Fehleranstieg + ≥ 1 Indikator; Kipppunkt: Aufgabenabbruch
+* **Handlung:** Unteraktivierung → Aktivierung erhöhen (Aufgabenwechsel, Bedeutsamkeit); Überaktivierung → Aktivierung senken (Komplexität reduzieren, Teilziele)
+* **Unsicherheit:** 0.25 – Optimum individuell und aufgabenabhängig; ohne Messdaten nur heuristisch bestimmbar
