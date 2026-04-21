@@ -1,4 +1,3 @@
-import { normalizeFragment } from "../lib/markdown.js";
 function resolveInternalMarkdownPath(url, contextPath) {
   if (
     !contextPath ||
@@ -769,7 +768,7 @@ function extractModelSummary(model) {
   text = text.replace(/^(?:\*\*)?[A-Z\s+]+(?:\*\*)?\s*(?:\([^)]+\))?\s*[-–]\s*/, '');
 
   // Strip remaining Markdown bold/italic
-  text = text.replace(/\*\*/g, '').replace(/_/g, '').replace(/\*/g, '');
+  text = text.replace(/\*\*/g, '').replace(/\*/g, '');
 
   // Truncate cleanly at the first sentence ending (., ?, or !) without ellipses
   const match = text.match(/.*?[.?!]/);
