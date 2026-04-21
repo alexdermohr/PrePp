@@ -767,37 +767,30 @@ export function renderModels(root, data, params) {
 
   sortedForIndex.forEach(model => {
     const li = document.createElement("li");
-    li.style.marginBottom = "0.75rem";
+    li.className = "model-index-item";
 
     const a = document.createElement("a");
     a.href = `#modelle?src=${encodeURIComponent(model.path)}`;
     a.textContent = model.title;
-    a.style.fontWeight = "600";
-    a.style.display = "block";
+    a.className = "model-index-link";
     li.appendChild(a);
 
-    // Versuche "Modelltyp" zu extrahieren
+    // Versuche "Modelltyp" defensiv zu extrahieren
     const typeSection = model.sections.find(s => s.heading && s.heading.toLowerCase().includes('modelltyp'));
     if (typeSection && typeSection.blocks && typeSection.blocks.length > 0) {
       const firstBlock = typeSection.blocks[0];
       if (firstBlock.type === 'text' && firstBlock.text) {
-        // Extrahiere den Text bis zum ersten Punkt oder maximal 80 Zeichen
-        let typeText = firstBlock.text;
-        if (typeText.startsWith('**')) {
-           const match = typeText.match(/\*\*(.*?)\*\*\s*[-–]?\s*(.*)/);
-           if (match) typeText = match[1] + " - " + match[2];
-        }
-        typeText = typeText.replace(/\*\*/g, '');
+        let typeText = firstBlock.text.replace(/\*\*/g, '').trim();
+
         const dotIndex = typeText.indexOf('.');
         if (dotIndex > 0 && dotIndex < 100) {
           typeText = typeText.substring(0, dotIndex + 1);
         } else if (typeText.length > 100) {
           typeText = typeText.substring(0, 100) + '...';
         }
+
         const desc = document.createElement("span");
-        desc.style.display = "block";
-        desc.style.fontSize = "0.85rem";
-        desc.style.color = "#6b7280";
+        desc.className = "model-index-meta";
         desc.textContent = typeText;
         li.appendChild(desc);
       }

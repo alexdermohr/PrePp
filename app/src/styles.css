@@ -582,3 +582,18 @@ hr {
   padding-left: 1.25rem;
   margin-bottom: 1rem;
 }
+
+.model-index-item {
+  margin-bottom: 0.75rem;
+}
+
+.model-index-link {
+  font-weight: 600;
+  display: block;
+}
+
+.model-index-meta {
+  display: block;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
