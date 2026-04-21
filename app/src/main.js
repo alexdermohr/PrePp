@@ -1,5 +1,6 @@
 import "./styles.css";
 import { loadData } from "./lib/data";
+import { normalizeFragment } from "./lib/markdown";
 import {
   renderHypothesen,
   renderBeobachtungen,
@@ -182,6 +183,41 @@ function renderFromHash() {
       // Optional focus management for genuine view changes
       const mainContent = document.getElementById("main-content");
       if (mainContent) mainContent.focus();
+
+      // Handle internal navigation scrolling
+      const src = params.get("src");
+      const frag = params.get("frag");
+
+      if (src) {
+        // Find the card. The cards get .highlight if their path matches src.
+        // Wait a tiny bit for DOM to settle if necessary, though it should be synchronous here.
+        setTimeout(() => {
+          const exactCard = document.querySelector(`[data-path="${CSS.escape(src)}"]`);
+          const highlightCard = exactCard || document.querySelector(".highlight");
+          if (highlightCard) {
+            if (frag) {
+              // Try to find a heading in the card that matches the fragment
+              const normalizedFrag = normalizeFragment(frag);
+              const headings = highlightCard.querySelectorAll("h2, h3, h4, h5, h6");
+              let targetHeading = null;
+
+              for (const h of headings) {
+                const hText = normalizeFragment(h.textContent);
+                if (hText === normalizedFrag || hText.startsWith(normalizedFrag)) {
+                  targetHeading = h;
+                  break;
+                }
+              }
+
+              if (targetHeading) {
+                targetHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                return;
+              }
+            }
+            highlightCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 50);
+      }
     }
   } else {
     // If it's an unknown hash but nothing is rendered yet (initial load), fallback to start

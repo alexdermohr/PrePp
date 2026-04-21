@@ -66,16 +66,29 @@ function viewIdForDocPath(path) {
   return "start";
 }
 
+
+function renderMultilineInlineText(target, text, contextPath) {
+  const lines = String(text || "").split("\n");
+  lines.forEach((line, i) => {
+    renderInlineText(target, line, contextPath);
+    if (i < lines.length - 1) target.appendChild(document.createElement("br"));
+  });
+}
+
 function renderInlineText(container, text, contextPath = null) {
   if (!text) return;
   // Simple regex to split text into tokens
-  const parts = text.split(/(\*\*.*?\*\*|`.*?`|\[.*?\]\(.*?\))/g);
+  const parts = text.split(/(\*\*.*?\*\*|\*.*?\*|`.*?`|\[.*?\]\(.*?\))/g);
 
   parts.forEach((part) => {
     if (part.startsWith("**") && part.endsWith("**")) {
       const strong = document.createElement("strong");
       strong.textContent = part.slice(2, -2);
       container.appendChild(strong);
+    } else if (part.startsWith("*") && part.endsWith("*")) {
+      const em = document.createElement("em");
+      em.textContent = part.slice(1, -1);
+      container.appendChild(em);
     } else if (part.startsWith("`") && part.endsWith("`")) {
       const code = document.createElement("code");
       code.textContent = part.slice(1, -1);
@@ -112,7 +125,7 @@ function renderInlineText(container, text, contextPath = null) {
             : resolvedRef.path;
           a.title = canonicalRef;
           const targetViewId = viewIdForDocPath(resolvedRef.path);
-          a.href = `#${targetViewId}?src=${encodeURIComponent(canonicalRef)}`;
+          a.href = `#${targetViewId}?src=${encodeURIComponent(resolvedRef.path)}${resolvedRef.fragment ? '&frag=' + encodeURIComponent(resolvedRef.fragment) : ''}`;
           container.appendChild(a);
         } else {
           // Whitelist allowed external protocols
@@ -208,6 +221,47 @@ function createSummarySection(title, contentSnippet) {
 }
 
 const blockRenderers = {
+  hr: (b, container) => {
+    container.appendChild(document.createElement("hr"));
+  },
+  blockquote: (b, container, contextPath) => {
+    const blockquote = document.createElement("blockquote");
+    renderMultilineInlineText(blockquote, b.text, contextPath);
+    container.appendChild(blockquote);
+  },
+  table: (b, container, contextPath) => {
+    const wrapper = document.createElement("div");
+    wrapper.className = "table-wrapper";
+
+    const table = document.createElement("table");
+    table.className = "markdown-table";
+
+    const thead = document.createElement("thead");
+    const trHead = document.createElement("tr");
+    b.headers.forEach(headerText => {
+      const th = document.createElement("th");
+      renderInlineText(th, headerText, contextPath);
+      trHead.appendChild(th);
+    });
+    thead.appendChild(trHead);
+    table.appendChild(thead);
+
+    const tbody = document.createElement("tbody");
+    b.rows.forEach(row => {
+      const tr = document.createElement("tr");
+      row.forEach(cellText => {
+        const td = document.createElement("td");
+        renderInlineText(td, cellText, contextPath);
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+
+    wrapper.appendChild(table);
+    container.appendChild(wrapper);
+  },
+
   text: (b, container, contextPath) => {
     const p = document.createElement("p");
     renderInlineText(p, b.text, contextPath);
@@ -278,6 +332,7 @@ function createSectionBlock(section, contextPath) {
 function createFileCard(entry) {
   const card = document.createElement("article");
   card.className = "card";
+  card.dataset.path = entry.path;
 
   const title = document.createElement("h3");
   title.textContent = entry.title;
@@ -341,6 +396,7 @@ function createHtmlFileCard(report) {
   const entry = report.html;
   const card = document.createElement("article");
   card.className = "card icf-report-card";
+  card.dataset.path = entry.path;
 
   const title = document.createElement("h3");
   title.textContent = report.title;
@@ -644,7 +700,7 @@ export function renderProjektplan(root, data, params) {
   root.appendChild(card);
 }
 
-export function renderICFReports(root, data) {
+export function renderICFReports(root, data, params) {
   if (!data.icfReports.length)
     return renderEmptyState(root, "Keine ICF-Reports vorhanden.");
 
@@ -662,7 +718,11 @@ export function renderICFReports(root, data) {
       label.className = "icf-format-label";
       label.textContent = "Markdown (Arbeitsversion)";
       group.appendChild(label);
-      group.appendChild(createFileCard(report.md));
+      const mdCard = createFileCard(report.md);
+      if (params?.get("src") === report.md.path) {
+        mdCard.classList.add("highlight");
+      }
+      group.appendChild(mdCard);
     }
     if (report.html) {
       const details = document.createElement("details");
@@ -672,7 +732,11 @@ export function renderICFReports(root, data) {
       summary.textContent = "Formale ICF-Ansicht (HTML) ein-/ausblenden";
       details.appendChild(summary);
 
-      details.appendChild(createHtmlFileCard(report));
+      const htmlCard = createHtmlFileCard(report);
+      if (params?.get("src") === report.html.path) {
+        htmlCard.classList.add("highlight");
+      }
+      details.appendChild(htmlCard);
       group.appendChild(details);
     }
 
@@ -686,12 +750,126 @@ export function renderMeta(root, data, params) {
   renderEntries(root, data.meta, params);
 }
 
-export function renderModels(root, data, params) {
-  if (!data.models.length)
-    return renderEmptyState(root, "Keine Modelle vorhanden.");
-  renderEntries(root, data.models, params);
+function extractModelSummary(model) {
+  let targetSection = model.sections.find(s => s.heading && s.heading.toLowerCase().includes('modelltyp'));
+
+  if (!targetSection || !targetSection.blocks || targetSection.blocks.length === 0) {
+    targetSection = model.sections.find(s => s.heading !== model.title && s.blocks && s.blocks.length > 0);
+  }
+
+  if (!targetSection || !targetSection.blocks || targetSection.blocks.length === 0) return null;
+
+  const firstBlock = targetSection.blocks.find(b => b.type === 'text');
+  if (!firstBlock || !firstBlock.text) return null;
+
+  let text = firstBlock.text;
+
+  // Cleanly strip leading taxonomic abbreviations like "**TRAIT** (Disposition) – " or "STATE + PROCESS -"
+  text = text.replace(/^(?:\*\*)?[A-Z\s+]+(?:\*\*)?\s*(?:\([^)]+\))?\s*[-–]\s*/, '');
+
+  // Strip remaining Markdown bold/italic
+  text = text.replace(/\*\*/g, '').replace(/\*/g, '');
+
+  // Truncate cleanly at the first sentence ending (., ?, or !) without ellipses
+  const match = text.match(/.*?[.?!]/);
+  if (match) {
+    text = match[0];
+  }
+
+  return text.trim();
 }
 
+export function renderModels(root, data, params) {
+  if (!data.models || !data.models.length)
+    return renderEmptyState(root, "Keine Modelle vorhanden.");
+
+  const sourceRef = params?.get("src");
+  const sourcePath = normalizeSourcePath(sourceRef);
+
+  // Extract index.md so it doesn't render as a regular model card
+  let otherModels = data.models.filter(e => e.path !== 'models/index.md' && e.path !== 'index.md');
+
+
+
+  // Render global UI index card
+  const indexCard = document.createElement("article");
+  indexCard.className = "card model-index-card";
+
+  const title = document.createElement("h2");
+  title.textContent = "Modelle im Überblick";
+  indexCard.appendChild(title);
+
+  const list = document.createElement("ul");
+  list.className = "model-index-list";
+
+  // Wir sortieren alphabetisch für den Index, unabhängig von der Renderreihenfolge.
+  const sortedForIndex = [...otherModels].sort((a, b) => a.title.localeCompare(b.title));
+
+  sortedForIndex.forEach(model => {
+    const li = document.createElement("li");
+    li.className = "model-index-item";
+
+    const a = document.createElement("a");
+    a.href = `#modelle?src=${encodeURIComponent(model.path)}`;
+    a.textContent = model.title;
+    a.className = "model-index-link";
+    li.appendChild(a);
+
+    const summaryText = extractModelSummary(model);
+    if (summaryText) {
+      const desc = document.createElement("span");
+      desc.className = "model-index-meta";
+      desc.textContent = summaryText;
+      li.appendChild(desc);
+    }
+
+    list.appendChild(li);
+  });
+
+  indexCard.appendChild(list);
+  root.appendChild(indexCard);
+
+  // Render actual models
+  otherModels.forEach((entry) => {
+    const card = document.createElement("article");
+    card.className = "card model-card";
+    card.dataset.path = entry.path;
+    if (entry.path === sourcePath) {
+      card.classList.add("highlight");
+    }
+
+    const title = document.createElement("h3");
+    title.textContent = entry.title;
+    card.appendChild(title);
+
+    const meta = document.createElement("p");
+    meta.className = "meta";
+    meta.textContent = entry.path;
+    card.appendChild(meta);
+
+    // Render sections
+    entry.sections.forEach((section, index) => {
+      if (index === 0 && section.heading === entry.title) {
+        if (section.blocks && section.blocks.length > 0) {
+          const bulletOnly = createSectionBlock(
+            { heading: "", blocks: section.blocks },
+            entry.path
+          );
+          const heading = bulletOnly.querySelector("h4");
+          if (heading) heading.remove();
+          card.appendChild(bulletOnly);
+        }
+        return;
+      }
+
+      const secBlock = createSectionBlock(section, entry.path);
+      secBlock.classList.add("model-section-block");
+      card.appendChild(secBlock);
+    });
+
+    root.appendChild(card);
+  });
+}
 export function renderAktuellerStand(root, data) {
   const container = document.createElement("div");
   container.className = "dashboard-grid";
