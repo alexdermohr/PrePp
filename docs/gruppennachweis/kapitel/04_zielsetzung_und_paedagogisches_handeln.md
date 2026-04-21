@@ -35,7 +35,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 
 ### Begleitende Handlungsanpassungen (Entscheidungen)
 
-| Entscheidung | Maßnahme | Ziel | Quelle |
+| Entscheidungsdokument | Maßnahme | Ziel | Quelle |
 |---|---|---|---|
 | E1 – Konsequenzen setzen | Vorübergehende Aussetzung von Sonderaktionen nach nicht eingehaltenen Absprachen | Verdeutlichung, dass Sonderaktionen an Umgangsregeln gebunden sind | [docs/entscheidungen/01_konsequenzen.md](../../entscheidungen/01_konsequenzen.md) |
 | E2 – Standort „Insel" | Pfandsammelstation intern statt außen | Kontrollierbare Umgebung, Komplexitätsreduktion | [docs/entscheidungen/02_standort_schulinsel.md](../../entscheidungen/02_standort_schulinsel.md) |

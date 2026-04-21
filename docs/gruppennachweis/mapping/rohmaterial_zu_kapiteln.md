@@ -24,8 +24,8 @@ Dieses Dokument stellt sicher, dass jede Aussage im Gruppennachweis auf eine Que
 
 | Aussage / Inhalt | Quelle (Rohmaterial) | Status |
 |---|---|---|
-| Einrichtung (Ida-Ehre-Schule Hamburg – Namensnennung) | `docs/tagebuch/05_tag_5.md` (Hamburg-Bezug), Repo-Arbeitskontext | strukturiert |
-| Institutionelles Schulprofil | – nicht im Repo belegt – | [OFFEN] |
+| Einrichtung (Schule in Hamburg) | `docs/tagebuch/05_tag_5.md` (Hamburg-Bezug), `docs/projektplan.md`, `docs/icf-reports/*` | strukturiert |
+| Konkreter Schulname / institutionelles Schulprofil | – nicht im Repo belegt – | [OFFEN] |
 | Zieldifferente Beschulung | `docs/projektplan.md`, ICF d820 | strukturiert |
 | Zeitlicher Rahmen (Vorlauf + Tage 1–7, 04.–08.04.2026) | `docs/tagebuch/*.md`, `docs/icf-reports/`, `docs/feedback/*.md` | strukturiert |
 | Projektphasen | `docs/projektplan.md` | strukturiert |
@@ -55,8 +55,8 @@ Dieses Dokument stellt sicher, dass jede Aussage im Gruppennachweis auf eine Que
 |---|---|---|
 | Übergeordnetes Ziel und Teilziele T1–T5 | `docs/projektplan.md` | strukturiert |
 | Projektphasen als Weg | `docs/projektplan.md`, `docs/tagebuch/*.md` | strukturiert |
-| Entscheidungen E1–E6 als Handlungsanpassungen | `docs/entscheidungen/*.md` | strukturiert |
-| Partizipation – Prinzipien und Ereignisse | `docs/projektplan.md`, `docs/tagebuch/04,05,06`, `docs/feedback/*.md` | strukturiert |
+| Entscheidungsdokumente E1, E2, E3, E4 und E6 als Handlungsanpassungen | `docs/entscheidungen/*.md` | strukturiert |
+| Partizipation – Prinzipien und Ereignisse | `docs/projektplan.md`, `docs/tagebuch/04_tag_4.md`, `docs/tagebuch/05_tag_5.md`, `docs/tagebuch/06_tag_6.md`, `docs/feedback/*.md` | strukturiert |
 | Fachliche Begründung (Hypothesen, Modelle) | `docs/hypothesen.md`, `models/prep_planung.md`, `docs/intervention/pause_protokoll.md` | strukturiert |
 | Hypothesenbezug (H1–H11) | `docs/hypothesen.md` | strukturiert |
 | Externe Fachliteratur | `docs/gruppennachweis/apparat/literaturverzeichnis.md` | [OFFEN] |
@@ -67,12 +67,12 @@ Dieses Dokument stellt sicher, dass jede Aussage im Gruppennachweis auf eine Que
 | Aussage / Inhalt | Quelle (Rohmaterial) | Status |
 |---|---|---|
 | Zielerreichung je Teilziel T1–T5 (A/B/C-Kategorie) | `docs/tagebuch/*.md`, `docs/beobachtungen/*.md`, `docs/feedback/*.md`, `docs/hypothesen.md` | strukturiert |
-| Nachweis-Indikatoren (H9, H1, H6, Projektergebnis) | `docs/beobachtungen/*.md`, `docs/tagebuch/04,06,07`, `docs/reflexion.md` | strukturiert |
+| Nachweis-Indikatoren (H9, H1, H6, Projektergebnis) | `docs/beobachtungen/*.md`, `docs/tagebuch/04_tag_4.md`, `docs/tagebuch/06_tag_6.md`, `docs/tagebuch/07_tag_7.md`, `docs/reflexion.md` | strukturiert |
 | Abweichungen vom Plan (Tag 1, 2, 3, 4, 7 + Rollenabweichung) | `docs/tagebuch/*.md`, `docs/reflexion.md`, `docs/entscheidungen/*.md` | strukturiert |
 | Spannungen Feedback ↔ Beobachtung | `docs/feedback/03_feedback_x.md`, `docs/beobachtungen/01_verhalten_in_situationen.md`, H10 | strukturiert |
 | Hypothesenstatus H1–H11 | `docs/hypothesen.md` | strukturiert |
 | Schlussfolgerungen | `docs/reflexion.md`, `docs/entscheidungen/*.md` | strukturiert |
-| Systematische Wirkungsanalyse (E1–E6, Raster) | `docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md` | [OFFEN] |
+| Systematische Wirkungsanalyse der Entscheidungsdokumente E1, E2, E3, E4 und E6 | `docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md` | [OFFEN] |
 | Messbare Entwicklung T3 (sprachlicher Ausdruck) | – noch nicht erhoben – | [OFFEN] |
 
 ### Kapitel 6: Formalia und Anhang
@@ -88,10 +88,10 @@ Dieses Dokument stellt sicher, dass jede Aussage im Gruppennachweis auf eine Que
 
 | Lücke | Nötig für | Handlungsbedarf |
 |---|---|---|
-| Institutionelles Profil der Ida-Ehre-Schule | Kapitel 2 | extern recherchieren und belegen oder als dauerhafte Leerstelle akzeptieren |
+| Konkreter Schulname / institutionelles Profil der Einrichtung | Kapitel 2 | extern recherchieren und belegen oder als dauerhafte Leerstelle akzeptieren |
 | Formale ICF-Codierung hemmender Umweltfaktoren | Kapitel 3 | neuer ICF-Report mit e-Faktoren < 0 (z. B. e325, e440) |
 | Systematische Feedback-Erhebung (Skalen/Auswahl) | Kapitel 3, 5 | weitere Erhebungen in verschiedenen Modi durchführen |
 | Externe Fachliteratur zu Empowerment/Partizipation/ICF | Kapitel 1, 4, 6 | Apparat befüllen, Zitierstil festlegen |
-| Systematische Wirkungsanalyse der Entscheidungen E1–E6 | Kapitel 5 | Beobachtungsraster durchgängig ausfüllen |
+| Systematische Wirkungsanalyse der Entscheidungsdokumente E1, E2, E3, E4 und E6 | Kapitel 5 | Beobachtungsraster durchgängig ausfüllen |
 | Messbare Entwicklung in T3 (sprachlicher Ausdruck) | Kapitel 5 | Operationalisierung (z. B. Lautstärke, Redeanteil) |
 | Abgabeformat / Umfang / Zitierstil des Gruppennachweises | Kapitel 6 | Vorgabe klären |

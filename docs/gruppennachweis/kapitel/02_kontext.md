@@ -4,7 +4,7 @@
 
 ## 2.1 Einrichtung
 
-Das Projekt findet an der **Ida-Ehre-Schule in Hamburg** statt. Belegt im vorliegenden Rohmaterial sind folgende Merkmale des Einrichtungskontexts:
+Das Projekt findet an einer **Schule in Hamburg** statt. Belegt im vorliegenden Rohmaterial sind folgende Merkmale des Einrichtungskontexts:
 
 - **Standort Hamburg** – dokumentiert über die lokale Mülleimersprüche-Aktion am Tag 5 („hier in Hamburg hat jeder Mülleimer einen lustigen, müllbezogenen Spruch").
   → Quelle: [docs/tagebuch/05_tag_5.md](../../tagebuch/05_tag_5.md)
@@ -15,7 +15,7 @@ Das Projekt findet an der **Ida-Ehre-Schule in Hamburg** statt. Belegt im vorlie
 - **Beteiligte institutionelle Akteure** – Hausmeister (Genehmigung und Materialbereitstellung), stellvertretender Schulleiter K (Rücksprache), Werkstatt/Holzwerker, pädagogische Fachkraft J (parallele Betreuungskontakte), Reinigungskräfte (systemisch relevant, aber im Vorlauf nicht eingebunden).
   → Quelle: [docs/projektplan.md](../../projektplan.md) (Phase 1), [docs/tagebuch/00_vorlauf.md](../../tagebuch/00_vorlauf.md) bis [docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md)
 
-> [OFFEN] Ein institutionelles Schulprofil der Ida-Ehre-Schule (Leitbild, pädagogisches Konzept, inklusives Schulkonzept) ist im Repo nicht dokumentiert und wird hier bewusst nicht ergänzt. → siehe [mapping/rohmaterial_zu_kapiteln.md](../mapping/rohmaterial_zu_kapiteln.md) (epistemische Lücke: Institutionsprofil).
+> [OFFEN] Der konkrete Schulname sowie ein institutionelles Schulprofil (Leitbild, pädagogisches Konzept, inklusives Schulkonzept) sind im Repo nicht dokumentiert und werden hier bewusst nicht ergänzt. → siehe [mapping/rohmaterial_zu_kapiteln.md](../mapping/rohmaterial_zu_kapiteln.md) (epistemische Lücke: Einrichtungskontext).
 
 ## 2.2 Situation des praktischen Handelns
 
@@ -52,5 +52,5 @@ Der Gruppennachweis dokumentiert **nicht** den gesamten Schulalltag von X, sonde
 
 ## Offene Punkte
 
-- [OFFEN] Institutionelles Profil der Ida-Ehre-Schule (Leitbild, Inklusionskonzept) – im Repo nicht belegt; wird nicht prospektiv ergänzt.
+- [OFFEN] Konkreter Schulname und institutionelles Profil der Einrichtung (Leitbild, Inklusionskonzept) – im Repo nicht belegt; wird nicht prospektiv ergänzt.
 - [OFFEN] Verhältnis PrepP-Zeitrahmen zur Gesamtprojektdauer über den dokumentierten Zeitraum hinaus.

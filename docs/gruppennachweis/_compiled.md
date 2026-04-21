@@ -48,9 +48,9 @@
 
 Die folgenden Punkte sind übergreifend noch offen; Detailauflistung im Mapping:
 
-- [OFFEN] Institutionelles Profil der Ida-Ehre-Schule (Kapitel 2).
+- [OFFEN] Institutionelles Profil der Schule / des Einrichtungskontexts in Hamburg (Kapitel 2).
 - [OFFEN] Externe Fachliteratur zu Empowerment, Partizipation, ICF-CY; Zitierstil (Kapitel 1, 4, 6).
-- [OFFEN] Systematische Wirkungsanalyse der Entscheidungen E1–E6 auf Basis des Beobachtungsrasters (Kapitel 5).
+- [OFFEN] Systematische Wirkungsanalyse der Entscheidungsdokumente E1, E2, E3, E4 und E6 auf Basis des Beobachtungsrasters (Kapitel 5).
 - [OFFEN] Systematisch erweiterte Feedback-Erhebung (Skalen, Auswahlformate; Kapitel 3, 5).
 - [OFFEN] Formale Anforderungen an den Gruppennachweis (Umfang, Abgabeformat, Zitierstil; Kapitel 6).
 

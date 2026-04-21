@@ -39,7 +39,7 @@
 
 **Offen im Nachweis:**
 
-- [OFFEN] Systematische Wirkungsanalyse der einzelnen Entscheidungen E1–E6 (pro Einheit: „Pause" genutzt? Eskalation? Abgeschlossen?) gemäß Raster aus [docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md](../../beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md).
+- [OFFEN] Systematische Wirkungsanalyse der einzelnen Entscheidungsdokumente E1, E2, E3, E4 und E6 (pro Einheit: „Pause" genutzt? Eskalation? Abgeschlossen?) gemäß Raster aus [docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md](../../beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md).
 - [OFFEN] Messbare Veränderung im sprachlichen Ausdruck gegenüber formellen Rollenpersonen (T3).
 
 ## 5.3 Abweichungen vom Plan
@@ -99,6 +99,6 @@
 
 ## Offene Punkte
 
-- [OFFEN] Systematische Wirkungsanalyse der Entscheidungen E1–E6 auf Basis des Beobachtungsrasters.
+- [OFFEN] Systematische Wirkungsanalyse der Entscheidungsdokumente E1, E2, E3, E4 und E6 auf Basis des Beobachtungsrasters.
 - [OFFEN] Feedback-Daten in abschließende Nachweise und Schlussfolgerungen einbinden, sobald ausreichend viele Erhebungszeitpunkte vorliegen.
 - [OFFEN] Quantitative/qualitative Bewertung der Teilziele T1, T2, T5 nach Projektende erneut vornehmen, um zwischen situationsgebundener und überdauernder Veränderung zu unterscheiden.
