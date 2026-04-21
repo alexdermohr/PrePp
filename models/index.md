@@ -32,12 +32,20 @@ Dieser Index ordnet den Modellkorpus als Werkzeugkasten.
 
 ## 3) Nutzungsprinzipien
 
-- Modelle sind komplementär, nicht konkurrierend.
+- Modelle sind primär komplementär, müssen im Einzelfall aber auch konkurrierend geprüft werden.
 - Fallzuordnungen sind heuristisch und alternativ deutbar.
 - Kein Einzelmodell überstimmt akute Sicherheitslogik (STF).
+
+## 3b) Konkurrenzprüfung (Falsifikationsfokus)
+
+- Modelle werden im Einzelfall nicht nur kombiniert, sondern gegeneinander geprüft.
+- Für jede Deutung sollte mindestens eine widerlegende Beobachtung benannt werden.
+- Beispiel Leitfrage: „Welche Beobachtung würde Hypothese A schwächen und Hypothese B stärken?“
+- Ziel: Bestätigungsbias reduzieren und handlungsrelevante Entscheidungen erzwingen.
 
 ## 4) Hinweis zur Navigation im Renderer
 
 - Interne Markdown-Links auf `.md`-Dateien werden im aktuellen Frontend als interne Referenzen aufgelöst.
 - Relative Pfade wie `./abc_sorkc.md` werden kontextbezogen auf `models/` normalisiert.
 - Technische Grundlage: Link- und Pfadauflösung in `app/src/components/views.js` sowie Abschnitts-/Listen-Parsing in `app/src/lib/markdown.js`.
+- Status: aktuell funktional; Stabilitätsgarantie für zukünftige Renderer-Änderungen ist nicht impliziert.

@@ -29,9 +29,9 @@ ABC ist die reduzierte Kurzform, SORKC die erweiterte funktionale Analyse.
 
 ## II. Kernlogik
 
-- **S/A**: Was geht voraus?
+- **S (A)**: Was geht voraus?
 - **O**: Welche Organismusfaktoren wirken mit?
-- **R/B**: Was wird gezeigt?
+- **R (B)**: Was wird gezeigt?
 - **C**: Was folgt darauf?
 - **K**: Wie regelmäßig ist die Kopplung?
 
