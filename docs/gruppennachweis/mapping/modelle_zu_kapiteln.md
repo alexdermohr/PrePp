@@ -4,11 +4,11 @@
 
 > **Status:** Dieses Dokument ist ein **Arbeits- und Integrationsplan** im Stützapparat.
 > Es ist **keine eigenständige Transformationsnorm**.
->
-> Verbindlich bleiben Contract, State und Transformation:
-> - [../_contract.md](../_contract.md)
-> - [../_state.md](../_state.md)
-> - [../../transformation/rohmaterial_to_gruppennachweis.md](../../transformation/rohmaterial_to_gruppennachweis.md)
+
+Verbindlich bleiben Contract, State und Transformation:
+- [../_contract.md](../_contract.md)
+- [../_state.md](../_state.md)
+- [../../transformation/rohmaterial_to_gruppennachweis.md](../../transformation/rohmaterial_to_gruppennachweis.md)
 
 Ziel: Modelle aus `models/` kapitelkonsistent einfügen, ohne die Trennung von Beobachtung, Interpretation und Bewertung zu verletzen.
 
@@ -66,7 +66,7 @@ Die folgenden Modelle sind **im Repository vorhanden** und damit direkt nutzbar:
 ## 3) Kapitelweise Einbindung (Governance-kompatibel)
 
 ### Kapitel 1 (Thema)
-- Rahmend: `prep_planung` bleibt Primäranker.
+- Rahmend: [`models/prep_planung.md`](../../../models/prep_planung.md) bleibt Primäranker.
 - Optional kurze Ergänzung über SDT (1–2 Sätze).
 
 ### Kapitel 2 (Kontext)

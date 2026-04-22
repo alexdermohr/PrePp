@@ -141,7 +141,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Mitwirk
 > **Wirkungsprüfung dieser Indikatoren:** Die Tabelle oben begründet jede Maßnahme und nennt, woran ihre Wirksamkeit erkannt werden kann. Die systematische Auswertung, ob diese Wirkindikatoren im dokumentierten Projektverlauf tatsächlich erfüllt wurden – einschließlich der beobachteten Kurzzeitwirkung, Alternativerklärungen und des abschließenden Zwischenurteils (A/B/C) – erfolgt in der zentralen [Evidenzlage in Kapitel 5.3](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6). Dort werden die Entscheidungen E1–E6 einer vollständigen Kontrastprüfung unterzogen.
 
 
-## 4.4.2 Modellkopplung (entscheidungsnah)
+### 4.4.2 Modellkopplung (entscheidungsnah)
 
 Die folgenden Modellbezüge ergänzen die Begründung **nur dort**, wo sie für die Entscheidungsauswahl oder Kontrastprüfung einen erkennbaren Mehrwert haben:
 

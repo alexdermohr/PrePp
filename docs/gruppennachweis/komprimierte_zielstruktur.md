@@ -1,6 +1,6 @@
 # Komprimierte Zielstruktur (Matrix-first)
 
-> Arbeitsmodus fuer die naechste Ueberarbeitung der Kapitel 1-6.
+> Arbeitsmodus für die nächste Überarbeitung der Kapitel 1-6.
 > Ziel ist nicht weniger Nachweis, sondern weniger Doppeltext.
 
 ## 1. Zielverschiebung
@@ -11,9 +11,9 @@ Statt "maximale Nachweisbarkeit" wird als Leitfrage gesetzt:
 
 Konsequenz:
 
-- Eine Information bekommt eine Primaerposition (Single Source of Truth).
-- Alle anderen Kapitel verweisen auf diese Primaerposition statt zu wiederholen.
-- Bewertung bleibt in Kapitel 5, Begruendung bleibt in Kapitel 4.
+- Eine Information bekommt eine Primärposition (Single Source of Truth).
+- Alle anderen Kapitel verweisen auf diese Primärposition statt zu wiederholen.
+- Bewertung bleibt in Kapitel 5, Begründung bleibt in Kapitel 4.
 
 ## 2. Kernartefakt (Zentrum)
 
@@ -29,7 +29,7 @@ Die zentrale Matrix ist das Hauptartefakt, nicht Beifang:
 Umsetzung im bestehenden Stand:
 
 - Inhaltlich bereits vorhanden in Kapitel 5.3 (E1-E6).
-- Kuenftige Schreibregel: Jede neue Aussage zu Wirkung zuerst in die Matrix, danach nur Verweis im Fliesstext.
+- Künftige Schreibregel: Jede neue Aussage zu Wirkung zuerst in die Matrix, danach nur Verweis im Fließtext.
 
 ## 3. Kapitelrollen (komprimiert)
 
@@ -43,7 +43,7 @@ Umsetzung im bestehenden Stand:
   Kernfunktion: funktionsbezogene Verdichtung, 2-3 Beispiele je ICF-Dimension
   Nicht mehr tun: keine Vollstaendigkeitsillusion durch Listen
 - Kapitel 4 Zielsetzung/Handeln
-  Kernfunktion: Hypothese -> Entscheidung -> Begruendung
+  Kernfunktion: Hypothese -> Entscheidung -> Begründung
   Nicht mehr tun: keine Wirkungsbewertung pro Entscheidung
 - Kapitel 5 Reflexion
   Kernfunktion: Wirkung und Hypothesenstatus (Matrixzentrierung)
@@ -61,13 +61,13 @@ Umsetzung im bestehenden Stand:
 5. **Zielerreichung:** in Kapitel 5.1 nur Kurzbilanz, ohne erneute Falldetails.
 6. **Kontrastpruefung:** Methodik einmal in Kapitel 5.0 definieren; danach nur anwenden.
 
-## 5. Minimalstruktur fuer Kapitel 4 (kompakt)
+## 5. Minimalstruktur für Kapitel 4 (kompakt)
 
 Empfohlene Kurzarchitektur:
 
 1. Zielbild (uebergeordnet + T1-T5 mit Evidenzkriterium)
 2. Entscheidungslinie (E1-E6 als Kurzuebersicht)
-3. Begruendungslinie (warum diese Entscheidung, welche Wirkindikatoren)
+3. Begründungslinie (warum diese Entscheidung, welche Wirkindikatoren)
 4. Verweis auf Matrixbewertung in Kapitel 5.3
 
 Kuerzungsregel:
@@ -75,7 +75,7 @@ Kuerzungsregel:
 - In Kapitel 4 keine A/B/C-Urteile.
 - Keine Wiederholung von "Was fehlt" und "Was nicht behauptet werden darf" (bleibt in 5.3).
 
-## 6. Minimalstruktur fuer Kapitel 5 (kompakt)
+## 6. Minimalstruktur für Kapitel 5 (kompakt)
 
 Empfohlene Kurzarchitektur:
 
@@ -87,22 +87,22 @@ Empfohlene Kurzarchitektur:
 
 Kuerzungsregel:
 
-- Fallnarrative nur dort, wo sie fuer das Urteil in der Matrix notwendig sind.
+- Fallnarrative nur dort, wo sie für das Urteil in der Matrix notwendig sind.
 - Wiederholte Belege aus 5.1 in 5.3 nur als Querverweis, nicht erneut ausformulieren.
 
-## 7. Schnelle Umsetzungssequenz (naechster Durchlauf)
+## 7. Schnelle Umsetzungssequenz (nächster Durchlauf)
 
-1. Kapitel 4 auf reine Begruendungsfunktion trimmen.
+1. Kapitel 4 auf reine Begründungsfunktion trimmen.
 2. Kapitel 5.1 auf Kurzbilanz reduzieren.
-3. Kapitel 5.3 als primaere Wirkungsdarstellung halten und bei Bedarf erweitern.
+3. Kapitel 5.3 als primäre Wirkungsdarstellung halten und bei Bedarf erweitern.
 4. Mapping-Dateien nur dann anpassen, wenn eine Aussage verschoben oder geloescht wurde.
 
-## 8. Entscheidungskriterium fuer jede Textpassage
+## 8. Entscheidungskriterium für jede Textpassage
 
 Vor jedem Absatz pruefen:
 
 - Bringt der Absatz neue Information?
 - Wenn nein: durch Verweis ersetzen.
-- Wenn ja: hat die Information bereits eine Primaerposition?
+- Wenn ja: hat die Information bereits eine Primärposition?
 
 Wenn die Antwort auf beide Fragen "nein" ist, wird der Absatz gestrichen.
