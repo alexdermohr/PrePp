@@ -77,7 +77,7 @@ Die Nummerierung (A1 … A10) dient dem Querverweis aus den Kapiteltexten.
 
 | Feld | Inhalt |
 |---|---|
-| **Beobachtung** | Im Repo sind „Schule in Hamburg", zieldifferente Beschulung (ICF d820), Binnenraum „Insel" und beteiligte Rollen belegt; Schulname, Leitbild oder Inklusionskonzept sind **nicht** belegt. → [docs/tagebuch/05_tag_5.md](../../tagebuch/05_tag_5.md), [docs/projektplan.md](../../projektplan.md), [ICF-Report](../../icf-reports/). |
+| **Beobachtung** | Im Repo sind „Schule in Hamburg", zieldifferente Beschulung (ICF d820), Binnenraum „Insel" und beteiligte Rollen belegt; Schulname, Leitbild oder Inklusionskonzept sind **nicht** belegt. → [docs/tagebuch/05_tag_5.md](../../tagebuch/05_tag_5.md), [docs/projektplan.md](../../projektplan.md), [ICF-Report (04.04.2026, ICF d820)](../../icf-reports/icf-report-gemeinschaftsprojekt-ko-konstr-2026-04-04-07-49.html). |
 | **Interpretation** | Ein institutionelles Profil würde Kontextaussagen pointieren (z. B. Verhältnis zum Inklusionsauftrag), ist aber nicht durch Primärquellen getragen. |
 | **Gegenhypothese** | Eine prospektive Kontextbeschreibung ohne Quelle wäre „kontextsensibel" und kein Verstoß gegen den Textfluss, solange sie allgemein gehalten ist. |
 | **Begründete Entscheidung** | Der Gruppennachweis behandelt dies als **epistemische Lücke** und ergänzt nicht, weil der Contract („Keine Aussage ohne Rückverweis auf Rohmaterial") Vorrang vor Textfluss hat. Die Lücke ist sichtbar markiert (Kapitel 2.1 `[OFFEN]`) und im Mapping dokumentiert. → [Kapitel 2.1](../kapitel/02_kontext.md#21-einrichtung-nachweisbarer-kontext) |

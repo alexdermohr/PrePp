@@ -70,10 +70,12 @@ keine Messskala):
 
 | Stufe | Einheiten | Anteil (von 8 Einheiten) |
 |---|---|---|
-| **P++** voll partizipativ | Tag 4 (vor Eskalation), Tag 5, Tag 6 | 3 |
-| **P+** gestaltend ohne Rückkopplung | Vorlauf, Tag 1 | 2 |
-| **P–** beteiligt, nicht gestaltend | Tag 7 | 1 |
-| **P0** keine Partizipation | Tag 2 (konsequenzbedingt), Tag 3 (ausweichend) | 2 |
+| **P++** voll partizipativ | Tag 4 (vor Eskalation), Tag 5, Tag 6 | 3/8 (37,5 %) |
+| **P+** gestaltend ohne Rückkopplung | Vorlauf, Tag 1 | 2/8 (25,0 %) |
+| **P–** beteiligt, nicht gestaltend | Tag 7 | 1/8 (12,5 %) |
+| **P0** keine Partizipation | Tag 2 (konsequenzbedingt), Tag 3 (ausweichend) | 2/8 (25,0 %) |
+
+> **Hinweis:** Die Prozentwerte beschreiben die Häufigkeitsverteilung im dokumentierten Zeitraum (8 Einheiten). Sie sind **nicht statistisch generalisierbar** und dienen ausschließlich der Übersicht – keine Basis für Aussagen über typisches Verhalten oder Interventionswirkung.
 
 **Lesart:** Partizipation ist in der Umsetzungsphase (Tag 4–6) durchgängig
 voll gegeben; in der Anfangs- und Konfliktphase (Vorlauf, Tag 1–3)

@@ -42,7 +42,7 @@ seine Lesart. Ergebnis ist das teilzielweise Urteil in
 (A/B/C) und die Matrix in 5.3.
 
 **Argumentationsschicht-Anker:**
-→ „verantwortliche Rolle" = [A1](mapping/argumentationsschicht.md#a1--die-projektrolle-als-initiatorkoorrdinator-passt-zu-x) · „rückgekoppelte Partizipation" = [A8](mapping/argumentationsschicht.md#a8--partizipation-ist-operationalisiert-schwelle-aus-prep-planung-und-wird-belegt) · „Einbindung aller Akteure" = [A10](mapping/argumentationsschicht.md#a10--systemische-vollständigkeit-als-schlussfolgerung-aus-tag-7)
+→ „verantwortliche Rolle" = [A1](mapping/argumentationsschicht.md#a1--die-projektrolle-als-initiatorkoordinator-passt-zu-x) · „rückgekoppelte Partizipation" = [A8](mapping/argumentationsschicht.md#a8--partizipation-ist-operationalisiert-schwelle-aus-prep-planung-und-wird-belegt) · „Einbindung aller Akteure" = [A10](mapping/argumentationsschicht.md#a10--systemische-vollständigkeit-als-schlussfolgerung-aus-tag-7)
 
 ## Kapitelintegration – Leitfaden und Übergänge
 
