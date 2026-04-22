@@ -11,6 +11,22 @@
 
 ## 5.0 Lesehilfe und Quellen
 
+### Priorisierte Leselogik (fuer Verdichtung)
+
+Dieses Kapitel ist die **Bewertungsachse** des Nachweises.
+
+- **Primaeres Zentrum:** [5.3 Evidenzlage je Entscheidung](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6)
+- **Sekundaer:** [5.1 Zielkurzbilanz](#51-zielerreichung--teilzielweiser-abgleich) als verdichtete Uebersicht
+- **Abschluss:** [5.6 Hypothesenstatus](#56-hypothesenstatus--abschließender-überblick) und [5.7 Schlussfolgerungen](#57-schlussfolgerungen)
+
+Entkopplungsregel zu Kapitel 4:
+
+- Kapitel 4 begruendet Entscheidungen.
+- Kapitel 5 bewertet Entscheidungen.
+- Wirkungsaussagen werden nicht in beiden Kapiteln vollstaendig ausformuliert.
+
+Arbeitsgrundlage fuer den Umbau: [komprimierte_zielstruktur.md](../komprimierte_zielstruktur.md).
+
 ### Methodischer Rahmen
 
 - **Bewertung prüft Wirkung, nicht Absicht.** Grundlage: [meta/arbeitsregeln.md](../../../meta/arbeitsregeln.md) (Regel 4), [_contract.md](../_contract.md).
@@ -234,6 +250,8 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 
 ## 5.6 Hypothesenstatus – abschließender Überblick
 
+Die folgende Tabelle bewertet den empirischen Status jeder Hypothese H1–H11 auf Basis des dokumentierten Projektmaterials. Für die Begründungen, wie diese Hypothesen bei der Entwicklung von Handlungsschritten und Entscheidungen eingespeist wurden, siehe [Kapitel 4.5](04_zielsetzung_und_paedagogisches_handeln.md#45-hypothesenbezug-und-wirkprüfung).
+
 | Hypothese | Status (Repo) | Reflexion |
 |---|---|---|
 | H1 | offen | Eigeninitiative in praktischen Tätigkeiten mehrfach bestätigt; formaler Vergleich zu unstrukturierten Phasen steht aus. |
@@ -249,6 +267,8 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | H11 | offen | Exit-Strategie Pause (E4) ist konzeptionell dokumentiert, wurde der Zielperson im dokumentierten Zeitraum jedoch nicht vorgestellt; Nutzung/Wirkung daher nicht systematisch auswertbar. |
 
 → Quelle: [docs/hypothesen.md](../../hypothesen.md)
+
+> **Rückbezug zu Kapitel 4.5:** Am Beispiel H1 wird dort gezeigt, wie Hypothesen als Begründungsachse in Zielsetzung und Handlungsplanung eingehen; Kapitel 5.6 bewertet dagegen ihren empirischen Status und Nachweisstatus im Material.
 
 ### 5.6.1 Prüfung der Hypothese H11 (Aggression und Kontrollverlust)
 
