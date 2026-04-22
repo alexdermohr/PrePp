@@ -75,9 +75,9 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 | Verantwortliche Rolle als Projektleiter | Anschluss an Gemeinschaft über einen nützlichen Beitrag ist im Projektplan als motivationaler Kern hypothetisiert; Rahmenmodell „Prep-Planung" verknüpft Aktivität mit Partizipation und Empowerment | [docs/projektplan.md](../../projektplan.md) (Arbeitshypothesen), [models/prep_planung.md](../../../models/prep_planung.md) |
 | Schrittweise Exposition in formellen Kontexten mit Scaffolding | Rückzugsverhalten in formellen/hierarchischen Situationen dokumentiert; Scaffolding entlastet, ohne die Aufgabe abzunehmen | [docs/hypothesen.md](../../hypothesen.md) (H2), [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md), [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md) |
 | Grenzsetzungen mit Prüfhinweis | Vorab vereinbarte Konsequenzen sollen Verbindlichkeit herstellen, ohne im Konfliktmoment zusätzlichen Druck aufzubauen | [docs/entscheidungen/01_konsequenzen.md](../../entscheidungen/01_konsequenzen.md), [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md) (Eigentumsregeln vorab), [docs/hypothesen.md](../../hypothesen.md) (H4) |
-| Pause-Protokoll als Exit-Strategie | Handlungsalternative zur Aggression bei Kontrollverlust; erhöht Handlungsfähigkeit unter Stress | [docs/entscheidungen/04_pause_als_exit_strategie.md](../../entscheidungen/04_pause_als_exit_strategie.md), [docs/intervention/pause_protokoll.md](../../intervention/pause_protokoll.md), [docs/hypothesen.md](../../hypothesen.md) (H11) |
+| Exit-Strategie Pause als Konzept | Handlungsalternative zur Aggression bei Kontrollverlust; kann die Handlungsfähigkeit unter Stress erhöhen | [docs/entscheidungen/04_pause_als_exit_strategie.md](../../entscheidungen/04_pause_als_exit_strategie.md), [docs/intervention/pause_protokoll.md](../../intervention/pause_protokoll.md), [docs/hypothesen.md](../../hypothesen.md) (H11) |
 | Reduktion von Systemkonkurrenz | X wählt Angebote des geringsten Widerstands; temporäre Einschränkung paralleler Angebote prüft Wirkung auf Verbindlichkeit | [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md), [docs/hypothesen.md](../../hypothesen.md) (H7), [docs/beobachtungen/02_umgang_mit_grenzen.md](../../beobachtungen/02_umgang_mit_grenzen.md) |
-| Kleinschrittige Umsetzung (EINE Entscheidung, EINE Handlung, EIN weiterer Teilnehmer, Pause aktiv) | Große Schritte erhöhen das Risiko von Kontrollverlust und Eskalation | [docs/entscheidungen/06_pfandprojekt_naechste_schritte.md](../../entscheidungen/06_pfandprojekt_naechste_schritte.md) |
+| Kleinschrittige Umsetzung (EINE Entscheidung, EINE Handlung, EIN weiterer Teilnehmer) | Große Schritte erhöhen das Risiko von Kontrollverlust und Eskalation | [docs/entscheidungen/06_pfandprojekt_naechste_schritte.md](../../entscheidungen/06_pfandprojekt_naechste_schritte.md) |
 | [OFFEN] Eigenständiger Fachliteraturbeleg | Empowerment-, Partizipations- und ICF-Rahmung sollen zusätzlich durch externe Literatur belegt werden | [apparat/literaturverzeichnis.md](../apparat/literaturverzeichnis.md) |
 
 ## 4.5 Hypothesenbezug
@@ -103,7 +103,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 - [docs/projektplan.md](../../projektplan.md) – Ziele, Phasen, Partizipationsprinzip
 - [docs/entscheidungen/*.md](../../entscheidungen/01_konsequenzen.md) – begleitende Handlungsanpassungen
 - [docs/hypothesen.md](../../hypothesen.md) – fachliche Begründungsachse
-- [docs/intervention/pause_protokoll.md](../../intervention/pause_protokoll.md) – operationalisierte Exit-Strategie
+- [docs/intervention/pause_protokoll.md](../../intervention/pause_protokoll.md) – dokumentiertes Konzept der Exit-Strategie
 - [models/prep_planung.md](../../../models/prep_planung.md) – Rahmenmodell
 
 ## Offene Punkte

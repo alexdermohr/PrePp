@@ -119,7 +119,7 @@
 
 - [OFFEN] Systematische Prüfung der Hypothese H11:
   - Tritt Aggression nach Kontrollverlust auf?
-  - Welche Wirkung haben Exit-Strategien (E4)?
+  - Welche Wirkung hat die Exit-Strategie (E4)?
   - Welche Alternativerklärungen (Arousal, Gruppendynamik) sind plausibel?
 - [OFFEN] Feedback-Daten in abschließende Nachweise und Schlussfolgerungen einbinden, sobald ausreichend viele Erhebungszeitpunkte vorliegen.
 - [OFFEN] Quantitative/qualitative Bewertung der Teilziele T1, T2, T5 nach Projektende erneut vornehmen, um zwischen situationsgebundener und überdauernder Veränderung zu unterscheiden.

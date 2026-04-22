@@ -2,7 +2,7 @@
 
 ## Maßnahme
 Projekt wird kleinschrittig umgesetzt, mit Fokus auf Selbstwirksamkeit von X.
-Siehe: [Pause-Protokoll](../intervention/pause_protokoll.md)
+Siehe: [Exit-Strategie Pause (Konzept)](../intervention/pause_protokoll.md)
 
 ## Konkrete Umsetzung (nächster Schritt)
 - X trifft Entscheidung zu:
@@ -15,10 +15,10 @@ Siehe: [Pause-Protokoll](../intervention/pause_protokoll.md)
 
 - X lädt mindestens eine weitere Person ein
 
-- Pause-Protokoll ist aktiv verfügbar
+- Die Exit-Strategie Pause liegt als dokumentiertes Konzept vor; eine Einführung bei der Zielperson ist im dokumentierten Zeitraum nicht belegt.
 
 ## Begründung
-Große Umsetzungsschritte erhöhen Risiko für Kontrollverlust und Eskalation.
+Große Umsetzungsschritte erhöhen das Risiko für Kontrollverlust und Eskalation.
 
 ## Ziel
 - Handlungsfähigkeit von X stabilisieren
@@ -26,6 +26,6 @@ Große Umsetzungsschritte erhöhen Risiko für Kontrollverlust und Eskalation.
 - Projekt schrittweise voranbringen
 
 ## Messkriterien
-- Wurde „Pause“ genutzt? (ja/nein)
 - Kam es zur Eskalation? (ja/nein)
 - Wurde Handlung abgeschlossen? (ja/nein)
+- Wurde im Verlauf auf das dokumentierte Exit-Konzept Bezug genommen? (ja/nein)

@@ -83,7 +83,7 @@ Belegbar sichtbare Merkmale im Projektverlauf:
 
 | Code | Benennung | Bewertung | Einordnung | Rückbindung im Material |
 |---|---|---|---|---|
-| e330 | Autoritätspersonen | +3 – guter Kontakt zu Sozialpädagog\*innen | Ressource | Rückkehr in den Kontakt, Beziehungsbedarf zur Projektleitung ([docs/tagebuch/05_tag_5.md](../../tagebuch/05_tag_5.md), [docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md)) |
+| e330 | Autoritätspersonen | +3 – guter Kontakt zu Sozialpädagogen | Ressource | Rückkehr in den Kontakt, Beziehungsbedarf zur Projektleitung ([docs/tagebuch/05_tag_5.md](../../tagebuch/05_tag_5.md), [docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md)) |
 | e430 | Individuelle Einstellungen von Autoritätspersonen | +3 – zugewandte Fachkräfte | Ressource | Entscheidung für unterstützende, unauffällige Begleitung ([docs/projektplan.md](../../projektplan.md) Phase 2, [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md) Scaffolding) |
 | e310 | Engster Familienkreis | +2 – Vater und Geschwister | Ressource | ICF-Report |
 | e315 | Erweiterter Familienkreis | +3 – unterstützender Onkel | Ressource | ICF-Report |
@@ -127,7 +127,7 @@ Interpretatorisch relevant, aber als Lücke markiert:
   → Quelle: [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md), [docs/tagebuch/01_tag_1.md](../../tagebuch/01_tag_1.md)
 - **Hausmeister, Werkstatt/Holzwerker** – Genehmigung, Materialunterstützung.
   → Quelle: [docs/projektplan.md](../../projektplan.md) (Phase 1), [docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md)
-- **Mitschülerinnen** – werden an Tag 1 aktiv in die Ideenfindung einbezogen.
+- **Mitschüler** – werden an Tag 1 aktiv in die Ideenfindung einbezogen.
   → Quelle: [docs/tagebuch/01_tag_1.md](../../tagebuch/01_tag_1.md)
 - **Reinigungskräfte** – systemisch relevant, im Vorlauf nicht eingebunden (s. Tag 7).
   → Quelle: [docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md)
