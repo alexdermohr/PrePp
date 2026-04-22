@@ -32,12 +32,12 @@ Das Projekt findet an einer **Schule in Hamburg** statt. Belegt im vorliegenden 
 Das Projekt ist eingebettet in den laufenden Schul- und Gruppenalltag; der pädagogische Rahmen wird von der Projektleitung (T. und A.) im Nebeneinander zu weiteren Betreuungspersonen und -angeboten (u. a. pädagogische Fachkraft J) umgesetzt.
 
 - Die Durchführung verläuft **phasenweise**: Plan erstellen → Schulhofumfrage → konkreter Plan → Materialbeschaffung & Umsetzung → Reflexion.
-  → Quelle: [docs/projektplan.md](../../projektplan.md) (Projektphasen)
+  → Quelle: [docs/projektplan.md](../../projektplan.md) (Projektphasen), [docs/arbeitsplan von x.jpeg](../../arbeitsplan%20von%20x.jpeg), [docs/umfrage von x.jpeg](../../umfrage%20von%20x.jpeg)
 - Realer Projektgegenstand im dokumentierten Zeitraum ist insbesondere ein **Pfandmülleimer in der Insel** als erster sichtbarer Baustein der „Schulhof verschönern"-Idee (Standortsuche, Gestaltung, Mülleimerschild, Einkauf mit Pfanderlös).
   → Quelle: [docs/tagebuch/03_tag_3.md](../../tagebuch/03_tag_3.md) – [docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md), [docs/entscheidungen/02_standort_schulinsel.md](../../entscheidungen/02_standort_schulinsel.md), [docs/entscheidungen/06_pfandprojekt_naechste_schritte.md](../../entscheidungen/06_pfandprojekt_naechste_schritte.md)
 
-- Die Bilddokumentation des umgesetzten Pfandmülleimers ist im Anhang verknüpft (Foto 1 und 2).
-  → Quelle: [docs/gruppennachweis/anhang/bilddokumentation_pfandprojekt.md](../anhang/bilddokumentation_pfandprojekt.md), [docs/foto_pfandprojekt_sammelbehaelter_01.jpeg](../../foto_pfandprojekt_sammelbehaelter_01.jpeg), [docs/foto_pfandprojekt_sammelbehaelter_02.jpeg](../../foto_pfandprojekt_sammelbehaelter_02.jpeg)
+- Die Bilddokumentation des umgesetzten Pfandmülleimers ist als Foto verknüpft.
+  → Quelle: [app/public/images/muelleimer-schild.jpeg](../../../app/public/images/muelleimer-schild.jpeg)
 - Der Handlungskontext ist geprägt durch ein **Spannungsfeld zwischen Struktur und Selbstbestimmung**: straffer PrepP-Zeitrahmen, Abstimmungen mit externen Akteuren, gleichzeitig Anspruch auf Eigenmotivation und Partizipation von X.
   → Quelle: [docs/projektplan.md](../../projektplan.md) (Phase 1, 3), [docs/reflexion.md](../../reflexion.md) (Risiko der Überstrukturierung)
 - **Systemische Rahmenbedingungen** beeinflussen die Verbindlichkeit: parallele niedrigschwellige Angebote Dritter (z. B. Pfand sammeln mit J) stehen in Konkurrenz zu Projektanforderungen.
