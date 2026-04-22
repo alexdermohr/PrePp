@@ -250,9 +250,13 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 
 ## 5.6 Hypothesenstatus – abschließender Überblick
 
+Die folgende Tabelle bewertet den empirischen Status jeder Hypothese H1–H11 auf Basis des dokumentierten Projektmaterials. Für die Begründungen, wie diese Hypothesen bei der Entwicklung von Handlungsschritten und Entscheidungen eingespeist wurden, siehe [Kapitel 4.5](04_zielsetzung_und_paedagogisches_handeln.md#45-hypothesenbezug-und-wirkprüfung).
+
 | Hypothese | Status (Repo) | Reflexion |
 |---|---|---|
-| H1 | offen | Eigeninitiative in praktischen Tätigkeiten mehrfach bestätigt; formaler Vergleich zu unstrukturierten Phasen steht aus. |
+| H1 | offen | Eigeninitiative in praktischen Tätigkeiten mehrfach bestätigt; formaler Vergleich zu unstrukturierten Phasen steht aus. | 
+
+→ Kapitel 4.5 zeigt, wie H1 als Begründungsachse in T4 und der Wahl des Einstiegs (Handlungsorientierte Tätigkeiten) fungiert; hier werden die Konsequenzen der fehlenden Vergleichsmöglichkeit reflektiert. |
 | H2 | aktiv geprüft | Rückzug in formellen Kontexten anhaltend; Scaffolding (E3c) testet Entlastung, Wirkung noch nicht quantifiziert. |
 | H3 | offen | Tag 3 stützt punktuell das Ausweichmuster; systematische Prüfung fehlt. |
 | H4 | offen | Tag 2/4 zeigen Ausfälle nach Grenzsetzung; vorab besprochene Regeln (E3d) noch nicht systematisch geprüft. |

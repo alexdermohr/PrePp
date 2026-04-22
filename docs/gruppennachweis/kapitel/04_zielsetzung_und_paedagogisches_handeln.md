@@ -136,25 +136,18 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Mitwirk
 | Kleinschrittige Umsetzung (E6) | Große Schritte erhöhen das Risiko von Kontrollverlust und Eskalation. | Abschluss genau einer Teilhandlung pro Einheit ohne Eskalation; Einladung einer weiteren Person erfolgt. | Erfolge stammen aus Themenattraktivität oder Begleitungsintensität, nicht aus Taktung. | [docs/entscheidungen/06_pfandprojekt_naechste_schritte.md](../../entscheidungen/06_pfandprojekt_naechste_schritte.md) |
 | [OFFEN] Eigenständiger Fachliteraturbeleg | Empowerment-, Partizipations- und ICF-Rahmung sollen zusätzlich durch externe Literatur belegt werden. | — | — | [apparat/literaturverzeichnis.md](../apparat/literaturverzeichnis.md) |
 
-> Die Spalte „Wirkindikator" bindet Maßnahmen an prüfbare Beobachtungen; die Spalte „Plausible Gegenerklärung" erzwingt eine Kontrastlesart. Die Auswertung dieser Indikatoren erfolgt in der [Evidenzlage 5.3](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6).
+> Die Spalte "Wirkindikator" bindet Maßnahmen an prüfbare Beobachtungen; die Spalte "Plausible Gegenerklärung" erzwingt eine Kontrastlesart. 
+>
+> **Wirkungsprüfung dieser Indikatoren:** Die Tabelle oben begründet jede Maßnahme und nennt, woran ihre Wirksamkeit erkannt werden kann. Die systematische Auswertung, ob diese Wirkindikatoren im dokumentierten Projektverlauf tatsächlich erfüllt wurden – einschließlich der beobachteten Kurzzeitwirkung, Alternativerklärungen und des abschließenden Zwischenurteils (A/B/C) – erfolgt in der zentralen [Evidenzlage in Kapitel 5.3](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6). Dort werden die Entscheidungen E1–E6 einer vollständigen Kontrastprüfung unterzogen.
 
-## 4.5 Hypothesenbezug
+## 4.5 Hypothesenbezug und Wirkprüfung
 
-| Hypothese | Bezug zur Zielsetzung | Status laut Repo |
-|---|---|---|
-| H1 – Handlungssicherheit in praktischen Tätigkeiten | T4, Wahl des Einstiegs | offen |
-| H2 – Formelle/hierarchische Kontexte | T3, Scaffolding-Entscheidung | aktiv geprüft |
-| H3 – Angebotswahl zur Vermeidung | E3a (Systemkonkurrenz) | offen |
-| H4 – Reaktionen bei akut gefährdeter Bedürfnisbefriedigung | E1, E3d | offen |
-| H5 – Verhalten bei Anspannung | E3b (Frühintervention) | offen |
-| H6 – Handlungsorientierte vs. soziale Situationen | T1, T2, Grundprinzip des Wegs | vorläufig gestützt |
-| H7 – Systemkonkurrenz | E3a | fraglich |
-| H8 – Frühe Eskalationssignale | E3b | aktiv geprüft |
-| H9 – Kooperationsbereitschaft als Ressource | T2, T5 | vorläufig gestützt |
-| H10 – Subjektive Rückmeldung | Partizipation, E3e | offen |
-| H11 – Aggression als Strategie bei Kontrollverlust | E4 (Exit-Strategie Pause) | offen; hohe Steuerungsrelevanz, da direkt mit Eskalationsverhalten und Intervention E4 verknüpft |
+Jede der Handlungsentscheidungen E1–E6 in [Kapitel 4.2](#42-weg-handlungsschritte) und jeder Handlungsschritt in [Kapitel 4.4.1](#441-handlungsschritte--begründung-wirkindikator-gegenerklärung) knüpft an eine oder mehrere der elf Hypothesen H1–H11 an.
 
-→ Quelle: [docs/hypothesen.md](../../hypothesen.md)
+**Hypothesenstatus und Bewertung:** Die Dokumentation des Status, der empirischen Stützung und der Prüflücken jeder Hypothese erfolgt konzentriert und bewertend in [Kapitel 5.6 Hypothesenstatus](#56-hypothesenstatus--abschließender-überblick). Dort wird explizit gemacht, welche Hypothesen offen, aktiv geprüft oder gestützt sind.
+
+→ Primäre Quelle: [docs/hypothesen.md](../../hypothesen.md)  
+→ Bewertungsort: [Kapitel 5.6](05_reflexion.md#56-hypothesenstatus--abschließender-überblick)
 
 ## 4.6 Quellenbezüge (zusammenfassend)
 
