@@ -493,6 +493,21 @@ a:focus-visible {
   border-radius: 4px;
 }
 
+.content-image-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.content-image-link:hover,
+.content-image-link:focus-visible {
+  text-decoration: none;
+}
+
+.content-image--rotate-90 {
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
 .hero-image {
   border-radius: 8px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);

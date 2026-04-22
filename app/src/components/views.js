@@ -330,7 +330,22 @@ const blockRenderers = {
     img.alt = b.alt || "Projektbild";
     img.className = "content-image";
     img.loading = "lazy";
-    container.appendChild(img);
+    if (b.rotate90) {
+      img.classList.add("content-image--rotate-90");
+    }
+
+    const imageLink = document.createElement("a");
+    imageLink.className = "content-image-link";
+    imageLink.href = safeUrl;
+    imageLink.target = "_blank";
+    imageLink.rel = "noopener noreferrer";
+    imageLink.title = "Bild in voller Größe öffnen";
+    imageLink.className = "content-image-link";
+    imageLink.style.textDecoration = "none";
+    imageLink.style.display = "inline-block";
+    imageLink.appendChild(img);
+
+    container.appendChild(imageLink);
   },
   code: (b, container) => {
     const pre = document.createElement("pre");
