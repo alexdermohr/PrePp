@@ -41,6 +41,9 @@ seine Lesart. Ergebnis ist das teilzielweise Urteil in
 [Kapitel 5.1](kapitel/05_reflexion.md#51-zielerreichung--teilzielweiser-abgleich)
 (A/B/C) und die Matrix in 5.3.
 
+**Argumentationsschicht-Anker:**
+→ „verantwortliche Rolle" = [A1](mapping/argumentationsschicht.md#a1--die-projektrolle-als-initiatorkoorrdinator-passt-zu-x) · „rückgekoppelte Partizipation" = [A8](mapping/argumentationsschicht.md#a8--partizipation-ist-operationalisiert-schwelle-aus-prep-planung-und-wird-belegt) · „Einbindung aller Akteure" = [A10](mapping/argumentationsschicht.md#a10--systemische-vollständigkeit-als-schlussfolgerung-aus-tag-7)
+
 ## Kapitelintegration – Leitfaden und Übergänge
 
 Die Kapitel sind in `structured` verfasst, noch nicht in
@@ -85,13 +88,16 @@ P4→T2/Partizipation, P5→E4). → Die Leitthese erhält hier ihre
 ### 4 → 5: Von der Maßnahme zur Wirkung
 
 Kapitel 4 setzt, Kapitel 5 prüft. Die teilzielweise A/B/C-Bewertung
-(5.1), die entscheidungsweise Evidenzlage mit Gegenhypothesen (5.3), die
-Spannungen zwischen Feedback und Beobachtung (5.5), der Hypothesenstatus
-(5.6) und die Schlussfolgerungen (5.7) übersetzen die in 4 gesetzten
-Ansprüche in ein Wirkungsbild. → Die Leitthese zeigt hier ihre
-empirische Oberfläche: T4 **(A)**, T1/T2/T5 **(B)**, T3 **(C)**;
-Kleinschrittigkeit wirksam, Grenzsetzung mit offener Wirkung,
-Exit-Strategie Pause noch ungeprüft.
+(5.1), die entscheidungsweise Evidenzlage mit Gegenhypothesen (5.3 – inkl.
+expliziter „Was fehlt / Was nicht behauptet werden darf"-Zeilen für die
+C-Fälle E1/E3b/E3d/E4), die Spannungen zwischen Feedback und Beobachtung
+(5.5), der Hypothesenstatus (5.6) und die Schlussfolgerungen (5.7) übersetzen
+die in 4 gesetzten Ansprüche in ein Wirkungsbild.
+→ Die Leitthese zeigt hier ihre empirische Oberfläche: T4 **(A)**,
+T1/T2/T5 **(B)**, T3 **(C)**; Kleinschrittigkeit wirksam, Grenzsetzung
+mit offener Wirkung, Exit-Strategie Pause noch ungeprüft.
+→ Schlussfolgerungen 5.7 spiegeln A1, A8, A10 und nennen diese Labels
+explizit als Prüflinien.
 
 ### 5 → 6: Von der Wirkung zur Form
 
@@ -154,7 +160,7 @@ findet sich unter:
 Die folgenden Punkte sind übergreifend noch offen; Detailauflistung im Mapping:
 
 - [OFFEN] Institutionelles Profil der Schule / des Einrichtungskontexts in Hamburg (Kapitel 2) — bewusst nicht prospektiv ergänzt.
-- [OFFEN] Externe Fachliteratur zu Empowerment, Partizipation, ICF-CY (Kapitel 1, 4, 6). Zitierstil APA 7 als Arbeitsstandard vorgesehen (vorbehaltlich Bewertungsrahmen).
+- [OFFEN] Externe Fachliteratur: 3 Funktionsblöcke (Empowerment/Partizipation: L1–L3, ICF-CY: L4–L5, Scaffolding/Selbstwirksamkeit: L6–L8) sind im Apparat **vorgeschlagen**, Angaben aber noch **zu verifizieren** vor Zitiereinsatz. → [apparat/literaturverzeichnis.md](apparat/literaturverzeichnis.md) (Zitierstil: APA 7 als Arbeitsstandard vorgesehen).
 - [OFFEN] Systematische Wirkungsanalyse für die in der [Evidenzlage 5.3](kapitel/05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6) als **(C)** klassifizierten Entscheidungen (E1, E3b, E3d, E4).
 - [OFFEN] Feedback-Erhebung erweitern (mehr Zeitpunkte, mehr Kontextvarianz; Kapitel 3, 5).
 - [OFFEN] Prospektive Erhebung des Partizipationsgrads pro Einheit (GE/RM-Stufen) – Retro-Fassung liegt in [mapping/partizipationsgrad.md](mapping/partizipationsgrad.md), Ersterhebung in der laufenden Dokumentation folgt.

@@ -81,7 +81,42 @@ heterogen, in der Abschlussphase (Tag 7) ausklingend. Die „P++"-Phase fällt
 zusammen mit der Phase, in der T4 (Selbstständigkeit) **(A)** bewertet ist
 (siehe [Kapitel 5.1](../kapitel/05_reflexion.md#51-zielerreichung--teilzielweiser-abgleich)).
 
-## Argumentative Rückbindung
+## Analytische Kopplung: Partizipationsgrad ↔ Teilziele und Entscheidungen
+
+Dieser Abschnitt geht über die Stufenbeschreibung hinaus und fragt:
+Welche **Teilziele** profitieren von P++-Partizipation, welche **Entscheidungen**
+korrelieren mit höherem Partizipationsgrad, und wo bleibt Partizipation
+formal vorhanden, aber sozial noch dünn?
+
+### Welche Teilziele profitieren von P++?
+
+| Teilziel | Befund im P-Material | Bewertung |
+|---|---|---|
+| **T4 – Selbstständigkeit und Organisation** | P++-Phasen (Tag 4–6) deckungsgleich mit dokumentierten selbstständigen Teilhandlungen (Einkauf, Beschriftung, Laufwege). T4 wird in 5.1 mit **(A)** bewertet. | **direkte Kopplung** – P++ ist Bedingung und Ausdruck von T4 |
+| **T1 – Selbstvertrauen und Selbstwirksamkeit** | Gestaltende Entscheidungen (Farbe, Spruch, Pfanderlös-Verwendung) gehen als eigene Ideen ins Produkt ein; das ist messbares Kompetenzerleben. T1 ist **(B)**: Pro-Belege in der P++-Phase, Kontra in formellen Momenten. | **partielle Kopplung** – P++ stützt T1 in handlungsorientierten Phasen; formelle Exposition (P– / P0) bleibt Wirkungslücke |
+| **T2 – Gleichwürdiger Umgang mit Mitschülern** | P++-Phasen enthalten kaum direkte Peer-Aushandlung; Mitschüler-Interaktion konzentriert sich auf Tag 1 (P+, Ideensammlung). Kooperation mit Y funktioniert, ist aber nicht primär durch GE/RM-Muster getrieben. | **schwache Kopplung** – T2-Entwicklung hängt stärker an Beziehungsformat als an P-Stufe |
+| **T3 – Sprachlicher Ausdruck / sozialer Auftritt** | In allen formellen Situationen (Hausmeister, K, Holzwerker) ist die P-Stufe P– oder P+; kein P++ in formellen Momenten. T3 ist **(C)**. | **keine belegbare Kopplung** – P++ tritt nicht dort auf, wo T3 adressiert wird; Scaffolding (E3c) stützt Präsenz, hebt aber die P-Stufe nicht |
+| **T5 – Gemeinschaftserfahrung** | Tag 6 (P++) ist das Moment des sichtbaren gemeinsamen Beitrags. Tag 7 (P–, systemischer Fehler) zerstört die Permanenz dieses Ergebnisses. | **abhängig von Systemstabilität** – P++ in T5 ist nur dann nachhaltig, wenn die systemische Rahmenbedingung gesichert ist (A10) |
+
+### Welche Entscheidungen korrelieren mit höherem Partizipationsgrad?
+
+| Entscheidung | Zusammenhang mit P-Stufe |
+|---|---|
+| **E6 (Kleinschrittigkeit)** | P++-Phase fällt mit kleinschrittiger Umsetzungsphase zusammen. Kleinschritt ermöglicht gestaltende Einzelentscheidung pro Einheit. **Stärkste Kopplung.** |
+| **E3a (Reduktion Systemkonkurrenz)** | Tag 3 (P0, ausweichend) ist der einzige P0-Tag ohne Konsequenz-Bedingung. E3a reagiert direkt auf diesen P0-Befund; ab Tag 4 folgt P++. Die Korrelation ist materiell belegt – Kausalrichtung offen. |
+| **E2 (Standort „Insel")** | Kontrollierbare Umgebung verringert Ablenkung und systemische Interferenz; kann als Ermöglichungsbedingung für P++ gelesen werden. Kein direkter Wirkungsbeleg. |
+| **E1 (Konsequenzen setzen)** | Tag 2 = P0 (konsequenzbedingt). E1 schafft de facto Nicht-Partizipation. Das ist methodisch richtig (Konsequenz für Absprachenbruch), pädagogisch aber ein Einschnitt in den P-Grad. Folgeüberlegung: Konsequenz-Intensität und Partizipationserhalt in Spannung. |
+| **E3c (Scaffolding)** | Erhöht P-Stufe nicht über P+ hinaus (keine belegte Rückkopplung in formellen Situationen). Hält aber P– statt P0: X bleibt physisch präsent, spricht leise, entscheidet nicht aktiv mit. |
+
+### Wo bleibt Partizipation formal vorhanden, aber sozial noch dünn?
+
+| Situation | P-Stufe | Befund |
+|---|---|---|
+| **Formelle Gespräche** (Hausmeister, K, Holzwerker) | P– | GE fehlt, RM fehlt; X ist physisch präsent, aber kommunikativ nicht aktiv. Scaffolding hält Anwesenheit, erzeugt keine inhaltliche Beteiligung. |
+| **Feedback-Runden** (alle Tage) | P– | Antworten vorhanden, aber inhaltlich nicht rückgekoppelt (außer in Fällen wie Reim-Argument Tag 6). Formal erhoben, pädagogisch noch nicht als Steuerungsimpuls genutzt. |
+| **Tag 1 (Peer-Ideenaufnahme)** | P+ | X stellt das Projekt vor, Mitschüler liefern Ideen; GE liegt im Vorstellen, RM ist nur teilweise belegt. Sozial ist das ein wichtiger Moment, P-technisch aber kein P++. |
+
+**Lesart:** Partizipation ist in der **Gestaltungssphäre** (Standort, Material, Form, Text) P++, in der **sozialen Sphäre** (Peer-Aushandlung, formelle Gespräche, Feedback-Steuerung) bestenfalls P+. Das ist konsistent mit den Profilen P1 (Handlungsstabilität als Ressource) und P3 (Rückzug in formeller Exposition) aus [Kapitel 3](../kapitel/03_menschen_und_icf.md#321-funktionsprofile-verdichtung). Die Leitthese „kleinschrittige, rückgekoppelte Partizipation" trifft diesen Befund: Sie ist in der Gestaltungssphäre erreichbar, in der sozialen Sphäre noch zu entwickeln.
 
 - **Zur Hypothese H6** (Handlungsorientierung stützt Stabilität): Die
   Ballung der P++-Einheiten in der Umsetzungsphase ist konsistent mit H6;

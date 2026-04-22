@@ -24,6 +24,7 @@
 
 - **Kontrastprüfung:** Jede zentrale Deutung wird gegen mindestens eine Alternativerklärung gestellt (Stress-/Dysregulationsmodell, Frustrationsdynamik, situative Angebotsstruktur, ICF-/Kontextdeutung). Das gilt insbesondere für die Evidenzlage in [5.3](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6).
 - **Adler als sekundäre Deutungsfolie:** Adlers Individualpsychologie (siehe [models/adler_individualpsychologie.md](../../../models/adler_individualpsychologie.md)) wird hier ausschließlich als Kontrastfolie eingesetzt, nicht als Leitmodell. Sie erscheint – wenn einschlägig – in einer eigenen Spalte der Evidenzlage (5.3) und wird stets mit einer Alternativdeutung gekoppelt. Primärrahmung der Maßnahmen in [Kapitel 4.4](04_zielsetzung_und_paedagogisches_handeln.md#44-fachliche-begründung-der-handlungsschritte).
+- **Rückbindung an die Argumentationsschicht:** Die Schlussfolgerungen in [5.7](#57-schlussfolgerungen) spiegeln explizit die Aussagen A1 (Projektrolle), A8 (Partizipation) und A10 (systemische Vollständigkeit) aus [mapping/argumentationsschicht.md](../mapping/argumentationsschicht.md). Die dort dokumentierten Gegenhypothesen und begründeten Entscheidungen bleiben als Prüflatte erhalten; Kapitel 5 liefert die empirische Oberfläche dieser Abwägungen.
 
 ### Quellenbezüge
 
@@ -88,6 +89,8 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | **Adler-Kontrastfolie (heuristisch)** | Lesbar als Sicherungstendenz: Aussetzung kann als Bedrohung des Einflusses erlebt werden; Wirkung hängt davon ab, ob Kooperation als Rückweg zur Zugehörigkeit offenbleibt. Gegenfolie: reine Stressreaktion ohne Zielbezug. |
 | **Zwischenurteil** | **(C)** – Verbindlichkeit im Kontakt bleibt; kein systematischer Wirkungsnachweis im dokumentierten Zeitraum. |
 | **Nachweislücke** | Kein Vorher-Nachher-Vergleich über mehr als eine Episode. |
+| **Was fehlt** | Mindestens zwei vergleichbare Grenzverletzepisoden mit und ohne vorab eingeführter Konsequenzankündigung. Beobachtungsraster, das Eskalationsfrequenz vor und nach E1 systematisch vergleicht. |
+| **Was deshalb nicht behauptet werden darf** | Dass E1 (Aussetzung von Sonderaktionen) zur Reduktion von Grenzüberschreitungen geführt hat. Dass Rückkehr und Entschuldigung kausal auf E1 zurückgehen. Dass E1 als pädagogische Konsequenzstrategie im vorliegenden Zeitraum empirisch wirksam war. |
 
 ### E2 – Standort „Insel" (interne Pfandsammelstation)
 
@@ -127,6 +130,8 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | **Adler-Kontrastfolie** | Umlenkung als Angebot, Kompetenz zu zeigen, statt Unterlegenheit zu erleben; Gegenfolie: Dysregulation im transaktionalen Stressmodell. |
 | **Zwischenurteil** | **(C)** – Wirkungsnachweis offen; Prüfstruktur existiert im Beobachtungsraster, ist aber nicht ausgefüllt. |
 | **Nachweislücke** | Keine Kopplung Signal → Reaktion → Ergebnis im Verlauf. |
+| **Was fehlt** | Systematische Kopplung von Vorläufersignal (Wort, Ton, Körpersprache) und beobachteter Reaktion der Fachkraft sowie Verlauf der nächsten 5–10 Minuten. Mindestens drei Vergleichsepisoden (Umlenkung durchgeführt / nicht durchgeführt / zu spät). |
+| **Was deshalb nicht behauptet werden darf** | Dass Frühintervention (E3b) im vorliegenden Zeitraum eskalationspräventiv gewirkt hat. Dass Tag-4-Eskalation trotz frühzeitigem Eingreifen aufgetreten ist – das ist nicht belegbar, weil das Eingreifen selbst nicht dokumentiert ist. Dass Arousal-Dynamik als Gegenhypothese widerlegt ist. |
 
 ### E3c – Scaffolding in formellen Situationen
 
@@ -153,6 +158,8 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | **Adler-Kontrastfolie** | Vorab-Klärung reduziert Gesichtsverlustrisiko im Konflikt; Gegenfolie: reine Stress-/Arousal-Entscheidung. |
 | **Zwischenurteil** | **(C)** – Wirkungsnachweis offen. |
 | **Nachweislücke** | Keine Prä-/Post-Vergleichssituation. |
+| **Was fehlt** | Mindestens eine dokumentierte Situation, in der Eigentumsregeln vorab besprochen wurden, gefolgt von einer vergleichbaren Konfliktkonstellation. Protokollnotiz über Zeitpunkt und Inhalt des Vorab-Gesprächs. |
+| **Was deshalb nicht behauptet werden darf** | Dass Vorab-Klärung von Eigentumsregeln (E3d) im vorliegenden Zeitraum Grenzüberschreitungen präventiv reduziert hat. Dass Tag-4-Eskalation durch E3d hätte verhindert werden können – die Grenzüberschreitung Tag 4 ist dokumentiert als Teil einer spezifischen Eskalationskonstellation (Verbalabwertung + physische Reaktion), nicht als Regelwissensdefizit. |
 
 ### E3e – Feedback als Gegenprüfung
 
@@ -179,6 +186,8 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | **Adler-Kontrastfolie** | Pause als Schutz vor erneuter Minderwertigkeits- bzw. Gesichtsverlustlage – funktional nur, wenn sie nicht als Ausschluss erlebt wird. |
 | **Zwischenurteil** | **(C)** – Wirkung nicht prüfbar im dokumentierten Zeitraum. |
 | **Nachweislücke** | Vorstellung bei X, Beobachtungsraster ausfüllen. |
+| **Was fehlt** | Einführung der Exit-Strategie bei X mit dokumentiertem Gespräch über Zweck und Nutzung. Mindestens eine belegte Nutzungsepisode mit Verlaufsnotiz (Eskalation verhindert / aufgehalten / ohne Effekt). Unterscheidung: Hat X die Pause als Handlungsoption verstanden oder als Ausschluss wahrgenommen (Adler-Kontrastfolie)? |
+| **Was deshalb nicht behauptet werden darf** | Dass E4 im vorliegenden Zeitraum als Handlungsalternative zur Aggression wirksam war – das Protokoll existiert, die Praxis nicht. Dass H11 (Aggression bei Kontrollverlust ↔ Pausenstrategie als Gegenmittel) gestützt ist. Dass das Fehlen einer Eskalation bei späterem Einsatz kausal auf E4 zurückgeht, solange keine Kontrollbedingung vorliegt. |
 
 ### E6 – Kleinschrittige Umsetzung
 
@@ -197,7 +206,7 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 
 - **Belegt wirksam (A):** nur E6 im dokumentierten Zeitraum, gestützt durch T4-Evidenz.
 - **Gemischt (B):** E2, E3a, E3c, E3e – jeweils Hinweise auf Wirkung sichtbar, Kausalität nicht trennbar.
-- **Nicht ausreichend belegt (C):** E1, E3b, E3d, E4 – entweder nicht systematisch geprüft oder nicht eingeführt.
+- **Nicht ausreichend belegt (C):** E1, E3b, E3d, E4 – entweder nicht systematisch geprüft oder nicht eingeführt. Für jeden C-Fall ist jetzt explizit ausgewiesen, **was für eine Wirkungsaussage fehlt** und **was deshalb nicht behauptet werden darf** (Zeilen in den jeweiligen Tabellen oben). Ein sauber begründetes C ist keine Schwäche des Nachweises – es macht seine epistemische Grenze sichtbar.
 - **Muster:** Entscheidungen mit struktureller Umsetzung (Standort, Kleinschrittigkeit, Feedback-Praxis) zeigen eher dokumentierte Spuren als Entscheidungen mit interaktionaler Umsetzung (Grenzsetzung, Frühintervention). Das stützt die Schlussfolgerung in [5.7](#57-schlussfolgerungen), Kleinschrittigkeit und Eigenmotivation als Prinzipien beizubehalten.
 
 ## 5.4 Abweichungen vom Plan
@@ -260,12 +269,19 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 
 ## 5.7 Schlussfolgerungen
 
-- **Kleinschrittigkeit als Prinzip beibehalten.** Die Vorfälle an Tag 2 und Tag 4 sowie die Entscheidung E6 sprechen dafür, Interventionen und Projektschritte in kleinen Einheiten zu führen, um Eskalationen vorzubeugen (H8).
+> Die folgenden Schlussfolgerungen spiegeln die Urteilslinien A1, A8 und A10
+> aus der [Argumentationsschicht](../mapping/argumentationsschicht.md) und
+> liefern ihre empirische Oberfläche. Jede Schlussfolgerung referenziert nur,
+> was im dokumentierten Zeitraum belegbar ist.
+
+- **Kleinschrittigkeit als Prinzip beibehalten.** Die Vorfälle an Tag 2 und Tag 4 sowie die Entscheidung E6 sprechen dafür, Interventionen und Projektschritte in kleinen Einheiten zu führen, um Eskalationen vorzubeugen (H8). Koinzidenz von P++-Stufen und Kleinschrittigkeit in der Umsetzungsphase (Tag 4–6) stützt das Prinzip als Partizipationsermöglicher, ohne die Kausalitätsfrage zu schließen. → [mapping/partizipationsgrad.md](../mapping/partizipationsgrad.md) (argumentative Rückbindung E6)
   → Quelle: [docs/reflexion.md](../../reflexion.md), [docs/entscheidungen/06_pfandprojekt_naechste_schritte.md](../../entscheidungen/06_pfandprojekt_naechste_schritte.md)
-- **Eigenmotivation statt Druck als Steuerungsprinzip beibehalten.** Die Tage 4–6 (Pfand sammeln, Mülleimersprüche, Schildgestaltung) zeigen, dass Aufnahme eigener Ideen das Engagement trägt; direkte Aufforderungen führen eher zu Rückzug.
+- **Eigenmotivation statt Druck als Steuerungsprinzip beibehalten.** Die Tage 4–6 (Pfand sammeln, Mülleimersprüche, Schildgestaltung) zeigen, dass Aufnahme eigener Ideen das Engagement trägt; direkte Aufforderungen führen eher zu Rückzug. **(→ A1: Projektrolle als Initiator/Koordinator bestätigt sich im Wirkungsbild; Gegenhypothese Beziehungseffekt bleibt offen.)**
   → Quelle: [docs/projektplan.md](../../projektplan.md), [docs/tagebuch/05_tag_5.md](../../tagebuch/05_tag_5.md), [docs/tagebuch/06_tag_6.md](../../tagebuch/06_tag_6.md), [docs/reflexion.md](../../reflexion.md)
-- **Systemische Vollständigkeit herstellen.** Die Entsorgung des Schilds am Tag 7 zeigt, dass relevante Akteure (hier: Reinigungskräfte) vorab einzubinden sind; Gemeinschaftserfahrung (T5) hängt an Systemstabilität.
+- **Systemische Vollständigkeit herstellen.** Die Entsorgung des Schilds am Tag 7 zeigt, dass relevante Akteure (hier: Reinigungskräfte) vorab einzubinden sind; Gemeinschaftserfahrung (T5) hängt an Systemstabilität. **(→ A10: Systemische Vollständigkeit als Schlussfolgerung aus Tag 7 – Einzelfall, aber strukturell reprä­sentativ für das Stakeholder-Problem.)**
   → Quelle: [docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md)
+- **Rückgekoppelte Partizipation als Wirkfaktor sichern.** P++-Phasen (Tag 4–6) fallen mit den belegten Zielannäherungen in T1, T4 zusammen; P0-Phasen (Tag 2, 3) korrelieren mit Konflikt und Projektabbruch. **(→ A8: Partizipation ist nicht nur formales Kriterium, sondern der dokumentierte Unterschied zwischen Engagement und Rückzug im vorliegenden Material. Gegenhypothesen Themenattraktivität und Beziehungseffekt bleiben nicht ausgeräumt.)** → [mapping/partizipationsgrad.md](../mapping/partizipationsgrad.md)
+  → Quelle: [docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md) – [docs/tagebuch/06_tag_6.md](../../tagebuch/06_tag_6.md)
 - **Feedback systematisch ausbauen.** H10 verlangt regelmäßige, möglichst skalierte Rückmeldung sowie deren Abgleich mit Beobachtungen gleicher Tage.
   → Quelle: [docs/reflexion.md](../../reflexion.md), [docs/feedback/01_feedback_zielperson.md](../../feedback/01_feedback_zielperson.md), [meta/arbeitsregeln.md](../../../meta/arbeitsregeln.md) (Regeln 7, 8)
 - **Risiko der Fehlattribuierung im Blick behalten.** Beobachtete Veränderungen können durch externe Faktoren beeinflusst sein; das Repo benennt dieses Risiko ausdrücklich.
