@@ -9,7 +9,7 @@
 
 ## 1.2 Kurzbeschreibung
 
-Im Projektverlauf durchläuft X mit zwei Pädagoginnen/Pädagogen (T. und A.) und zeitweise kooperierenden Mitschüler\*innen – insbesondere Y – die Phasen Planung, Schulhofumfrage, konkrete Umsetzungsplanung, Materialbeschaffung und Reflexion. Kern der Umsetzung ist bislang der Aufbau einer Pfandsammel-Struktur für die Einrichtung (Pfandprojekt als erster sichtbarer Beitrag).
+Im Projektverlauf durchläuft X mit zwei Pädagogen (T. und A.) und zeitweise kooperierenden Mitschülern – insbesondere Y – die Phasen Planung, Schulhofumfrage, konkrete Umsetzungsplanung, Materialbeschaffung und Reflexion. Kern der Umsetzung ist bislang der Aufbau einer Pfandsammel-Struktur für die Einrichtung (Pfandprojekt als erster sichtbarer Beitrag).
 → Quelle: [docs/projektplan.md](../../projektplan.md) (Projektphasen), [docs/tagebuch/00_vorlauf.md](../../tagebuch/00_vorlauf.md) bis [docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md)
 
 ## 1.3 Sinnvolle Idee

@@ -1,11 +1,11 @@
 # Beobachtungsraster: Pause und Pfandprojekt
 
 ## Ziel
-Minimale Erfassung der Wirksamkeit des Pause-Protokolls und der kleinschrittigen Projektumsetzung.
+Minimale Erfassung der Anwendung der dokumentierten Exit-Strategie Pause und der kleinschrittigen Projektumsetzung.
 
 ## Pro Einheit festhalten
 - Datum / Situation
-- Wurde „Pause“ genutzt? (ja/nein)
+- Wurde die Exit-Strategie (Pause) eingesetzt? (ja/nein)
 - Kam es zur Eskalation? (ja/nein)
 - Dauer der Eskalation grob
 - Wurde die geplante Handlung abgeschlossen? (ja/nein)

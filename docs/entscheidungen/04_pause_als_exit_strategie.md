@@ -1,20 +1,24 @@
-# Entscheidung: Pause als Exit-Strategie einführen
+# Entscheidung: Exit-Strategie Pause konzipieren und dokumentieren
 
 ## Maßnahme
-Ein einfaches, standardisiertes Pause-Protokoll wird eingeführt.
+Ein einfaches, standardisiertes Pause-Konzept wird konzipiert und dokumentiert.
 Siehe: [Pause-Protokoll](../intervention/pause_protokoll.md)
 
+## Status im dokumentierten Zeitraum
+Die Exit-Strategie wurde der Zielperson im dokumentierten Zeitraum nicht vorgestellt.
+Sie ist daher noch nicht als eingeführte oder aktiv verfügbare Praxis belegt.
+
 ## Bezug zur Hypothese
-Diese Entscheidung prüft Hypothese H11 (Aggression als Strategie bei Kontrollverlust).
+Diese Entscheidung betrifft Hypothese H11 (Aggression als Strategie bei Kontrollverlust).
 
 ## Begründung
-Exit-Optionen erhöhen Handlungsfähigkeit unter Stress und können Aggression als Eskalationsstrategie ersetzen.
+Eine Exit-Option kann die Handlungsfähigkeit unter Stress erhöhen und als mögliche Alternative zu Eskalationsverhalten geprüft werden.
 
 ## Ziel
-- Reduktion von Eskalationen
-- Aufbau alternativer Handlungsstrategien
+- Vorbereitung einer prüfbaren Handlungsalternative bei drohendem Kontrollverlust
+- Methodische Grundlage für die spätere Prüfung von H11
 
-## Messkriterien
-- Anzahl Eskalationen pro Einheit wird dokumentiert
-- Dauer von Eskalationen wird grob geschätzt
-- Nutzung von „Pause“ wird gezählt
+## Messkriterien (für spätere Prüfung)
+- Tritt Aggression nach Kontrollverlust auf?
+- Welche Wirkung hat die Exit-Strategie (E4)?
+- Welche Alternativerklärungen (Arousal, Gruppendynamik) sind plausibel?
