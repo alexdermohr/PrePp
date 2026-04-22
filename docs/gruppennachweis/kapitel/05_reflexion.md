@@ -11,12 +11,12 @@
 
 ## 5.0 Lesehilfe und Quellen
 
-### Priorisierte Leselogik (fuer Verdichtung)
+### Priorisierte Leselogik (für Verdichtung)
 
 Dieses Kapitel ist die **Bewertungsachse** des Nachweises.
 
-- **Primaeres Zentrum:** [5.3 Evidenzlage je Entscheidung](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6)
-- **Sekundaer:** [5.1 Zielkurzbilanz](#51-zielerreichung--teilzielweiser-abgleich) als verdichtete Uebersicht
+- **Primäres Zentrum:** [5.3 Evidenzlage je Entscheidung](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6)
+- **Sekundär:** [5.1 Zielkurzbilanz](#51-zielerreichung--teilzielweiser-abgleich) als verdichtete Übersicht
 - **Abschluss:** [5.6 Hypothesenstatus](#56-hypothesenstatus--abschließender-überblick) und [5.7 Schlussfolgerungen](#57-schlussfolgerungen)
 
 Entkopplungsregel zu Kapitel 4:
@@ -25,7 +25,7 @@ Entkopplungsregel zu Kapitel 4:
 - Kapitel 5 bewertet Entscheidungen.
 - Wirkungsaussagen werden nicht in beiden Kapiteln vollstaendig ausformuliert.
 
-Arbeitsgrundlage fuer den Umbau: [komprimierte_zielstruktur.md](../komprimierte_zielstruktur.md).
+Arbeitsgrundlage für den Umbau: [komprimierte_zielstruktur.md](../komprimierte_zielstruktur.md).
 
 ### Methodischer Rahmen
 
@@ -58,6 +58,12 @@ Arbeitsgrundlage fuer den Umbau: [komprimierte_zielstruktur.md](../komprimierte_
 - Welche Zuschreibungen wurden getroffen?
 - Welche Alternativen wurden geprüft?
 - Welche Interaktionsschleifen könnten Verhalten stabilisieren?
+- **Modellprüfung (nur entscheidungsnah):**
+  - Attributionstheorie bei Zuschreibungen zu Absicht/Wille/Provokation.
+  - ABC/SORKC + Operante Konditionierung bei der Frage, welche Sequenzen/Konsequenzen Muster stabilisieren.
+  - Stresstoleranzfenster + Lazarus + Emotionsregulation (Gross) bei Kippprozessen (E3b/E4).
+  - Ökologische Systemtheorie + systemische Zirkularität bei Stakeholder-/Kontextabbrüchen (z. B. Tag 7).
+  → Modelle: [models/attributionstheorie.md](../../../models/attributionstheorie.md), [models/abc_sorkc.md](../../../models/abc_sorkc.md), [models/operante_konditionierung.md](../../../models/operante_konditionierung.md), [models/stresstoleranzfenster.md](../../../models/stresstoleranzfenster.md), [models/transaktionales_stressmodell_lazarus.md](../../../models/transaktionales_stressmodell_lazarus.md), [models/emotionsregulation_gross.md](../../../models/emotionsregulation_gross.md), [models/oekologische_systemtheorie_bronfenbrenner.md](../../../models/oekologische_systemtheorie_bronfenbrenner.md), [models/systemische_zirkularitaet.md](../../../models/systemische_zirkularitaet.md)
 - **[OFFEN]** Systematische Attributionsprüfung (Absicht/Wille/Provokation) wird im aktuellen Stand nur punktuell dokumentiert und ist in 5.3 noch nicht durchgängig ausgewiesen.
 
 ## 5.1 Zielerreichung – teilzielweiser Abgleich
