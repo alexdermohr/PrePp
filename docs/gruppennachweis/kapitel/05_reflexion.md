@@ -137,7 +137,7 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | **Intervention** | Stellvertretende bzw. gemeinsame Gesprächsführung mit Beteiligung von X. |
 | **Beobachtete Kurzzeitwirkung** | X bleibt in einzelnen Situationen physisch präsent, aber leise/abgewandt; kein messbarer Zuwachs an eigenem Redeanteil im Zeitraum. |
 | **Alternativerklärungen** | (a) Präsenz ist an Beziehung zu T./A. gebunden, nicht an Scaffolding-Form. (b) Sprachlich-akustische Hürden (Hörgerät, b2309) überlagern den sozialen Effekt. |
-| **Adler-Kontrastfolie** | Scaffolding kann als Entlastung des erlebten Kontrollverlustes in exponierten Situationen gelesen werden und als Angebot zum Kompetenzerleben — ohne daraus auf innere Ursache schließen zu können. Gegenfolie: Hör- bzw. Aktivierungshürden. |
+| **Adler-Kontrastfolie** | Scaffolding als Entlastung des Minderwertigkeitsdrucks und Angebot zum Kompetenzerleben; Gegenfolie: Hör- bzw. Aktivierungs­hürden. |
 | **Zwischenurteil** | **(B)** – H2 „aktiv geprüft", Wirkung noch nicht quantifiziert. |
 | **Nachweislücke** | Keine Operationalisierung (Lautstärke, Redeanteil, Blickkontakt). |
 
@@ -176,7 +176,7 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | **Intervention** | Standardisiertes Pause-Protokoll dokumentiert, **nicht** mit X eingeführt. → [docs/intervention/pause_protokoll.md](../../intervention/pause_protokoll.md) |
 | **Beobachtete Kurzzeitwirkung** | Keine, da nicht eingeführt. |
 | **Alternativerklärungen** | Bei späterer Einführung zu prüfen: Arousal-Regulation (Stressfenster), Gruppendynamik, Reizentzug. |
-| **Adler-Kontrastfolie** | Pause kann als Schutz vor weiterer Einschränkung von Handlungsoptionen und erlebtem Kontrollverlust gelesen werden – funktional nur, wenn sie nicht als Ausschluss erlebt wird. |
+| **Adler-Kontrastfolie** | Pause als Schutz vor erneuter Minderwertigkeits- bzw. Gesichtsverlustlage – funktional nur, wenn sie nicht als Ausschluss erlebt wird. |
 | **Zwischenurteil** | **(C)** – Wirkung nicht prüfbar im dokumentierten Zeitraum. |
 | **Nachweislücke** | Vorstellung bei X, Beobachtungsraster ausfüllen. |
 

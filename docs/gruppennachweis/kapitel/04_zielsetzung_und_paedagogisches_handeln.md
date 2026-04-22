@@ -95,7 +95,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 
 **Sinnvolle Andockstellen im Material:**
 
-- **Warum direkte Grenzsetzung kippen kann:** nicht bloß Regelverletzung, sondern möglicher erlebter Kontroll- oder Einflussverlust (→ E1, E3d).
+- **Warum direkte Grenzsetzung kippen kann:** nicht bloß Regelverletzung, sondern mögliche Bedrohung von Selbstwert/Einfluss (→ E1, E3d).
 - **Warum handlungsorientierte, kleinschrittige Beteiligung funktioniert:** sie erlaubt Kompetenz- und Zugehörigkeitserfahrung ohne Überforderung (→ E6, Projektphasen 3–4).
 - **Warum Y als Vermittler hilfreich ist:** soziale Einbettung und Anerkennung statt bloßer Steuerung (→ Partizipation 4.3).
 - **Warum die Exit-Strategie Pause funktional sein kann:** Schutz vor weiterer Zielblockade, nicht Belohnung des Abbruchs (→ E4).
