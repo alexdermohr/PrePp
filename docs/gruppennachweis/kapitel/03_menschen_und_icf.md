@@ -9,7 +9,7 @@
 > Grenzen des Feedbacks als Erkenntnisquelle ([3.8](#38-feedback-der-zielperson-perspektive-x)).
 > Eine psychologische Deutung (auch Adler) erfolgt bewusst **nicht** in diesem
 > Kapitel, sondern – falls einschlägig – in [Kapitel 4.4.0](04_zielsetzung_und_paedagogisches_handeln.md#440-heuristische-rahmung-adler)
-> und in der [Wirkungsmatrix 5.3](05_reflexion.md#53-wirkungsmatrix-der-entscheidungen-e1e6).
+> und in der [Evidenzlage 5.3](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6).
 
 ## 3.1 Demografische Daten
 
@@ -127,12 +127,17 @@ Belegbar sichtbare Merkmale im Projektverlauf:
 
 ## 3.8 Feedback der Zielperson (Perspektive X)
 
-Die dokumentierten Rückmeldungen von X sind insgesamt knapp, mechanistisch und ambivalent; sie stützen sich bisher nur auf zwei Erhebungstage. Die **Form der Rückmeldung** ist bei jedem Eintrag markiert (vgl. Regel 8 in [meta/arbeitsregeln.md](../../../meta/arbeitsregeln.md); vollständige Modi in [docs/feedback/01_feedback_zielperson.md](../../feedback/01_feedback_zielperson.md)).
+Zwei Erhebungen, beide direkt und wörtlich:
 
-| Datum | Kontext | Inhalt | Erhebungsart | Quellentreue | Häufigkeit |
-|---|---|---|---|---|---|
-| 2026-04-07 | Allgemeine Projektwahrnehmung | „gut" | direkt (offene Frage) | wörtlich | einmalig | 
-| 2026-04-08 | Feedbackrunde zum Gesamtprojekt | „gut"; „nichts" gefiel nicht; „sehr lecker" (Fanta-Kuchen); keine Antwort zur Einstiegsphase; „ja" (Beleidigungen angebracht); „sehr gut" (Perspektivwechsel) | direkt (offene Frage) | wörtlich | einmalig |
+| Datum | Frage | Antwort |
+|---|---|---|
+| 2026-04-07 | Wie gefällt dir das Projekt? | „gut" |
+| 2026-04-08 | Wie fandest du das Projekt? | „gut" |
+| 2026-04-08 | Was gefiel dir nicht so gut? | „nichts" |
+| 2026-04-08 | Frage zur Anfangsphase (Druck zu Interviews) | keine Antwort |
+| 2026-04-08 | Beim Fanta-Kuchen: War alles super? | „sehr lecker!" |
+| 2026-04-08 | Fandest du auch deine Beleidigungen der anderen Schüler angebracht? | „ja" |
+| 2026-04-08 | Wie würdest du dich anstelle der anderen Kinder fühlen? | „sehr gut" |
 
 Quellen: [docs/feedback/02_feedback_x.md](../../feedback/02_feedback_x.md), [docs/feedback/03_feedback_x.md](../../feedback/03_feedback_x.md).
 
@@ -140,9 +145,8 @@ Quellen: [docs/feedback/02_feedback_x.md](../../feedback/02_feedback_x.md), [doc
 
 - Die Rückmeldungen sind **kurz und wenig differenzierend**; ihre Belastbarkeit als Steuerungsgröße ist begrenzt (vgl. [docs/hypothesen.md](../../hypothesen.md) H10).
 - Einzelne Antworten (z. B. „Beleidigungen angebracht: ja") stehen in Spannung zum pädagogischen Ziel eines gleichwürdigen Umgangs und zu beobachteten Entschuldigungen.
-  → Quelle: [docs/feedback/03_feedback_x.md](../../feedback/03_feedback_x.md) (Block 5), vgl. [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md)
-- Bisher dokumentiert ist ausschließlich der Modus **„direkt / wörtlich"**; paraphrasierte, skalierte oder Auswahl-Formate liegen nicht vor. Die Vorlage sieht diese Modi aber bereits vor.
-- [OFFEN] Ausbau der Feedback-Praxis (Skala, Auswahlformat, regelmäßige Erhebung) gemäß [docs/feedback/01_feedback_zielperson.md](../../feedback/01_feedback_zielperson.md) (Erhebungsmodi).
+  → Quelle: [docs/feedback/03_feedback_x.md](../../feedback/03_feedback_x.md), vgl. [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md)
+- [OFFEN] Mehr Erhebungszeitpunkte, mehr Kontextvarianz.
 
 ## 3.9 Weitere Beteiligte
 
@@ -164,5 +168,5 @@ Quellen: [docs/feedback/02_feedback_x.md](../../feedback/02_feedback_x.md), [doc
 ## Offene Punkte
 
 - [OFFEN] Formale ICF-Codierung hemmender Umweltfaktoren (z. B. Systemkonkurrenz) liegt nicht vor.
-- [OFFEN] Feedback-Erhebung systematisch erweitern (mehr Erhebungszeitpunkte, Skalen-/Auswahlformate) gemäß [docs/feedback/01_feedback_zielperson.md](../../feedback/01_feedback_zielperson.md).
+- [OFFEN] Feedback-Erhebung erweitern (mehr Zeitpunkte, mehr Kontextvarianz).
 - [OFFEN] Alle Bewertungen gegen aktuellere ICF-Reports rückprüfen, sobald verfügbar.

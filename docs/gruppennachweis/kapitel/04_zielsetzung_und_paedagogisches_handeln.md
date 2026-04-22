@@ -9,7 +9,7 @@
 > fachliche Begründung der Handlungsschritte ([4.4](#44-fachliche-begründung-der-handlungsschritte)).
 > Die Adler-Rahmung in [4.4.0](#440-heuristische-rahmung-adler) wird nur
 > heuristisch und mit Alternativerklärungen eingesetzt. Wirkungsprüfung der
-> Maßnahmen: [Kapitel 5, Wirkungsmatrix](05_reflexion.md#53-wirkungsmatrix-der-entscheidungen-e1e6).
+> Wirkungsprüfung der Maßnahmen: [Kapitel 5, Evidenzlage](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6).
 
 ## 4.1 Ziel
 
@@ -89,7 +89,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 > sondern als zielgerichtete Bewegung im sozialen Kontext zu lesen (Sicherung
 > von Zugehörigkeit, Kompetenzerleben, Einfluss). Primärrahmung bleiben
 > Projektplan, Beobachtung, ICF und Hypothesen. Jede Adler-Lesart wird in
-> [Kapitel 5.3](05_reflexion.md#53-wirkungsmatrix-der-entscheidungen-e1e6)
+> [Kapitel 5.3](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6)
 > gegen mindestens eine Alternativerklärung geprüft (Stress-/Dysregulations­modell,
 > Frustrationsdynamik, situative Angebotsstruktur, ICF-/Kontextdeutung).
 
@@ -115,7 +115,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 | Kleinschrittige Umsetzung (E6) | Große Schritte erhöhen das Risiko von Kontrollverlust und Eskalation. | Abschluss genau einer Teilhandlung pro Einheit ohne Eskalation; Einladung einer weiteren Person erfolgt. | Erfolge stammen aus Themenattraktivität oder Begleitungsintensität, nicht aus Taktung. | [docs/entscheidungen/06_pfandprojekt_naechste_schritte.md](../../entscheidungen/06_pfandprojekt_naechste_schritte.md) |
 | [OFFEN] Eigenständiger Fachliteraturbeleg | Empowerment-, Partizipations- und ICF-Rahmung sollen zusätzlich durch externe Literatur belegt werden. | — | — | [apparat/literaturverzeichnis.md](../apparat/literaturverzeichnis.md) |
 
-> Die Spalte „Wirkindikator" bindet Maßnahmen an prüfbare Beobachtungen; die Spalte „Plausible Gegenerklärung" erzwingt eine Kontrastlesart. Die Auswertung dieser Indikatoren erfolgt in der [Wirkungsmatrix 5.3](05_reflexion.md#53-wirkungsmatrix-der-entscheidungen-e1e6).
+> Die Spalte „Wirkindikator" bindet Maßnahmen an prüfbare Beobachtungen; die Spalte „Plausible Gegenerklärung" erzwingt eine Kontrastlesart. Die Auswertung dieser Indikatoren erfolgt in der [Evidenzlage 5.3](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6).
 
 ## 4.5 Hypothesenbezug
 
@@ -146,4 +146,4 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 ## Offene Punkte
 
 - [OFFEN] Ergänzung durch externe Fachliteratur zu Empowerment / Partizipation / ICF → [apparat/literaturverzeichnis.md](../apparat/literaturverzeichnis.md) (Zitierstil: APA 7 als Arbeitsstandard vorgesehen)
-- [OFFEN] Systematische Dokumentation des Partizipationsgrades (gestaltende Entscheidungen pro Einheit); Auswertung der Wirkindikatoren über die [Wirkungsmatrix 5.3](05_reflexion.md#53-wirkungsmatrix-der-entscheidungen-e1e6)
+- [OFFEN] Systematische Dokumentation des Partizipationsgrades (gestaltende Entscheidungen pro Einheit); Auswertung der Wirkindikatoren über die [Evidenzlage 5.3](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6)

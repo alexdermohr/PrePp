@@ -22,8 +22,8 @@
   | **B** | gemischte Evidenz (Pro- und Kontra-Beobachtungen) |
   | **C** | kein ausreichender Nachweis im dokumentierten Zeitraum |
 
-- **Kontrastprüfung:** Jede zentrale Deutung wird gegen mindestens eine Alternativerklärung gestellt (Stress-/Dysregulationsmodell, Frustrationsdynamik, situative Angebotsstruktur, ICF-/Kontextdeutung). Das gilt insbesondere für die Wirkungsmatrix in [5.3](#53-wirkungsmatrix-der-entscheidungen-e1e6).
-- **Adler als sekundäre Deutungsfolie:** Adlers Individualpsychologie (siehe [models/adler_individualpsychologie.md](../../../models/adler_individualpsychologie.md)) wird hier ausschließlich als Kontrastfolie eingesetzt, nicht als Leitmodell. Sie erscheint – wenn einschlägig – in einer eigenen Spalte der Wirkungsmatrix und wird stets mit einer Alternativdeutung gekoppelt. Primärrahmung der Maßnahmen in [Kapitel 4.4](04_zielsetzung_und_paedagogisches_handeln.md#44-fachliche-begründung-der-handlungsschritte).
+- **Kontrastprüfung:** Jede zentrale Deutung wird gegen mindestens eine Alternativerklärung gestellt (Stress-/Dysregulationsmodell, Frustrationsdynamik, situative Angebotsstruktur, ICF-/Kontextdeutung). Das gilt insbesondere für die Evidenzlage in [5.3](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6).
+- **Adler als sekundäre Deutungsfolie:** Adlers Individualpsychologie (siehe [models/adler_individualpsychologie.md](../../../models/adler_individualpsychologie.md)) wird hier ausschließlich als Kontrastfolie eingesetzt, nicht als Leitmodell. Sie erscheint – wenn einschlägig – in einer eigenen Spalte der Evidenzlage (5.3) und wird stets mit einer Alternativdeutung gekoppelt. Primärrahmung der Maßnahmen in [Kapitel 4.4](04_zielsetzung_und_paedagogisches_handeln.md#44-fachliche-begründung-der-handlungsschritte).
 
 ### Quellenbezüge
 

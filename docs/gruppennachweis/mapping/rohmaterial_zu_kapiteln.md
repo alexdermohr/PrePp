@@ -45,10 +45,10 @@ Dieses Dokument stellt sicher, dass jede Aussage im Gruppennachweis auf eine Que
 | ICF d/ – Aktivitäten & Partizipation | `docs/icf-reports/*`, `docs/beobachtungen/*.md`, `docs/tagebuch/*.md`, `docs/hypothesen.md` | strukturiert |
 | ICF e/ – Umweltfaktoren (Ressourcen) | `docs/icf-reports/*` | strukturiert |
 | Hemmende Umweltfaktoren (nicht ICF-codiert) | `docs/entscheidungen/03_systemarchitektur_und_regulation.md`, H7, `docs/tagebuch/07_tag_7.md` | strukturiert |
-| Feedback der Zielperson (Erhebungsart/Quellentreue markiert) | `docs/feedback/*.md` | strukturiert |
+| Feedback der Zielperson | `docs/feedback/*.md` | strukturiert |
 | Weitere Beteiligte (T., A., Y, J, K, Hausmeister, Reinigungskräfte) | `docs/projektplan.md`, `docs/tagebuch/*.md`, `docs/reflexion.md` | strukturiert |
 | Formale ICF-Codierung hemmender Umweltfaktoren | `docs/icf-reports/*` | [OFFEN] |
-| Systematische Feedback-Erhebung (Skalen/Auswahl) | `docs/feedback/*.md` | [OFFEN] |
+| Systematische Feedback-Erhebung | `docs/feedback/*.md` | [OFFEN] |
 
 ### Kapitel 4: Zielsetzung und pädagogisches Handeln
 
@@ -70,7 +70,7 @@ Dieses Dokument stellt sicher, dass jede Aussage im Gruppennachweis auf eine Que
 |---|---|---|
 | Zielerreichung je Teilziel T1–T5 (A/B/C-Kategorie) | `docs/tagebuch/*.md`, `docs/beobachtungen/*.md`, `docs/feedback/*.md`, `docs/hypothesen.md` | strukturiert |
 | Nachweis-Indikatoren (H9, H1, H6, Projektergebnis) | `docs/beobachtungen/*.md`, `docs/tagebuch/04_tag_4.md`, `docs/tagebuch/06_tag_6.md`, `docs/tagebuch/07_tag_7.md`, `docs/reflexion.md` | strukturiert |
-| Wirkungsmatrix E1–E6 (Anlass/Hypothese/Intervention/beobachtete Wirkung/Alternativerklärung/Adler-Kontrast/Zwischenurteil) | `docs/entscheidungen/*.md`, `docs/tagebuch/*.md`, `docs/beobachtungen/*.md`, `docs/feedback/*.md`, `models/adler_individualpsychologie.md` | strukturiert (Zwischenurteile textbasiert, A/B/C, im dokumentierten Zeitraum) |
+| Evidenzlage E1–E6 (Anlass/Hypothese/Intervention/beobachtete Wirkung/Alternativerklärung/Adler-Kontrast/Zwischenurteil) | `docs/entscheidungen/*.md`, `docs/tagebuch/*.md`, `docs/beobachtungen/*.md`, `docs/feedback/*.md`, `models/adler_individualpsychologie.md` | strukturiert (Zwischenurteile textbasiert, A/B/C, im dokumentierten Zeitraum) |
 | Abweichungen vom Plan (Tag 1, 2, 3, 4, 7 + Rollenabweichung) | `docs/tagebuch/*.md`, `docs/reflexion.md`, `docs/entscheidungen/*.md` | strukturiert |
 | Spannungen Feedback ↔ Beobachtung | `docs/feedback/03_feedback_x.md`, `docs/beobachtungen/01_verhalten_in_situationen.md`, H10 | strukturiert |
 | Hypothesenstatus H1–H11 | `docs/hypothesen.md` | strukturiert (H11: offen – Prüfstruktur vorhanden, aber keine systematische Auswertung) |
@@ -83,7 +83,7 @@ Dieses Dokument stellt sicher, dass jede Aussage im Gruppennachweis auf eine Que
 
 | Aussage / Inhalt | Quelle (Rohmaterial) | Status |
 |---|---|---|
-| Einhaltung der Arbeitsregeln 1–8 | `meta/arbeitsregeln.md`, Kapitel 2–5 | strukturiert |
+| Einhaltung der Arbeitsregeln 1–6 | `meta/arbeitsregeln.md`, Kapitel 2–5 | strukturiert |
 | Literaturverzeichnis (Stand, Zitierstil) | `docs/gruppennachweis/apparat/literaturverzeichnis.md` | [OFFEN] |
 | Anhang A1–A9 (Referenz auf Rohmaterial) | `docs/projektplan.md`, `docs/tagebuch/*.md`, `docs/beobachtungen/*.md`, `docs/hypothesen.md`, `docs/entscheidungen/*.md`, `docs/feedback/*.md`, `docs/intervention/pause_protokoll.md`, `docs/icf-reports/*`, `docs/reflexion.md` | strukturiert |
 | Formale Anforderungen (Umfang, Abgabeformat, Zitierstil) | – projektseitig nicht festgelegt – | [OFFEN] |
@@ -94,7 +94,7 @@ Dieses Dokument stellt sicher, dass jede Aussage im Gruppennachweis auf eine Que
 |---|---|---|
 | Konkreter Schulname / institutionelles Profil der Einrichtung | Kapitel 2 | extern recherchieren und belegen oder als dauerhafte Leerstelle akzeptieren |
 | Formale ICF-Codierung hemmender Umweltfaktoren | Kapitel 3 | neuer ICF-Report mit e-Faktoren < 0 (z. B. e325, e440) |
-| Systematische Feedback-Erhebung (Skalen/Auswahl) | Kapitel 3, 5 | weitere Erhebungen in verschiedenen Modi durchführen |
+| Systematische Feedback-Erhebung | Kapitel 3, 5 | mehr Zeitpunkte, mehr Kontextvarianz |
 | Externe Fachliteratur zu Empowerment/Partizipation/ICF | Kapitel 1, 4, 6 | Apparat befüllen, Zitierstil festlegen |
 | Systematische Prüfung der Hypothese H11 (Kontrollverlust ↔ Aggression; Intervention E4 ↔ Wirkung) | Kapitel 5 | Beobachtungsraster durchgängig ausfüllen |
 | Messbare Entwicklung in T3 (sprachlicher Ausdruck) | Kapitel 5 | Operationalisierung (z. B. Lautstärke, Redeanteil) |

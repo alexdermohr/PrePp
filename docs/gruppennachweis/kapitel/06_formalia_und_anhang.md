@@ -4,7 +4,7 @@
 
 > **Auf einen Blick:** Kapitel 6 dokumentiert den formalen Rahmen: Contract,
 > State und Transformationsregeln ([6.1](#61-dokumentationsrahmen)), Einhaltung
-> der acht Arbeitsregeln ([6.2](#62-einhaltung-der-arbeitsregeln)), Sprache/Stil
+> der Arbeitsregeln ([6.2](#62-einhaltung-der-arbeitsregeln)), Sprache/Stil
 > ([6.3](#63-sprache-und-stil)), Literaturapparat mit vorgeschlagenem Zitierstil
 > APA 7 ([6.4](#64-literaturverzeichnis)) und die Anhänge A1–A10
 > ([6.5](#65-anhang)). Offene Formalia (Umfang, Abgabeformat) sind
@@ -28,10 +28,6 @@
 | 4 | Reflexion prüft Wirkung, nicht Absicht | Kapitel 5 bewertet teilzielweise nach Evidenzstärke (A/B/C) und benennt Abweichungen | [docs/reflexion.md](../../reflexion.md), Kapitel 5 |
 | 5 | Dokumentation erfolgt kurz und regelmäßig | Vorlauf + 7 Tageseinträge, Beobachtungsraster, Feedback-Einträge | [docs/tagebuch/*.md](../../tagebuch/00_vorlauf.md), [docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md](../../beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md) |
 | 6 | Keine identifizierenden Angaben | Zielperson als X, Mitschüler als Y, Fachkräfte als T., A., J, stellvertretender Schulleiter als K | Alle Kapitel und Rohdokumente |
-| 7 | Feedback als eigene Quelle | Eigener Ordner `docs/feedback/` mit Eintragsregeln, Format und Erhebungsmodi | [docs/feedback/01_feedback_zielperson.md](../../feedback/01_feedback_zielperson.md), Kapitel 3.8 |
-| 8 | Form der Rückmeldung wird markiert | Einträge dokumentieren Erhebungsart und Quellentreue („direkt / wörtlich"); Platzhalter nennen alle Modi (wörtlich / paraphrasiert / Auswahl / Skala / nicht erhoben) | [docs/feedback/02_feedback_x.md](../../feedback/02_feedback_x.md), [docs/feedback/03_feedback_x.md](../../feedback/03_feedback_x.md) – Vorlage: [docs/feedback/01_feedback_zielperson.md](../../feedback/01_feedback_zielperson.md) |
-
-> Regel 8 ist in den Feedback-Dateien durch die Felder `Erhebungsart` und `Quellentreue` bereits operationalisiert. Bisher dokumentiert ist ausschließlich der Modus „direkt / wörtlich"; andere Modi (paraphrasiert, Auswahl, Skala) stehen als zulässige Alternativen bereit, wurden im dokumentierten Zeitraum aber nicht angewendet.
 
 ## 6.3 Sprache und Stil
 
