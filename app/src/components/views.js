@@ -222,6 +222,19 @@ function sanitizeImageUrl(url, contextPath = null) {
   return null;
 }
 
+function sanitizeLinkUrl(url, contextPath = null) {
+  if (!url) return null;
+  const safeImageUrl = sanitizeImageUrl(url, contextPath);
+  if (safeImageUrl) return safeImageUrl;
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol === "mailto:" || parsed.protocol === "tel:") {
+      return url;
+    }
+  } catch (e) {}
+  return null;
+}
+
 function extractFirstSnippet(sections) {
   let fallbackText = "";
 
@@ -325,6 +338,7 @@ const blockRenderers = {
       container.appendChild(fallback);
       return;
     }
+
     const img = document.createElement("img");
     img.src = safeUrl;
     img.alt = b.alt || "Projektbild";
@@ -334,13 +348,13 @@ const blockRenderers = {
       img.classList.add("content-image--rotate-90");
     }
 
+    const safeHref = sanitizeLinkUrl(b.href || b.url, contextPath) || safeUrl;
     const imageLink = document.createElement("a");
     imageLink.className = "content-image-link";
-    imageLink.href = safeUrl;
+    imageLink.href = safeHref;
     imageLink.target = "_blank";
     imageLink.rel = "noopener noreferrer";
     imageLink.title = "Bild in voller Größe öffnen";
-    imageLink.className = "content-image-link";
     imageLink.style.textDecoration = "none";
     imageLink.style.display = "inline-block";
     imageLink.appendChild(img);
