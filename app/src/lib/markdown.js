@@ -14,6 +14,7 @@ export function parseMarkdownSections(markdown) {
   let currentListBlock = null;
   let currentTableBlock = null;
   let currentBlockquoteBlock = null;
+  let pendingHtmlImageHref = null;
 
   function flushText() {
     if (currentTextBlock) {
@@ -52,6 +53,34 @@ export function parseMarkdownSections(markdown) {
 
   for (const rawLine of rawLines) {
     const line = rawLine.trim();
+
+    const htmlAnchorOpenMatch = line.match(/^<a\s+[^>]*href="([^"]+)"[^>]*>/i);
+    if (htmlAnchorOpenMatch) {
+      pendingHtmlImageHref = htmlAnchorOpenMatch[1];
+      continue;
+    }
+
+    if (/^<\/a>$/i.test(line)) {
+      pendingHtmlImageHref = null;
+      continue;
+    }
+
+    const htmlImageMatch = line.match(/<img\s+[^>]*src="([^"]+)"[^>]*>/i);
+    if (htmlImageMatch) {
+      const altMatch = line.match(/\balt="([^"]*)"/i);
+      const styleMatch = line.match(/\bstyle="([^"]*)"/i);
+      const styleValue = styleMatch?.[1] || "";
+      const hasNinetyDegreeRotation = /rotate\(\s*90deg\s*\)/i.test(styleValue);
+
+      flushAll();
+      current.blocks.push({
+        type: 'image',
+        alt: altMatch?.[1] || '',
+        url: pendingHtmlImageHref || htmlImageMatch[1],
+        rotate90: hasNinetyDegreeRotation
+      });
+      continue;
+    }
 
     if (line.startsWith('```')) {
       flushAll();

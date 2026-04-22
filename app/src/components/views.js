@@ -330,8 +330,12 @@ const blockRenderers = {
     img.alt = b.alt || "Projektbild";
     img.className = "content-image";
     img.loading = "lazy";
+    if (b.rotate90) {
+      img.classList.add("content-image--rotate-90");
+    }
 
     const imageLink = document.createElement("a");
+    imageLink.className = "content-image-link";
     imageLink.href = safeUrl;
     imageLink.target = "_blank";
     imageLink.rel = "noopener noreferrer";
