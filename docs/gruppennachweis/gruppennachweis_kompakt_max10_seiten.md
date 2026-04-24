@@ -110,21 +110,82 @@ Exemplarische Datenspur:
 **Abgrenzung dieses Kapitels:** Kapitel 4 begründet Ziele und Maßnahmen (Hypothese → Entscheidung → Wirkindikator). Die eigentliche Wirkungsbewertung (A/B/C) erfolgt zentral in Kapitel 5.
 
 ## 5) Reflexion: Zielerreichung und Evidenz
-### Teilziel-Bilanz
-- **T4: (A)** klar gestützt im dokumentierten Zeitraum.
-- **T1/T2/T5: (B)** gemischte Evidenz.
-- **T3: (C)** im Zeitraum nicht ausreichend belegt.
 
-### Entscheidungsbezogene Evidenz
-- **A:** E6 (Kleinschrittigkeit)
-- **B:** E2, E3 (Systemregulation gesamt)
-- **C:** E1, E4 sowie nicht belastbar nachgewiesene E3-Teile (Frühintervention/Vorab-Regeln)
+> Bewertet wird **Wirkung (nicht Absicht)** auf Basis der dokumentierten Quellen
+> (Tagebuch, Beobachtungen, Entscheidungen, Feedback). Die Darstellung folgt
+> der Matrixlogik: **Teilziele → Entscheidungen → Hypothesenstatus**.
 
-### Gegenhypothesen (explizit)
-Beobachtete Effekte können alternativ durch **Themenattraktivität**, **Beziehungswirkung zur Projektleitung**, **Tagesform/Arousal**, **Systembrüche zwischen Akteuren**, **Reifung/Zeitverlauf**, **Zufallseffekte** oder **externe Verstärker außerhalb des Projekts** erklärt sein.
+### 5.1 Teilziel-Bilanz (T1–T5)
+- **T4 Selbstständigkeit/Organisation: (A)**
+  Mehrfach beobachtete eigenständige Übernahme zentraler Handlungsschritte (Planung, Einkauf, Beschriftung, Umsetzung) über mehrere Einheiten.
+- **T1 Selbstwirksamkeit, T2 Peer-Interaktion, T5 Gemeinschaftserfahrung: (B)**
+  Teilweise gelingende Beteiligung und Rückkehr in Interaktion, jedoch situativ instabil (v. a. bei Konflikt, Kontrollverlust, Parallelangeboten und Systembrüchen).
+- **T3 Sprachlicher Ausdruck: (C)**
+  Systematisch angelegt, im dokumentierten Zeitraum jedoch nicht hinreichend verdichtet; einzelne Beobachtungen ohne Trendnachweis.
 
-### Interpretationsgrenze
-Für eine belastbarere Kausalitätsaussage wären mindestens nötig: längerer Vorher-Nachher-Verlauf, dokumentierte Vergleichsbedingungen (mit/ohne Maßnahme) und standardisierte Indikatoren pro Teilziel. Diese Voraussetzungen liegen im vorliegenden Zeitraum nicht vor.
+### 5.2 Entscheidungsbezogene Evidenz (E1–E6, Kern)
+Bewertet wird je Entscheidung das Verhältnis von intendierter zu beobachteter Wirkung (inkl. Kontrastprüfung).
+
+- **E6 Kleinschrittigkeit: (A)**
+  Wiederholt stabilisierende Wirkung auf Beteiligung und Handlungskontinuität.
+  **Kontrast:** Themenattraktivität könnte mitwirken; die wiederkehrende Stabilisierung spricht dennoch für einen eigenständigen Maßnahmeneffekt.
+- **E2 Standort „Insel“: (B)**
+  Komplexitätsreduktion und Umsetzbarkeit plausibel; Maßnahme- und Kontexteffekt sind nicht sauber trennbar.
+  **Kontrast:** Wirkung kann auch aus Aufmerksamkeitsfokus/Systemruhe resultieren.
+- **E3 Systemregulation (gesamt): (B)**
+  Struktur und Scaffolding wirken punktuell stabilisierend, aber uneinheitlich umgesetzt; Teilkomponenten (Frühintervention, Vorab-Regeln) nicht belastbar nachgewiesen.
+  **Kontrast:** Effekte können durch Beziehungsqualität statt Strukturmaßnahmen erklärt sein.
+- **E1 Konsequenzsetzung: (C)**
+  Keine stabile Verhaltensänderung nachweisbar.
+  **Kontrast:** kurzfristige Effekte eher situativ (Arousal/Beziehung) als strukturell.
+- **E4 Exit-Strategie Pause: (C)**
+  Konzept vorhanden, aber im Zeitraum nicht systematisch eingeführt/erprobt; daher keine belastbare Wirkungsaussage.
+
+### 5.3 Gegenhypothesen (Pflicht-Kontrast)
+Als Alternativerklärungen bleiben plausibel:
+
+- **Individuelle Faktoren:**
+  - Tagesform/Arousal,
+  - Beziehungswirkung zur Projektleitung.
+- **Systemische Faktoren:**
+  - Themenattraktivität,
+  - Parallelangebote/fehlende Abstimmung,
+  - Zeitverlauf/Reifung,
+  - Zufall in Einzelsituationen.
+
+→ Eindeutige Kausalzuordnung zu Einzelmaßnahmen ist im dokumentierten Zeitraum nur eingeschränkt möglich.
+
+### 5.4 Interpretationsgrenzen
+Für belastbarere Kausalität fehlen als **Defizit-Cluster**:
+1. **Zeitverlauf:** systematischer Vorher–Nachher-Vergleich,
+2. **Vergleichsebene:** Bedingungen mit/ohne Maßnahme,
+3. **Messbasis:** standardisierte Indikatoren je Teilziel (insb. T3),
+4. **Baseline:** Vergleichsdaten außerhalb der Projektsituation.
+
+→ Die Bewertung bleibt auf plausibler, nicht experimentell gesicherter Ebene.
+
+### 5.5 Spannungen im Material
+- **Feedback vs. Beobachtung:** subjektiv überwiegend positive Bewertung bei teils konfliktgeprägtem Verhalten.
+- **Partizipation vs. Steuerung:** Mitentscheidung vorhanden, aber häufig stark strukturell gerahmt.
+- **Stabilität vs. Situation:** Wirkung stark kontextabhängig; Transfer bleibt begrenzt.
+
+### 5.6 Hypothesenstatus (H1–H11, verdichtet)
+- **Gestützt:** vor allem handlungsnahe Aktivierung/Umsetzung (insb. H1, H6).
+- **Teilweise gestützt:** soziale und selbstbezogene Hypothesen (u. a. H2, H7, H9, H10).
+- **Offen/nicht ausreichend geprüft:** insbesondere **H11** (Kontrollverlust ↔ Aggression; Exit-Strategie nicht systematisch erprobt).
+
+→ Die Hypothesenprüfung ist strukturiert angelegt, aber im Zeitraum nicht vollständig abgeschlossen.
+
+### 5.7 Schlussfolgerung
+Wirksam erscheinen im vorliegenden Material vor allem:
+- kleinschrittige Strukturierung,
+- handlungsnahe Aufgaben,
+- reale Mitentscheidung.
+
+Begrenzt bzw. unklar bleibt die Wirkung dort, wo Maßnahmen nicht stabil umgesetzt oder nicht ausreichend geprüft wurden (v. a. E1/E4 sowie T3).
+
+**Kernaussage Kapitel 5:**
+Nachweisbar ist Wirkung als **Muster im Verlauf** (insb. bei E6), nicht als eindeutige Ursache einzelner Maßnahmen.
 
 ## 6) Abweichungen und offene Nachweise
 ### Wichtige Prozessabweichungen
